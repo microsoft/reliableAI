@@ -1,0 +1,22 @@
+---
+seed:
+  ~
+data_folder:
+  /home/yang/ml4s-data/synthetic
+dir_name:
+  siblings-tune
+#  random
+
+# cases are different options for vicinal graph generation
+case0_num: # do nothing
+  0
+case1_num: # cpd replacement
+  0
+case2_num: # edge manipulation
+  1000
+case3_num: # purely synthetic graphs (random graphs)
+  0
+random_bn: # if use random bayesian network for data generation
+  False
+remove_exist_data:
+  True

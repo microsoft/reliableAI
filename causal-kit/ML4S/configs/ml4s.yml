@@ -1,0 +1,22 @@
+---
+log_path:
+  /home/yang/ml4s/reports
+
+feature_folder:
+  /home/yang/ml4s-data/feature
+
+cit_folder:
+  /home/yang/ml4s-data/cit/
+
+model_folder:
+  /home/yang/ml4s-data/model
+
+feature_name_list: # this stores a list of feature names which will be extracted for the learning task
+  - "previous order prediction"
+  - "degrees of target nodes"
+  - "superiority"
+  - "density"
+  - "k-order conditional dependencies"
+  - "residual of conditional dependencies"
+  - "mutual information"
+

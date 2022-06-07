@@ -1,0 +1,35 @@
+---
+save_dir:
+  '../synthetics'
+
+num_simulation_samples:
+  20000
+
+visualization:
+  False
+
+avgInDegree:
+  - 1.2
+  - 1.7
+
+graph_spec_dict:
+  small:
+    number_of_samples: 50
+    node_number_range:
+      - 11
+      - 20
+  medium:
+    number_of_samples: 50
+    node_number_range:
+      - 21
+      - 50
+  large:
+    number_of_samples: 50
+    node_number_range:
+      - 51
+      - 100
+  vlarge:
+    number_of_samples: 0
+    node_number_range:
+      - 101
+      - 1000
