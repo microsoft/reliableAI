@@ -168,46 +168,6 @@ def score_gami2(GAMInet_model, test_x_tr, h_map, bandwidths, epsilon=1e-13, N_su
         pure_score_gami2.to_csv(os.path.join(save_folder, "pure_score2.csv"))
     return pure_score_gami1, pure_score_gami2
 
-def score_gami(GAMInet_model, test_x_tr, sx, sy, h_map, bandwidths, epsilon=1e-13, N_subset=None, save_folder=None):
-    test_x = sx.inverse_transform(test_x_tr)
-    gami_int_list = GAMInet_model.interaction_list
-    gami_int_pred = predict_int_GAMI(GAMInet_model, test_x)
-    for i in range(len(gami_int_pred)):
-        gami_int_pred[i] = (gami_int_pred[i])
-    scale_lam_list = [1/10, 1, 10]
-    scale_lam_list_names = ['lam'+str(scale_lam) for scale_lam in scale_lam_list]
-    pure_score_gami1, pure_score_gami2 = pd.DataFrame(index=gami_int_list, columns=bandwidths.tolist() + scale_lam_list_names), pd.DataFrame(index=gami_int_list, columns=bandwidths.tolist() + scale_lam_list_names)
-    for i, pair in enumerate(gami_int_list):
-        # X1, X2 = th.from_numpy(test_x[:, pair[0]]).double(), th.from_numpy(test_x[:, pair[1]]).double()
-        X1, X2 = th.from_numpy(test_x[:, pair[0]]), th.from_numpy(test_x[:, pair[1]])
-        # pred_int = th.from_numpy(gami_int_pred[i].numpy()).double()
-        pred_int = th.from_numpy((gami_int_pred[i].reshape(-1,1)).reshape(-1)).double()
-        for j, h in enumerate(bandwidths):
-            pure_score_gami1.iloc[i, j], pure_score_gami2.iloc[i, j] = pureness_score2_normalized(X1, X2, pred_int, h, epsilon=epsilon, N_subset=N_subset)
-        if h_map is not None:
-            for k, scale_lam in enumerate(scale_lam_list):
-                pure_score_gami1.iloc[i, len(bandwidths)+k] = pureness_score2_normalized_single(X1, pred_int, scale_lam*h_map[pair[0]], epsilon=epsilon, N_subset=N_subset)
-                pure_score_gami2.iloc[i, len(bandwidths)+k] = pureness_score2_normalized_single(X2, pred_int, scale_lam*h_map[pair[1]], epsilon=epsilon, N_subset=N_subset)
-        '''# todo: add predict using GAMINET
-        est_xtrue = true_pureness_est_gaussian_x_gami(GAMInet_model, 0, 0, 1, cov_submat, -0.75, 1, 1000, 1000,
-                                                 save_folder=None)
-        est_ytrue = ??
-        denom = th.square(pred_int).mean().numpy()
-        score_xtrue = th.square(est_xtrue)/(denom + eps)
-        score_ytrue = th.square(est_ytrue) / (denom + eps)
-        # todo: nomalize? denom?
-        pure_score_gami1.iloc[i, len(bandwidths)+1], pure_score_gami2.iloc[i, len(bandwidths)+1] = score_xtrue, score_ytrue'''
-
-    pure_score_gami1, pure_score_gami2 = pure_score_gami1.loc[sorted(pure_score_gami1.index)], pure_score_gami2.loc[sorted(pure_score_gami2.index)]
-    pure_score_gami1.loc['avg'], pure_score_gami2.loc['avg'] = pure_score_gami1.mean(0), pure_score_gami2.mean(0)
-
-    if save_folder is not None:
-        Path(save_folder).mkdir(parents=True, exist_ok=True)
-        pd.DataFrame(test_x).to_csv(os.path.join(save_folder, "test_x.csv"), index=None)
-        pd.DataFrame(np.array([i.numpy().flatten() for i in gami_int_pred]).T, columns=gami_int_list).to_csv(os.path.join(save_folder, "int_preds.csv"), index=None)
-        pure_score_gami1.to_csv(os.path.join(save_folder, "pure_score1.csv"))
-        pure_score_gami2.to_csv(os.path.join(save_folder, "pure_score2.csv"))
-    return pure_score_gami1, pure_score_gami2
 
 def score_gami_cat(GAMInet_model, test_x, N_subset=None, save_folder=None):
     gami_int_list = GAMInet_model.interaction_list
@@ -253,21 +213,6 @@ def score_ebm(ebm, test_x_tr, sx, sy, h_map, bandwidths, epsilon=1e-13, N_subset
                 pure_score_ebm1.iloc[i, len(bandwidths)+k] = pureness_score2_normalized_single(X1, pred_int, scale_lam*h_map[pair[0]], epsilon=epsilon, N_subset=N_subset)
                 pure_score_ebm2.iloc[i, len(bandwidths)+k] = pureness_score2_normalized_single(X2, pred_int, scale_lam*h_map[pair[1]], epsilon=epsilon, N_subset=N_subset)
 
-        '''# todo:
-        pure_score_gami1.iloc[i, len(bandwidths)], pure_score_gami2.iloc[
-            i, len(bandwidths)] = pureness_score2_normalized(X1, X2, pred_int, pair_h_map[(pair[0], pair[1])],
-                                                             epsilon=epsilon, N_subset=N_subset)
-
-        # todo: add predict using GAMINET
-        est_xtrue = true_pureness_est_gaussian_x_gami(GAMInet_model, 0, 0, 1, cov_submat, -0.75, 1, 1000, 1000,
-                                                      save_folder=None)
-        est_ytrue = ??
-        denom = th.square(pred_int).mean().numpy()
-        score_xtrue = th.square(est_xtrue) / (denom + eps)
-        score_ytrue = th.square(est_ytrue) / (denom + eps)
-        # todo: nomalize? denom?
-        pure_score_gami1.iloc[i, len(bandwidths) + 1], pure_score_gami2.iloc[i, len(bandwidths) + 1] = score_xtrue, score_ytrue'''
-
     pure_score_ebm1, pure_score_ebm2 = pure_score_ebm1.loc[sorted(pure_score_ebm1.index)], pure_score_ebm2.loc[sorted(pure_score_ebm2.index)]
     pure_score_ebm1.loc['avg'], pure_score_ebm2.loc['avg'] = pure_score_ebm1.mean(0), pure_score_ebm2.mean(0)
 
@@ -278,7 +223,6 @@ def score_ebm(ebm, test_x_tr, sx, sy, h_map, bandwidths, epsilon=1e-13, N_subset
         pure_score_ebm1.to_csv(os.path.join(save_folder, "pure_score1.csv"))
         pure_score_ebm2.to_csv(os.path.join(save_folder, "pure_score2.csv"))
     return pure_score_ebm1, pure_score_ebm2
-
 
 def score_ebm_cat(ebm, test_x, N_subset=None, save_folder=None):
     ebm_int_list = []
@@ -302,6 +246,7 @@ def score_ebm_cat(ebm, test_x, N_subset=None, save_folder=None):
         pd.DataFrame(np.array([i for i in ebm_int_pred]).T, columns=ebm_int_list).to_csv(os.path.join(save_folder, "int_preds.csv"), index=None)
         pure_score_ebm.to_csv(os.path.join(save_folder, "pure_score.csv"))
     return pure_score_ebm
+
 import math
 def score_pureGAM3(pureGAM_model, int_pred, X_num, h_map, bandwidths, epsilon=1e-13, save_folder=None):
     pureGAM_int_list = [(pair[0], pair[1]) for pair in pureGAM_model.pairwise_idxes_num]
@@ -380,84 +325,6 @@ def score_pureGAM3(pureGAM_model, int_pred, X_num, h_map, bandwidths, epsilon=1e
 
     if save_folder is not None:
         Path(save_folder).mkdir(parents=True, exist_ok=True)
-        pure_score_pureGAM1.to_csv(os.path.join(save_folder, "pure_score1.csv"))
-        pure_score_pureGAM2.to_csv(os.path.join(save_folder, "pure_score2.csv"))
-    return pure_score_pureGAM1, pure_score_pureGAM2
-
-
-def score_pureGAM2(pureGAM_model, test_x_tr, h_map, bandwidths, epsilon=1e-13, N_subset=None, save_folder=None):
-    test_x = test_x_tr
-    pureGAM_int_list = [(pair[0], pair[1]) for pair in pureGAM_model.pairwise_idxes_num]
-    pureGAM_outputs = predict_vec_pureGAM(pureGAM_model, th.from_numpy(test_x))
-    pureGAM_int_pred = [pureGAM_outputs[i, :].detach().numpy() for i in range(len(pureGAM_int_list))]
-
-    scale_lam_list = [1/10, 1, 10]
-    scale_lam_list_names = ['lam'+str(scale_lam) for scale_lam in scale_lam_list]
-    pure_score_pureGAM1, pure_score_pureGAM2 = pd.DataFrame(index=pureGAM_int_list, columns=bandwidths.tolist() + scale_lam_list_names), pd.DataFrame(index=pureGAM_int_list, columns=bandwidths.tolist() + scale_lam_list_names)
-
-    for i, pair in enumerate(pureGAM_int_list):
-        X1, X2 = th.from_numpy(test_x[:, pair[0]]).double(), th.from_numpy(test_x[:, pair[1]]).double()
-        pred_int = th.from_numpy((pureGAM_int_pred[i].reshape(-1, 1)).reshape(-1)).double()
-        t1 = time.time()
-        for j, h in enumerate(bandwidths):
-            pure_score_pureGAM1.iloc[i, j], pure_score_pureGAM2.iloc[i, j] = pureness_score2_normalized(X1, X2, pred_int, h, epsilon=epsilon, N_subset=N_subset)
-        if h_map is not None:
-            for k, scale_lam in enumerate(scale_lam_list):
-                pure_score_pureGAM1.iloc[i, len(bandwidths)+k] = pureness_score2_normalized_single(X1, pred_int, scale_lam*h_map[pair[0]], epsilon=epsilon, N_subset=N_subset)
-                pure_score_pureGAM2.iloc[i, len(bandwidths)+k] = pureness_score2_normalized_single(X2, pred_int, scale_lam*h_map[pair[1]], epsilon=epsilon, N_subset=N_subset)
-        t2 = time.time()
-        print('time2', t2-t1)
-    pure_score_pureGAM1, pure_score_pureGAM2 = pure_score_pureGAM1.loc[sorted(pure_score_pureGAM1.index)], pure_score_pureGAM2.loc[sorted(pure_score_pureGAM2.index)]
-    print(pure_score_pureGAM1)
-    pure_score_pureGAM1.loc['avg_log'], pure_score_pureGAM2.loc['avg_log'] = np.log10(pure_score_pureGAM1.astype('float')).mean(0), np.log10(pure_score_pureGAM2.astype('float')).mean(0)
-    print(pure_score_pureGAM2)
-    if save_folder is not None:
-        Path(save_folder).mkdir(parents=True, exist_ok=True)
-        pd.DataFrame(test_x).to_csv(os.path.join(save_folder, "test_x.csv"), index=None)
-        pd.DataFrame(pureGAM_outputs.detach().numpy().T, columns=pureGAM_int_list).to_csv(os.path.join(save_folder, "int_preds.csv"), index=None)
-        pure_score_pureGAM1.to_csv(os.path.join(save_folder, "pure_score1.csv"))
-        pure_score_pureGAM2.to_csv(os.path.join(save_folder, "pure_score2.csv"))
-    return pure_score_pureGAM1, pure_score_pureGAM2
-
-def score_pureGAM(pureGAM_model, test_x_tr, sx, sy, h_map, bandwidths, epsilon=1e-13, N_subset=None, save_folder=None):
-    test_x = sx.inverse_transform(test_x_tr)
-    pureGAM_int_list = [(pair[0], pair[1]) for pair in pureGAM_model.pairwise_idxes_num]
-    pureGAM_outputs = predict_vec_pureGAM(pureGAM_model, th.from_numpy(test_x))
-    pureGAM_int_pred = [pureGAM_outputs[i, :].detach().numpy() for i in range(len(pureGAM_int_list))]
-
-    scale_lam_list = [1/2, 3/4, 7/8, 1, 8/7, 4/3, 2/1]
-    scale_lam_list_names = ['lam'+str(scale_lam) for scale_lam in scale_lam_list]
-    pure_score_pureGAM1, pure_score_pureGAM2 = pd.DataFrame(index=pureGAM_int_list, columns=bandwidths.tolist() + scale_lam_list_names), pd.DataFrame(index=pureGAM_int_list, columns=bandwidths.tolist() + scale_lam_list_names)
-    for i, pair in enumerate(pureGAM_int_list):
-        X1, X2 = th.from_numpy(test_x[:, pair[0]]).double(), th.from_numpy(test_x[:, pair[1]]).double()
-        pred_int = th.from_numpy((pureGAM_int_pred[i].reshape(-1, 1)).reshape(-1)).double()
-        for j, h in enumerate(bandwidths):
-            t1 = time.time()
-            pure_score_pureGAM1.iloc[i, j], pure_score_pureGAM2.iloc[i, j] = pureness_score2_normalized(X1, X2, pred_int, h, epsilon=epsilon, N_subset=N_subset)
-            t2 = time.time()
-            print(t2-t1)
-        if h_map is not None:
-            for k, scale_lam in enumerate(scale_lam_list):
-                pure_score_pureGAM1.iloc[i, len(bandwidths)+k] = pureness_score2_normalized_single(X1, pred_int, scale_lam*h_map[pair[0]], epsilon=epsilon, N_subset=N_subset)
-                pure_score_pureGAM2.iloc[i, len(bandwidths)+k] = pureness_score2_normalized_single(X2, pred_int, scale_lam*h_map[pair[1]], epsilon=epsilon, N_subset=N_subset)
-
-        '''# todo: add predict using GAMINET
-        est_xtrue = true_pureness_est_gaussian_x_gami(GAMInet_model, 0, 0, 1, cov_submat, -0.75, 1, 1000, 1000,
-                                                      save_folder=None)
-        est_ytrue = ??
-        denom = th.square(pred_int).mean().numpy()
-        score_xtrue = th.square(est_xtrue) / (denom + eps)
-        score_ytrue = th.square(est_ytrue) / (denom + eps)
-        # todo: nomalize? denom?
-        pure_score_pureGAM1.iloc[i, len(bandwidths) + 1], pure_score_pureGAM2.iloc[i, len(bandwidths) + 1] = score_xtrue, score_ytrue'''
-
-    pure_score_pureGAM1, pure_score_pureGAM2 = pure_score_pureGAM1.loc[sorted(pure_score_pureGAM1.index)], pure_score_pureGAM2.loc[sorted(pure_score_pureGAM2.index)]
-    pure_score_pureGAM1.loc['avg'], pure_score_pureGAM2.loc['avg'] = pure_score_pureGAM1.mean(0), pure_score_pureGAM2.mean(0)
-
-    if save_folder is not None:
-        Path(save_folder).mkdir(parents=True, exist_ok=True)
-        pd.DataFrame(test_x).to_csv(os.path.join(save_folder, "test_x.csv"), index=None)
-        pd.DataFrame(pureGAM_outputs.detach().numpy().T, columns=pureGAM_int_list).to_csv(os.path.join(save_folder, "int_preds.csv"), index=None)
         pure_score_pureGAM1.to_csv(os.path.join(save_folder, "pure_score1.csv"))
         pure_score_pureGAM2.to_csv(os.path.join(save_folder, "pure_score2.csv"))
     return pure_score_pureGAM1, pure_score_pureGAM2

@@ -57,22 +57,6 @@ def run(train_x, train_y, test_x, test_y, sxx, syy, cov_mat, results_folder, h_m
     #score_ebm(ebm, test_x, sxx, syy, bandwidths=np.array([1, 0.5, 0.1, 0.05, 0.01]), h_map=h_map, epsilon=0, N_subset=None, save_folder=results_folder)
     #true_pureness_score_gaussian_ebm(model=ebm, cov_mat=cov_mat, num_sigmas=4, N=200, sy=syy, normalize=True, epsilon=0, save_folder=results_folder)
 
-
-'''def run_main_effects(train_x, train_y, test_x, test_y, results_folder):
-    """
-    EBM main effects
-    """
-    Path(results_folder).mkdir(parents=True, exist_ok=True)
-    ebm = ExplainableBoostingRegressor(interactions=0)
-    ebm.fit(train_x, train_y)
-    yt_ebm = ebm.predict(train_x)
-    r2_ebmt = r2_score(train_y, yt_ebm)
-    yh_ebm = ebm.predict(test_x)
-    r2_ebm = r2_score(test_y, yh_ebm)
-    acc_df = pd.DataFrame([r2_ebmt, r2_ebm], index=["train", "test"], columns=["r2"])
-    acc_df.to_csv(os.path.join(results_folder, "accuracy.csv"))'''
-
-
 def run_cat(train_x, train_y, test_x, test_y, syy, results_folder, int_num=10): # default int_num
     """
     EBM
@@ -100,17 +84,3 @@ def run_cat(train_x, train_y, test_x, test_y, syy, results_folder, int_num=10): 
     EBM Pureness
     """
     score_ebm_cat(ebm, test_x, syy, N_subset=None, save_folder=results_folder)
-
-'''def run_cat_main_effects(train_x, train_y, test_x, test_y, results_folder):
-    """
-    EBM main effects
-    """
-    Path(results_folder).mkdir(parents=True, exist_ok=True)
-    ebm = ExplainableBoostingRegressor(interactions=0)
-    ebm.fit(train_x, train_y)
-    yt_ebm = ebm.predict(train_x)
-    r2_ebmt = r2_score(train_y, yt_ebm)
-    yh_ebm = ebm.predict(test_x)
-    r2_ebm = r2_score(test_y, yh_ebm)
-    acc_df = pd.DataFrame([r2_ebmt, r2_ebm], index=["train", "test"], columns=["r2"])
-    acc_df.to_csv(os.path.join(results_folder, "accuracy.csv"))'''

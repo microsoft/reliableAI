@@ -60,68 +60,13 @@ def main(seed):
         run_pureGAM2.run_cat(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, results_folder=os.path.join(rpath, "pureGAM2"), avg_cardi=avg_cardi)
         t2 = time.time()
         print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t2 - t1), np.round(t2 - t1), np.round(t2 - t0)))
-        '''t3 = time.time()
+        t3 = time.time()
         print("Running GAMI-Net...")
         run_gami2.run_cat(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y,
                          results_folder=os.path.join(rpath, "gami2"), int_num=int_num_gami, heredity=True)
         t4 = time.time()
-        print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t4 - t3),
-                                                                                                  np.round(t4 - t1),
-                                                                                                  np.round(t4 - t0)))'''
+        print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t4 - t3), np.round(t4 - t1), np.round(t4 - t0)))
 
-        '''print("Running EBM...")
-                t6 = time.time()
-                run_ebm.run_cat(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, syy=pty,
-                                results_folder=os.path.join(rpath, "ebm"), int_num=int_num_ebm)
-                t7 = time.time()
-                print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t7 - t6),
-                                                                                                          np.round(t7 - t1),
-                                                                                                          np.round(t7 - t0)))
-
-                print("Running XGBoost...")
-                run_xgboost.run_max_int(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y,
-                                        results_folder=os.path.join(rpath, "xgboost_max_int"))'''
-
-        '''print("Running pureGAM main effects only...")
-        run_pureGAM.run_cat_main_effects(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, results_folder=os.path.join(rpath, "pureGAM_main"))
-        t3 = time.time()
-        print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t3 - t0), np.round(t3 - t1), np.round(t3 - t0)))
-        '''
-
-
-        '''print("Running GAMI-Net...")
-        run_gami.run_cat(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, syy=pty, results_folder=os.path.join(rpath, "gami_heredity"), int_num=int_num_gami, heredity=True)
-        t5 = time.time()
-        print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t5 - t4), np.round(t5 - t1), np.round(t5 - t0)))'''
-
-
-
-        '''print("Running GAMI-Net main effects only...")
-        run_gami.run_cat_main_effects(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, results_folder=os.path.join(rpath, "gami_main"))
-        t6 = time.time()
-        print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t6 - t5), np.round(t6 - t1), np.round(t6 - t0)))'''
-
-        ''''''
-
-
-        '''print("Running EBM main effects only...")
-        run_ebm.run_cat_main_effects(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, results_folder=os.path.join(rpath, "ebm_main"))
-        t8 = time.time()
-        print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t8 - t7), np.round(t8 - t1), np.round(t8 - t0)))'''
-
-        ''''''
-
-        # t8 = time.time()
-        # print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t8 - t7), np.round(t8 - t1), np.round(t8 - t0)))
-        # print("Running XGBoost pairwise interactions...")
-        # run_xgboost.run_pw_int(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, results_folder=os.path.join(rpath, "xgboost_pw_int"))
-        # t9 = time.time()
-        # print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t9 - t8), np.round(t9 - t1), np.round(t9 - t0)))
-        # print("Running XGboost main effects...")
-        # run_xgboost.run_main_effects(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, results_folder=os.path.join(rpath, "xgboost_main"))
-        # t10 = time.time()
-        # print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t10 - t9), np.round(t10 - t1), np.round(t10 - t0)))
-        # print("")
 if __name__ == '__main__':
     seed = 3453218
     main(seed)
