@@ -1,0 +1,7 @@
+climbRate : continuous
+Altitude : continuous
+RollRate : continuous
+curRoll : continuous
+diffClb : continuous
+diffDiffClb : continuous
+Se : continuous
