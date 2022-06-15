@@ -81,6 +81,13 @@ as it returns a valid instance of `pgmpy.models.BayesianNetwork`.
 2. Modify  __configs/benchmark.yml__ to include `{your data}` and comment other benchmarks.
 3. Follow the instruction in **Prepare Pseudo Graph** and **Run `ML4S`**.
 
+## known issues
+
+Due to the limitation of forward sampling in `pgmpy`, when the dataset is
+complex (e.g., with dense graph structure or high cardinality), it may fail (or
+very slow) to produce vicinal graphs and associated datasets. We confirm that
+`ML4S` successfully process all datasets used in our paper.
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
