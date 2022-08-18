@@ -5,11 +5,20 @@ This repository contains the open-sourced official implementation of the paper:
 repository helpful, please cite the following paper:
 
 ```
-@article{ml4s,
-  title={ML4S: Learning Causal Skeleton from Vicinal Graphs},
-  author={Ma, Pingchuan and Ding, Rui and Dai, Haoyue and Jiang, Yuanyuan and Wang, Shuai and Han, Shi and Zhang, Dongmei},
-  booktitle={Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining},
-  year={2022}
+@inproceedings{ml4s,
+author = {Ma, Pingchuan and Ding, Rui and Dai, Haoyue and Jiang, Yuanyuan and Wang, Shuai and Han, Shi and Zhang, Dongmei},
+title = {ML4S: Learning Causal Skeleton from Vicinal Graphs},
+year = {2022},
+isbn = {9781450393850},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3534678.3539447},
+booktitle = {Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+pages = {1213–1223},
+numpages = {11},
+keywords = {bayesian network, structure learning, causal discovery},
+location = {Washington DC, USA},
+series = {KDD '22}
 }
 ```
 
