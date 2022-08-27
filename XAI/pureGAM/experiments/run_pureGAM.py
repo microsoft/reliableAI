@@ -1,53 +1,27 @@
-import os
 from pathlib import Path
 from os import sys, path
 sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
-from benchmarks.synthetic_data_generator import generate_x, function_main_effects, function_interaction, num_gen_gauss
-from benchmarks.synthetic_data_generator import check_hist, check_func_main, check_func_int
-from experiment_metrics.metrics import pureness_loss_est, pureness_loss_est2, pureness_score2, pureness_score2_normalized
-from synthetic_experiments.run_metrics import true_pureness_score_gaussian_pureGAM, true_pureness_score_gaussian_ebm, true_pureness_score_gaussian_gami
-from synthetic_experiments.run_metrics2 import score_pureness
+from metrics.metrics_true import true_pureness_score_gaussian_pureGAM
+from metrics.metrics_torch import score_pureness
 import traceback
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-from matplotlib import cm
-import pandas as pd
-from interpret.glassbox import ExplainableBoostingRegressor, ExplainableBoostingClassifier
-from interpret import show
-from sklearn.metrics import explained_variance_score, mean_squared_error, mean_absolute_error, r2_score, precision_recall_curve, accuracy_score, average_precision_score, confusion_matrix
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import PowerTransformer, OneHotEncoder, StandardScaler
 
 """PureGAM"""
 sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 sys.path.append(path.join(path.dirname(path.dirname(path.abspath(__file__))), "test_sgd_solve_new"))
 
-import pandas as pd
-from sklearn.model_selection import train_test_split
-
 import os
 import numpy as np
-import pickle as pkl
 import torch
 import torch as th
-import torch.nn as nn
-import torch.nn.functional as F
 import torch.utils.data as data
-from tqdm import tqdm
-from sklearn.model_selection import train_test_split
-from sgd_solver.utils import generate_pairwise_idxes, _print_metrics, safe_norm, save_model, load_model
 import pandas as pd
-from sklearn.metrics import explained_variance_score, mean_squared_error, mean_absolute_error, r2_score
-from optimizer.AugLagSGD import Adam_AugLag
-from torch_utils.dataset_util import PureGamDataset, PureGamDataset_smoothingInTraining
-from torch_utils.readwrite import make_dir
-from sgd_solver.pureGam import PureGam
-from optimizer.AugLagSGD import Adam_AugLag
+from sklearn.metrics import mean_squared_error
+from torch_utils.dataset_util import PureGamDataset_smoothingInTraining
+from pureGAM_model.pureGAM import PureGam
+from torch.optim import Adam
 from sklearn.metrics import r2_score
 import time
-from run_metrics import predict_vec_pureGAM, score_pureGAM, score_pureGAM_cat
-import numpy
+from metrics.metrics_cate import score_pureGAM_cat
 
 batch_scale = 4
 N_param_scale = 0.5
@@ -102,7 +76,7 @@ def run(train_x, train_y, test_x, test_y, cov_mat, results_folder):
     model.fit_cate_encoder(X_cate)
 
     # Prepare the optimizer for training, declare the learning rate of all model paramaters
-    '''optimizer = Adam_AugLag([
+    '''optimizer = Adam([
         {'params': pureGAM_model.model_categorical.parameters(), 'lr': 0},#6e-3},
         {'params': pureGAM_model.model_smoothing.eta_univ, 'lr': 1e-2/X_num.shape[1]},
         {'params': pureGAM_model.model_smoothing.eta_biv, 'lr': 2*1e-2/X_num.shape[1]/(X_num.shape[1]-1)},
@@ -116,7 +90,7 @@ def run(train_x, train_y, test_x, test_y, cov_mat, results_folder):
     ], amsgrad=True)'''
 
     over_all_lr_rate = 1 * 1e-3
-    optimizer = Adam_AugLag([
+    optimizer = Adam([
         {'params': [model.model_categorical.w1_univ, model.model_categorical.w2_univ, model.model_categorical.b_univ],
          'lr': 0 if X_cate.shape[1] == 0 else over_all_lr_rate},  # 6e-3},
         {'params': [model.model_categorical.w1_biv, model.model_categorical.w2_biv, model.model_categorical.b_biv],
@@ -206,13 +180,8 @@ def run(train_x, train_y, test_x, test_y, cov_mat, results_folder):
     """
     pureGAM pureness
     """
-    #print(h_map)
-
-
     return h_map
 
-batch_scale = 4
-N_param_scale = 0.5
 
 import math
 def run_cat(train_x, train_y, test_x, test_y, results_folder, avg_cardi=3):
@@ -266,7 +235,7 @@ def run_cat(train_x, train_y, test_x, test_y, results_folder, avg_cardi=3):
     model.fit_cate_encoder(X_cate)
 
     # Prepare the optimizer for training, declare the learning rate of all model paramaters
-    '''optimizer = Adam_AugLag([
+    '''optimizer = Adam([
         {'params': pureGAM_model.model_categorical.eta_univ, 'lr': 1e-3/X_cate.shape[1]/(avg_cardi-1)**2 * 10000/X_cate.shape[0]},#6e-3},
         #{'params': pureGAM_model.model_categorical.eta_biv, 'lr': 1e-4},#)
         {'params': pureGAM_model.model_categorical.eta_biv, 'lr': 2 * 1e-3/(X_cate.shape[1]-1)/X_cate.shape[1]/(avg_cardi-1)**2 * 10000/X_cate.shape[0]},#/(avg_cardi-1)},
@@ -290,7 +259,7 @@ def run_cat(train_x, train_y, test_x, test_y, results_folder, avg_cardi=3):
      'lr': 0 if X_cate.shape[1] == 0 else over_all_lr_rate / (batch_scale * 128) * avg_cardi ** 2},
     # 'lr': 0},"""
     print("&^ biv param", 1/ (batch_scale * 128) / (avg_cardi ** 2) * X_cate.shape[1] )
-    optimizer = Adam_AugLag([
+    optimizer = Adam([
 
 
         {'params': [model.model_categorical.w1_univ, model.model_categorical.w2_univ, model.model_categorical.b_univ],
@@ -368,4 +337,3 @@ def run_cat(train_x, train_y, test_x, test_y, results_folder, avg_cardi=3):
     """
     pureGAM pureness
     """
-

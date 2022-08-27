@@ -1,63 +1,9 @@
 import numpy as np
-import torch.autograd
-
-'''from pure_smoother.kernel_smoother_tensor import Kernel_Weigther
-from pure_smoother.kernel_smoother_tensor import K_Epanechnikov as K_E
-from pure_smoother.kernel_smoother_tensor import K_Gaussian as K_G
-from pure_smoother.kernel_smoother_tensor import K_tri_cube as K_t'''
 from torch_utils.kernel_smoother import compute_pairwise_distance
-from torch_utils.kernel_smoother import K_Epanechnikov as K_E
 from torch_utils.kernel_smoother import K_Gaussian as K_G
-from torch_utils.kernel_smoother import K_tri_cube as K_t
-from sgd_solver.utils import generate_pairwise_idxes
-from torch_utils.synthetic import numerical_generator
+from pureGAM_model.utils import generate_pairwise_idxes
 import torch as th
 import torch.nn as nn
-'''
-class Numerical_transformer:
-    def __init__(self, feature_p, univariate_ids=None, bivariate_ids=None,
-                 kw_univ: Kernel_Weigther = Kernel_Weigther(0.1, K_G),
-                 kw_biv: Kernel_Weigther = Kernel_Weigther(0.1, K_G)):
-        self.p_ = feature_p
-        self.univariate_ids_ = univariate_ids
-        if univariate_ids is None:
-            self.univariate_ids_ = np.arange(self.p_)
-        self.bivariate_ids_ = bivariate_ids
-        if bivariate_ids is None:
-            self.bivariate_ids_ = np.array(generate_pairwise_idxes(self.p_))
-
-        self.kw_univ = kw_univ
-        self.kw_biv = kw_biv
-
-        self.X_memo = None
-        self.is_fit_ = False
-
-    def fit(self, X):
-        if isinstance(X, th.Tensor):
-            self.X_memo = X.clone().detach()
-        else:
-            self.X_memo = th.tensor(X)
-        self.is_fit_ = True
-
-    def fit_transform(self, X):
-        self.fit(X)
-        return self.transform(X)
-
-    def transform(self, X, is_norm=True):
-        assert self.is_fit_, "The encoder hasn't been fit yet!"
-        univariate_encoded_data_ = []
-        bivariate_encoded_data_ = []
-        for id_univ in self.univariate_ids_:
-            S_univ = self.kw_univ.S(self.X_memo[:, [id_univ]], X[:, [id_univ]], is_norm=is_norm)
-            univariate_encoded_data_.append(S_univ)
-        for id_biv in self.bivariate_ids_:
-            S_biv = self.kw_biv.S(self.X_memo[:, [id_biv[0], id_biv[1]]], X[:, [id_biv[0], id_biv[1]]], is_norm=is_norm)
-            bivariate_encoded_data_.append(S_biv)
-        #return np.array(univariate_encoded_data_ + bivariate_encoded_data_)
-        if len(univariate_encoded_data_ + bivariate_encoded_data_) > 0:
-            return th.stack(univariate_encoded_data_ + bivariate_encoded_data_, dim=0)
-        else:
-            return th.zeros((X.shape[0],0))'''
 
 class Numerical_transformer_adapt(nn.Module):
     def __init__(self, feature_p, num_points_univ, num_points_biv, num_points_triv,
@@ -139,7 +85,6 @@ class Numerical_transformer_adapt(nn.Module):
                 kij = kij / kij.sum(axis=-1, keepdim=True)
             trivariate_encoded_data_.append(kij)
 
-
         #return np.array(univariate_encoded_data_ + bivariate_encoded_data_)
         univariate_encoded_data = th.stack(univariate_encoded_data_, dim=0) if \
             len(univariate_encoded_data_) > 0 else th.zeros((0, X.shape[0], self.num_points_univ), device=X.device)
@@ -147,11 +92,6 @@ class Numerical_transformer_adapt(nn.Module):
             len(bivariate_encoded_data_) > 0 else th.zeros((0, X.shape[0], self.num_points_biv), device=X.device)
         trivariate_encoded_data = th.stack(trivariate_encoded_data_, dim=0) if \
             len(trivariate_encoded_data_) > 0 else th.zeros((0, X.shape[0], self.num_points_triv), device=X.device)
-
-        '''if th.isnan(univariate_encoded_data).any():
-            print("haha da")
-            print(univariate_encoded_data[-4])
-            print(univariate_encoded_data[-2])'''
 
         return univariate_encoded_data, bivariate_encoded_data, trivariate_encoded_data
 
@@ -199,29 +139,5 @@ class Numerical_transformer_adapt(nn.Module):
             lam_triv = self.lam_w1_triv*th.exp(self.lam_w2_triv)+self.lam_b_triv
         return lam_univ, lam_biv, lam_triv
 
-    '''def transform_seperate(self, X, is_norm=True):
-        assert self.is_fit_, "The encoder hasn't been fit yet!"
-        univariate_encoded_data_ = []
-        bivariate_encoded_data_ = []
-        for i, id_univ in enumerate(self.univariate_ids_):
-            S_univ = self.kw_univ.S(self.X_memo_univ[:, [id_univ]], X[:, [id_univ]], is_norm=is_norm, lam=self.lam_univ[i])
-            univariate_encoded_data_.append(S_univ)
-        for i, id_biv in enumerate(self.bivariate_ids_):
-            S_biv = self.kw_biv.S(self.X_memo_biv[:, [id_biv[0], id_biv[1]]], X[:, [id_biv[0], id_biv[1]]], is_norm=is_norm, lam=self.lam_biv[i])
-            bivariate_encoded_data_.append(S_biv)
-        #return np.array(univariate_encoded_data_ + bivariate_encoded_data_)
-        univariate_encoded_data = th.stack(univariate_encoded_data_, dim=0) if \
-            len(univariate_encoded_data_) > 0 else th.zeros((0, X.shape[0], self.num_points_univ), device=X.device)
-        bivariate_encoded_data = th.stack(bivariate_encoded_data_, dim=0) if \
-            len(bivariate_encoded_data_) > 0 else th.zeros((0, X.shape[0], self.num_points_biv), device=X.device)
-        return univariate_encoded_data, bivariate_encoded_data'''
-
 if __name__ == "__main__":
-    N, p = 1000, 3
-    X, y = numerical_generator(N)
-    X_test, y_test = numerical_generator(1000)
-    encoder = Numerical_transformer(p)
-    S_train = encoder.fit_transform(X)
-    S_test = encoder.transform(X_test)
-    print(S_train.shape)
-    print(S_test.shape)
+    pass

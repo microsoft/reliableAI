@@ -3,9 +3,8 @@ import numpy as np
 import pandas as pd
 import xgboost as xgb
 from pathlib import Path
-from sklearn.metrics import r2_score
+from sklearn.metrics import r2_score, explained_variance_score, mean_squared_error
 import time
-from sklearn.metrics import explained_variance_score, mean_squared_error
 
 # not calculating pureness of xgb.
 def run_pw_int(train_x, train_y, test_x, test_y, results_folder): # default int_num

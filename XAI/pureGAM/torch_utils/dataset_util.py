@@ -1,7 +1,4 @@
 import torch.utils.data as data
-import torch as th
-from sklearn.model_selection import train_test_split
-#from datasets.Synthetic.data_generator import categorical_generator, numerical_generator
 
 class PureGamDataset(data.Dataset):
     # X_pe means X after pureness encoding
@@ -37,14 +34,3 @@ class PureGamDataset_smoothingInTraining(data.Dataset):
 
 if __name__ == "__main__":
     pass
-    '''N = 2000
-    X_cate, y_cate, eta, eta_inter = categorical_generator(N)
-    X_num, y_num = numerical_generator(N)
-    y = y_cate + y_num
-
-    bias = y.mean()
-    y_mean_centered = y - bias
-    y_mean_centered = th.tensor(y_mean_centered)
-
-    X_cate_train, X_cate_test, X_num_train, X_num_test, y_train, y_test =\
-        train_test_split(X_cate, X_num, y_mean_centered, test_size=0.5, random_state=42)'''

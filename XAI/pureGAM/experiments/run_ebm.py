@@ -2,26 +2,12 @@ import os
 from pathlib import Path
 from os import sys, path
 sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
-from benchmarks.synthetic_data_generator import generate_x, function_main_effects, function_interaction, num_gen_gauss
-from benchmarks.synthetic_data_generator import check_hist, check_func_main, check_func_int
-from experiment_metrics.metrics import pureness_loss_est, pureness_loss_est2, pureness_score2, pureness_score2_normalized
-from synthetic_experiments.run_metrics import true_pureness_score_gaussian_pureGAM, true_pureness_score_gaussian_ebm, true_pureness_score_gaussian_gami
 
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-from matplotlib import cm
 import pandas as pd
-from interpret.glassbox import ExplainableBoostingRegressor, ExplainableBoostingClassifier
-from interpret import show
-from sklearn.metrics import explained_variance_score, mean_squared_error, mean_absolute_error, r2_score, precision_recall_curve, accuracy_score, average_precision_score, confusion_matrix
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import PowerTransformer, OneHotEncoder, StandardScaler
+from interpret.glassbox import ExplainableBoostingRegressor
+from sklearn.metrics import mean_squared_error, r2_score
 
-from interpret.glassbox.ebm.utils import EBMUtils
-from interpret.utils import unify_data
-
-from run_metrics import predict_vec_ebm, score_ebm, score_ebm_cat
+from metrics.metrics_cate import score_ebm_cat
 import time
 
 ## default int_num of ebm is 10:
@@ -44,7 +30,7 @@ def run(train_x, train_y, test_x, test_y, sxx, syy, cov_mat, results_folder, h_m
     yt_ebm = ebm.predict(train_x)
 
     mse_train = mean_squared_error(train_y, yt_ebm)
-    mse_test = mean_squared_error(train_y, yt_ebm)
+    mse_test = mean_squared_error(test_y, yh_ebm)
     r2_ebmt = r2_score(train_y, yt_ebm)
     r2_ebm = r2_score(test_y, yh_ebm)
     acc_df = pd.DataFrame([[r2_ebmt, r2_ebm], [mse_train, mse_test], [train_time, test_time]],
@@ -75,9 +61,9 @@ def run_cat(train_x, train_y, test_x, test_y, syy, results_folder, int_num=10): 
     yt_ebm = ebm.predict(train_x)
 
     mse_train = mean_squared_error(train_y, yt_ebm)
+    mse_test = mean_squared_error(test_y, yh_ebm)
     r2_ebmt = r2_score(train_y, yt_ebm)
     r2_ebm = r2_score(test_y, yh_ebm)
-    mse_test = mean_squared_error(train_y, yt_ebm)
     acc_df = pd.DataFrame([[r2_ebmt, r2_ebm], [mse_train, mse_test], [train_time, test_time]], index=["r2", "mse", "time"], columns=["train", "test"])
     acc_df.to_csv(os.path.join(results_folder, "accuracy.csv"))
     """

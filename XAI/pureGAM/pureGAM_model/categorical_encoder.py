@@ -1,15 +1,6 @@
-"""
-July 12 2021
-@ Ziyu Wang
-"""
-
 import numpy as np
-## for the moment temprorarily use the old pure encoder univariate to be compatible with the explain functions.
-#from torch_utils.pure_encoder import pure_encoder_univariate, pure_encoder_bivariate
-from pure_coding.pure_encoder import pure_encoder_bivariate, pure_encoder_univariate
-from sgd_solver.utils import generate_pairwise_idxes
-from sklearn.preprocessing import LabelEncoder
-
+from pureGAM_model.pure_coding import pure_encoder_bivariate, pure_encoder_univariate
+from pureGAM_model.utils import generate_pairwise_idxes
 
 class Categorical_encoder:
     def __init__(self, feature_p, univariate_ids=None, bivariate_ids=None):

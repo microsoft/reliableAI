@@ -16,20 +16,20 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 from torch_utils.dataset_util import PureGamDataset, PureGamDataset_smoothingInTraining
 from torch_utils.readwrite import make_dir
-from sgd_solver.pureGam import PureGam
-from optimizer.AugLagSGD import Adam_AugLag
+from pureGAM_model.pureGAM import PureGam
+from torch.optim import Adam
 from sklearn.metrics import r2_score, mean_squared_error
 import math
 from sklearn.preprocessing import power_transform
-from benchmarks.synthetic_data_generator import num_gen_gauss, num_gen_gauss_3rd_int, gen_3nd_order_data
+from synthetic_datagenerator.synthetic_data_generator import num_gen_gauss, num_gen_gauss_3rd_int, gen_3nd_order_data
 import xgboost as xgb
 from interpret.glassbox import ExplainableBoostingRegressor, ExplainableBoostingClassifier
 from gaminet import GAMINet
 from sklearn.preprocessing import MinMaxScaler
 import tensorflow as tf
-import synthetic_experiments.run_gami as run_gami
+import experiments.run_gami as run_gami
 
-from experiment_metrics.metrics import metric_wrapper, rmse
+from metrics.metrics import metric_wrapper, rmse
 from pathlib import Path
 
 if __name__ == "__main__":
@@ -168,7 +168,7 @@ if __name__ == "__main__":
         {'params': model.num_enc.lam_triv, 'lr': 3 * 2 * 1e-2 / X_num.shape[1] / (X_num.shape[1] - 1) / (X_num.shape[1] - 2)},
         {'params': model.num_enc.X_memo_triv, 'lr': 0}'''
 
-        optimizer = Adam_AugLag([
+        optimizer = Adam([
             {'params': model.model_categorical.parameters(), 'lr': 0},  # 6e-3},
             {'params': model.model_smoothing.eta_univ, 'lr': 1e-2 / X_num.shape[1]},
             {'params': model.model_smoothing.eta_biv, 'lr': 1e-2 / X_num.shape[1] / (X_num.shape[1] - 1)},
@@ -188,7 +188,7 @@ if __name__ == "__main__":
             {'params': model.num_enc.X_memo_triv, 'lr': 0}
         ], amsgrad=True)
 
-        '''optimizer = Adam_AugLag([
+        '''optimizer = Adam([
             {'params': model.model_categorical.parameters(), 'lr': 0e-3},
             {'params': model.model_smoothing.eta_univ, 'lr': 1e-3},
             {'params': model.model_smoothing.eta_biv, 'lr': 2 * 1e-3 / (X_num.shape[1] - 1)},

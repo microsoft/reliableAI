@@ -1,21 +1,6 @@
-
 import torch
 import torch as th
 import torch.nn as nn
-
-nn.Dropout()
-
-class Linear_regression(nn.Module):
-    """
-     linear regression module
-    """
-    def __init__(self, feature_dims):
-        super(Linear_regression, self).__init__()
-        self.linear = nn.Linear(feature_dims, 1)
-
-    def forward(self, x):
-        out = self.linear(x)
-        return out
 
 class Smoother_additive_model_pairwise(nn.Module):
     def __init__(self, feature_dims_univ, feature_dims_biv, feature_dims_triv, num_points_univ, num_points_biv, num_points_triv, bias=None, dropout_rate=0.1):#, pairwise_list=None):
@@ -27,7 +12,6 @@ class Smoother_additive_model_pairwise(nn.Module):
         self.w1_univ = nn.Parameter(th.zeros([num_points_univ, feature_dims_univ], dtype=torch.double).T.unsqueeze(dim=-1))
         self.w1_biv = nn.Parameter(th.zeros([num_points_biv, feature_dims_biv], dtype=torch.double).T.unsqueeze(dim=-1))
         self.w1_triv = nn.Parameter(th.zeros([num_points_triv, feature_dims_triv], dtype=torch.double).T.unsqueeze(dim=-1))
-
 
         self.w2_univ = nn.Parameter(th.zeros([num_points_univ, feature_dims_univ], dtype=torch.double).T.unsqueeze(dim=-1))
         self.w2_biv = nn.Parameter(th.zeros([num_points_biv, feature_dims_biv], dtype=torch.double).T.unsqueeze(dim=-1))
@@ -156,13 +140,6 @@ class Smoother_additive_model_pairwise(nn.Module):
         return batch_mean_along_features_univ, batch_mean_along_features_biv, batch_mean_along_features_triv,\
                 conditional_project, conditional_project_trivbiv
 
-    '''def compute_pureness_constrain_order1(self, S_train):
-        contri_mat_unsqueeze = th.bmm(S_train, self.eta)
-
-        contri_mat = contri_mat_unsqueeze.squeeze(axis=-1)
-        batch_mean_along_features = contri_mat.mean(axis=1)
-        return batch_mean_along_features'''
-
     def explain(self):
         NotImplemented
 
@@ -204,18 +181,6 @@ class Categorical_additive_model(nn.Module):
         return y_hat
 
     def get_eta(self):
-
         eta_univ = self.w1_univ*th.exp(self.w2_univ) + self.b_univ
         eta_biv = self.w1_biv*th.exp(self.w2_biv) + self.b_biv
         return eta_univ, eta_biv
-
-class Pairwise_smoother_additive_model(nn.Module):
-    def __init__(self, num_points, feature_dims):
-        super(Pairwise_smoother_additive_model, self).__init__()
-    def forward(self, S):
-        pass
-class Pairwise_smoother_additive_model(nn.Module):
-    def __init__(self, num_points, feature_dims):
-        super(Pairwise_smoother_additive_model, self).__init__()
-    def forward(self, S):
-        pass

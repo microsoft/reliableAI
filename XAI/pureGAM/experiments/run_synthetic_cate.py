@@ -1,18 +1,16 @@
 import os
 import time
 import numpy as np
-import pandas as pd
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import PowerTransformer,  MinMaxScaler
-from pathlib import Path
+from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
-import run_pureGAM2
-import run_gami2
-import run_ebm
-import run_xgboost
+import run_pureGAM
+import run_gami
 
-from categorical_gen import generate_data, generate_name, generate_data_test, get_name_test, get_name_new
+from synthetic_datagenerator.categorical_gen import get_name_test
+
 
 def main(seed):
     int_num_gami = 40
@@ -57,12 +55,12 @@ def main(seed):
 
         #TODO
         print("Running pureGAM...")
-        run_pureGAM2.run_cat(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, results_folder=os.path.join(rpath, "pureGAM2"), avg_cardi=avg_cardi)
+        run_pureGAM.run_cat(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, results_folder=os.path.join(rpath, "pureGAM2"), avg_cardi=avg_cardi)
         t2 = time.time()
         print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t2 - t1), np.round(t2 - t1), np.round(t2 - t0)))
         t3 = time.time()
         print("Running GAMI-Net...")
-        run_gami2.run_cat(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y,
+        run_gami.run_cat(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y,
                          results_folder=os.path.join(rpath, "gami2"), int_num=int_num_gami, heredity=True)
         t4 = time.time()
         print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t4 - t3), np.round(t4 - t1), np.round(t4 - t0)))

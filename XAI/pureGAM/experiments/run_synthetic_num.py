@@ -2,21 +2,14 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 import time
 import numpy as np
-import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import PowerTransformer,  MinMaxScaler
-from pathlib import Path
+from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
-import run_pureGAM2
-import run_gami2
+import run_pureGAM
+import run_gami
 import run_ebm
-import run_xgboost
+from synthetic_datagenerator.numerical_gen import get_names2
 
-import torch
-from sgd_solver.pureGam import PureGam
-from sklearn.preprocessing import  power_transform
-
-from numerical_gen import generate_data, get_names, generate_data_test,get_names_test, get_names1, get_names2, get_names3
 
 class IdentityTransform:
     def __init__(self):
@@ -35,8 +28,6 @@ def main(seed):
     #names = get_names_test()
     names = get_names2()
 
-    ## DEBUG
-    # names = ["debug"]
     ## END DEBUG
     print("")
     for name in names:
@@ -73,13 +64,13 @@ def main(seed):
         print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t7 - t6),np.round(t7 - t1),np.round(t7 - t0)))
 
         print("Running pureGAM...")
-        adaptive_kernel = run_pureGAM2.run(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, cov_mat=cov, results_folder=os.path.join(rpath, "pureGAM2"))
+        adaptive_kernel = run_pureGAM.run(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, cov_mat=cov, results_folder=os.path.join(rpath, "pureGAM2"))
         t2 = time.time()
         print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t2 - t1), np.round(t2 - t1), np.round(t2 - t0)))
 
         t3 = time.time()
         print("Running GAMI-Net...")
-        run_gami2.run(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, h_map=None, cov_mat=cov, results_folder=os.path.join(rpath, "gami2"), int_num=int_num_gami, heredity=False)
+        run_gami.run(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, h_map=None, cov_mat=cov, results_folder=os.path.join(rpath, "gami2"), int_num=int_num_gami, heredity=False)
         t4 = time.time()
         print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t4 - t3), np.round(t4 - t1), np.round(t4 - t0)))
 

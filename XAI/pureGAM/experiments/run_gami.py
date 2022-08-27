@@ -2,21 +2,10 @@ import os
 from pathlib import Path
 from os import sys, path
 sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
-from benchmarks.synthetic_data_generator import generate_x, function_main_effects, function_interaction, num_gen_gauss
-from benchmarks.synthetic_data_generator import check_hist, check_func_main, check_func_int
-from experiment_metrics.metrics import pureness_loss_est, pureness_loss_est2, pureness_score2, pureness_score2_normalized
 import time
-from synthetic_experiments.run_metrics import true_pureness_score_gaussian_pureGAM, true_pureness_score_gaussian_ebm, true_pureness_score_gaussian_gami
-
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-from matplotlib import cm
+from metrics.metrics_true import true_pureness_score_gaussian_pureGAM, true_pureness_score_gaussian_gami
 import pandas as pd
-from interpret.glassbox import ExplainableBoostingRegressor, ExplainableBoostingClassifier
-from interpret import show
 from sklearn.metrics import explained_variance_score, mean_squared_error, mean_absolute_error, r2_score, precision_recall_curve, accuracy_score, average_precision_score, confusion_matrix
-# from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import PowerTransformer, OneHotEncoder, StandardScaler, OrdinalEncoder
 
 # GAMI-NET
@@ -46,8 +35,9 @@ np_config.enable_numpy_behavior()
 #     label = scaler.inverse_transform(label.reshape([-1, 1]))
 #     return np.sqrt(np.mean((pred - label)**2))
 
-from synthetic_experiments.run_metrics import predict_int_GAMI, score_gami, score_gami_cat
-from synthetic_experiments.run_metrics2 import score_pureness
+from metrics.metrics import predict_int_GAMI
+from metrics.metrics_cate import score_gami_cat
+from metrics.metrics_torch import score_pureness
 import math
 import torch as th
 import traceback
@@ -160,7 +150,6 @@ def run(train_x, train_y, test_x, test_y, cov_mat, results_folder, h_map, int_nu
     GAMI pureness
     """
 
-    #score_gami(GAMInet_model, test_x, sxx, syy,  bandwidths=np.array([0.1]), h_map=h_map, epsilon=0, N_subset=None, save_folder=results_folder)
     true_pure_df = true_pureness_score_gaussian_gami(model=GAMInet_model, cov_mat=cov_mat, num_sigmas=3, N=200, normalize=True, epsilon=0, save_folder=results_folder)
     #todo: true_pure_df = true_pureness_score_gaussian_gami(model=GAMInet_model, cov_mat=cov_mat, num_sigmas=4, N=200, sy=syy, normalize=True, epsilon=0, save_folder=results_folder)
     true_pure_df = np.log10(true_pure_df.astype('float')).dropna()

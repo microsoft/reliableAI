@@ -1,22 +1,15 @@
-import os
-import numpy as np
 from time import time
-import pickle as pkl
 import torch
 import torch as th
 import torch.nn as nn
-from sgd_solver.categorical_encoder import Categorical_encoder
-from sgd_solver.numerical_transformer_exp import Numerical_transformer_adapt
+from pureGAM_model.categorical_encoder import Categorical_encoder
+from pureGAM_model.numerical_smoother import Numerical_transformer_adapt
 from sklearn.model_selection import train_test_split
-from sgd_solver.utils import generate_pairwise_idxes, _print_metrics, safe_norm, safe_norm_alter, save_model, load_model
-#from sgd_solver.models import Smoother_additive_model_pairwise, Categorical_additive_model
-from sgd_solver.models_exp import Smoother_additive_model_pairwise, Categorical_additive_model
+from pureGAM_model.utils import generate_pairwise_idxes, _print_metrics, safe_norm, safe_norm_alter, save_model, load_model
+from pureGAM_model.submodels import Smoother_additive_model_pairwise, Categorical_additive_model
 import pandas as pd
-from sklearn.metrics import explained_variance_score, mean_squared_error, mean_absolute_error, r2_score
 from torch_utils.readwrite import make_dir
 from sklearn.metrics import r2_score, mean_squared_error
-# generate data
-#from datasets.Synthetic.data_generator import numerical_generator, categorical_generator
 
 class PureGam:
     def __init__(self, p_univ_num, p_univ_cate, N_param_univ, N_param_biv, init_kw_lam_univ, init_kw_lam_biv,
@@ -24,7 +17,7 @@ class PureGam:
                  device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu"), adaptiveInfoPerEpoch=10,
                  isPurenessConstraint=True, isAugLag = False, AugLag_startepoch = 60, AugLag_interepoch = 50,
                  isInnerBatchPureLoss=False, isLossEnhanceForDenseArea = False, dropout_rate=0.1, pure_lam_scale=1,
-                 pairwise_idxes_cate=None, is_balancer=False, epoch4balancer_change=5, isLossMean=True):
+                 pairwise_idxes_cate=None, is_balancer=False, epoch4balancer_change=5, isLossMean=True, verbose=False):
         self.model_output_dir = model_output_dir
         make_dir(dir_path=model_output_dir)
         '''self.p_univ_num = X_num.shape[1]
@@ -118,6 +111,7 @@ class PureGam:
         self.epoch4balancer_change = epoch4balancer_change
 
         self.isLossMean = isLossMean
+        self.verbose = verbose
 
     def get_model_size(self):
         return sum(p.numel() for p in self.model_smoothing.parameters() if p.requires_grad) +\
@@ -132,9 +126,9 @@ class PureGam:
         self.model_categorical = self.model_categorical.to(self.device)
 
         #print("Model Params Shape :: ", self.cate_enc.cardinality_univ, self.cate_enc.cardinality_biv, self.model_smoothing.eta_univ.shape, self.model_smoothing.eta_biv.shape)
-
-        print("Model Params Shape :: ", self.cate_enc.cardinality_univ, self.cate_enc.cardinality_biv,
-          self.model_smoothing.w1_univ.shape, self.model_smoothing.w1_biv.shape)
+        if self.verbose:
+            print("Model Params Shape :: ", self.cate_enc.cardinality_univ, self.cate_enc.cardinality_biv,
+              self.model_smoothing.w1_univ.shape, self.model_smoothing.w1_biv.shape)
 
     def init_param_points(self, X_num):
         # sample X_num_param as params of Smoothing Predictive model
@@ -361,9 +355,6 @@ class PureGam:
                 print("### {AS} Params of Adaptive Smoothing")
                 print("lam_univ::=", self.num_enc.get_lam()[0])
                 print("lam_biv::=", self.num_enc.get_lam()[1])
-                #print("X_memo_univ::", self.num_enc.X_memo_univ.max(axis=0)[0] - self.num_enc.X_memo_univ.min(axis=0)[0])
-                #print("X_memo_biv::", self.num_enc.X_memo_biv.max(axis=0)[0] - self.num_enc.X_memo_biv.min(axis=0)[0])
-                #print("Bias::", self.model_smoothing.bias)
                 print()
 
             for ith_batch, (batch_C_X, batch_N_X, batch_y) in enumerate(train_data_loader):
@@ -377,12 +368,7 @@ class PureGam:
 
                 #todo: test test
                 if th.isnan(self.num_enc.get_lam()[0]).any():
-
-                    print("### aaaa")
-                    #print("lam_univ::", self.num_enc.lam_univ)
-                    print(batch_N_X[:, -4])
-                    print(batch_N_X[:, -2])
-                    assert False
+                    assert False, "Error: nan in numerical smoother"
 
                 # save intermediate metrics and loss
                 total_loss_train += loss_tensor_train
@@ -391,7 +377,6 @@ class PureGam:
 
             optimizer.step()
             optimizer.zero_grad()
-
 
             for batch_C_X, batch_N_X, batch_y in valid_data_loader:
                 with torch.no_grad():
@@ -518,27 +503,7 @@ class PureGam:
         return torch.cat(all_contri_mat_biv, dim=-1)# concat through (p, n_batch)
 
     def plot_numerical(self, train_N_X):
-
-        if not isinstance(train_N_X, th.Tensor):
-            train_N_X = th.tensor(train_N_X).to(self.device)
-        ###   PRINT PURENESS GRAPH    ###!
-        _, contri_mat_univ, contri_mat_biv, order1_mean, order2_mean, conditional_mean = self.predict_batch_numerical(train_N_X)
-        print("!!!!!!!!!!! PURE PLOT !!!!!", train_N_X.shape)
-
-        batch_N_X_trans = train_N_X.transpose(-1, 0)
-        print(batch_N_X_trans.shape, batch_N_X_trans[self.pairwise_idx1].shape, contri_mat_biv.shape, conditional_mean.shape)
-
-        for ith, (idx1, idx2) in enumerate(zip(self.pairwise_idx1, self.pairwise_idx2)):
-            print(ith, " th Interaction plot")
-            #tmpx = np.c_
-            contri_df = pd.DataFrame([batch_N_X_trans[idx1].cpu().numpy(), batch_N_X_trans[idx2].cpu().numpy(),
-                   contri_mat_biv[ith].cpu().numpy()]).transpose()
-
-            #todo: conditional_mean_plot_df = pd.DataFrame(([batch_N_X_trans[idx1].cpu().numpy(), ])
-            num_ints2 = conditional_mean.shape[0]
-            conditional_mean1_plot_df = pd.DataFrame([ self.num_enc.X_memo_univ[idx1].detach().cpu().numpy(), conditional_mean[ith].cpu().numpy()] ).transpose()
-            conditional_mean2_plot_df = pd.DataFrame([ self.num_enc.X_memo_univ[idx2].detach().cpu().numpy(), conditional_mean[num_ints2//2 + ith].cpu().numpy()] ).transpose()
-            #print(conditional_mean1_plot_df.shape, conditional_mean2_plot_df.shape)
+        NotImplemented
 
     def plot_categorical(self, train_C_X):
         NotImplemented
