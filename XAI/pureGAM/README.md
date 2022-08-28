@@ -6,7 +6,7 @@ repository helpful, please cite the following paper:
 
 ```
 @inproceedings{ml4s,
-author = {Ma, Pingchuan and Ding, Rui and Dai, Haoyue and Jiang, Yuanyuan and Wang, Shuai and Han, Shi and Zhang, Dongmei},
+author = {Sun, Xingzhi and Wang, Ziyu and Ding, Rui and Han, Shi and Zhang, Dongmei},
 title = {pureGAM: Learning an Inherently Pure Additive Model},
 year = {2022},
 isbn = {9781450393850},
