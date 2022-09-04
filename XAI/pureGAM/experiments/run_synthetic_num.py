@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import time
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -8,7 +8,7 @@ import pandas as pd
 import run_pureGAM
 import run_gami
 import run_ebm
-from synthetic_datagenerator.numerical_gen import get_names2
+from synthetic_datagenerator.numerical_gen import get_names
 
 
 class IdentityTransform:
@@ -26,7 +26,7 @@ def main(seed):
 
     #names = get_names()
     #names = get_names_test()
-    names = get_names2()
+    names = get_names()
 
     ## END DEBUG
     print("")

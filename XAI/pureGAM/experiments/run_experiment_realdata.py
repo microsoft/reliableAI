@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import numpy as np
 import time
 import torch as th
@@ -58,11 +58,11 @@ def run_pureGam_gami_kfold(X_num, X_cate, y, results_folder, isPureScore=True, s
         X_cate_train, X_cate_test = X_cate[train_index], X_cate[test_index]
         y_train, y_test = y[train_index], y[test_index]
 
-        """pureGam = run_pureGam(X_num_train, X_cate_train, y_train, X_num_test, X_cate_test, y_test,
+        pureGam = run_pureGam(X_num_train, X_cate_train, y_train, X_num_test, X_cate_test, y_test,
                               results_folder=results_folder + '/' + 'pureGam' + '_fold' + str(i), isPureScore=isPureScore)
         _ = run_gami(X_num_train, X_cate_train, y_train, X_num_test, X_cate_test, y_test, task_type, meta_info,
                      results_folder=results_folder + '/' + 'Gami' + '_fold' + str(i), isPureScore=isPureScore,
-                     h_map=pureGam.num_enc.get_lam()[0].detach().cpu().numpy().tolist())"""
+                     h_map=pureGam.num_enc.get_lam()[0].detach().cpu().numpy().tolist())
 
         #todo:
         run_ebm(X_num_train, X_cate_train, y_train, X_num_test, X_cate_test, y_test,
@@ -152,7 +152,6 @@ def run_pureGam(X_num, X_cate, y_train, X_num_test, X_cate_test, y_test, results
 
     '''_, X_num_ttrain_smp, _, X_cate_ttrain_smp, _, y_ttrain_smp = \
         train_test_split(X_num_ttrain, X_cate_ttrain, y_ttrain, test_size=0.25, random_state=seed * 2 + 101)'''
-
     batch_scale = 4#2
     N_param_scale = 0.5# todo: 0.5
     kwargs = {}

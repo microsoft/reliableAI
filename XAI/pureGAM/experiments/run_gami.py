@@ -135,7 +135,6 @@ def run(train_x, train_y, test_x, test_y, cov_mat, results_folder, h_map, int_nu
     gami_int_pred = predict_int_GAMI(GAMInet_model, x)
 
     try:
-        assert False
         gami_int_pred = th.tensor(gami_int_pred, dtype=th.double).squeeze(2).to(device)
 
         pure_score1, pure_score2 = score_pureness(gami_int_pred, X_num=th.tensor(x).to(device),

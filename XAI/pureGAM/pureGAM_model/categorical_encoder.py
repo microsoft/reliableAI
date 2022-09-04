@@ -71,7 +71,6 @@ class Categorical_encoder:
             enc = self.bivariate_encoders_[i]
             dat = enc.transform(X[:, id_biv[0]], X[:, id_biv[1]])
             bivariate_encoded_data_.append(dat)
-
         # todo: triv enc
         '''trivariate_encoded_data_ = []
         for i, id_triv in enumerate(self.trivariate_ids_):

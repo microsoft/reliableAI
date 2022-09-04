@@ -5,17 +5,16 @@ from os import sys, path
 sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 import numpy as np
 import pandas as pd
-from synthetic_data_generator import num_gen_gauss
+from synthetic_datagenerator.synthetic_data_generator import num_gen_gauss
 
 
 def generate_data(seed = 214254):
     names = []
-    out_folder = ("data3/")
-    Ns = [20000]
-    #Ns = [10000,20000, 40000, 60000, 80000]#[10000,20000, 40000, 60000, 80000]#[2000, 3000] ##, 100000]10000,[1500,
+    out_folder = ("../experiments/data3/")
+    Ns = [20000, 40000, 60000, 80000]#[10000,20000, 40000, 60000, 80000]#[2000, 3000] ##, 100000]10000,[1500,
     p1 = 10
     N1 = 20000
-    ps = [40]# 20 #[5, 10, 20, 30, 40, 50] #,  [3,4]
+    ps = [20, 30, 40] #,  [3,4]
     #ps = [40]
     
     # Ns = [10000]
@@ -98,7 +97,7 @@ def get_names3():
 
 def get_names():
     names = []
-    Ns = [40000, 60000, 80000] #[2000, 3000] ##, 100000]10000,[1500,[10000,20000, 40000, 60000, 80000, 100000]
+    Ns = [20000, 40000, 60000, 80000] #[2000, 3000] ##, 100000]10000,[1500,[10000,20000, 40000, 60000, 80000, 100000]
     p1 = 10
     N1 = 20000
     ps = [20, 30, 40] #,  [3,4]

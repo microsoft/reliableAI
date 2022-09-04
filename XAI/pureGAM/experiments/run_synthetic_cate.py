@@ -2,12 +2,13 @@ import os
 import time
 import numpy as np
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 import run_pureGAM
 import run_gami
+import run_ebm
 
 from synthetic_datagenerator.categorical_gen import get_name_test
 
@@ -59,11 +60,19 @@ def main(seed):
         t2 = time.time()
         print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t2 - t1), np.round(t2 - t1), np.round(t2 - t0)))
         t3 = time.time()
+
         print("Running GAMI-Net...")
         run_gami.run_cat(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y,
                          results_folder=os.path.join(rpath, "gami2"), int_num=int_num_gami, heredity=True)
         t4 = time.time()
         print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t4 - t3), np.round(t4 - t1), np.round(t4 - t0)))
+
+        print("Running EBM...")
+        t6 = time.time()
+        run_ebm.run_cat(train_x=train_x, train_y=train_y, test_x=test_x, test_y=test_y, syy=pty,
+                        results_folder=os.path.join(rpath, "ebm"), int_num=int_num_ebm)
+        t7 = time.time()
+        print("Finished. Time used: {}. Time elapsed in this dataset: {}. Total time: {}.".format(np.round(t7 - t6), np.round(t7 - t1), np.round(t7 - t0)))
 
 if __name__ == '__main__':
     seed = 3453218

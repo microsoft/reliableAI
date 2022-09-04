@@ -151,7 +151,6 @@ def run(train_x, train_y, test_x, test_y, cov_mat, results_folder):
 
     pred_int = model.predict_biv_contri_mat(train_loader_all)
     try:
-        assert False
         pure_score1, pure_score2 = score_pureness(pred_int, X_num=th.tensor(X_num).to(device),
                                                   interaction_list=[(pair[0], pair[1]) for pair in
                                                                     model.pairwise_idxes_num],

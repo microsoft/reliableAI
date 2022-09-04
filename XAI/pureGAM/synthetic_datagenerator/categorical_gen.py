@@ -5,12 +5,12 @@ import numpy as np
 import pandas as pd
 from os import sys, path
 sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
-from synthetic_data_generator import gen_cat_data, gen_cat_y
+from synthetic_datagenerator.synthetic_data_generator import gen_cat_data, gen_cat_y
 
 def generate_data(seed=24536475):
 
     names = []
-    out_folder = ("cat_data/")
+    out_folder = ("../experiments/cat_data/")
 
     # Ns = [10000]
     # p1 = 5
@@ -43,8 +43,8 @@ def generate_data(seed=24536475):
     N > 2*c^2*p
     """
 
-    '''
-    Ns = [10000, 20000, 40000]#, 60000, 80000, 100000] #[3000, 4000]#]
+
+    Ns = [20000, 40000, 60000, 80000] #[3000, 4000]#]
     p1 = 5
     c1 = 5
 
@@ -65,10 +65,10 @@ def generate_data(seed=24536475):
         pd.DataFrame(y).to_csv(ypath, index=None)
         names.append("{}_{}_{}".format(N, p, c))
         t2 = time.time()
-        print("Data {}x{}x{} generated. Time used: {}. Total time: {}.".format(N, p, c, np.round(t2 - t1), np.round(t2 - t0)))'''
+        print("Data {}x{}x{} generated. Time used: {}. Total time: {}.".format(N, p, c, np.round(t2 - t1), np.round(t2 - t0)))
 
     N1 = 20000
-    ps = [2]  # [10, 20] , 6, 7
+    ps = [2,3,4,5,6]
     c1 = 5
 
     for p in ps:
@@ -226,14 +226,14 @@ def generate_name():
 
     names = []
 
-    '''Ns = [10000, 20000, 40000, 60000, 80000]
+    Ns = [20000, 40000, 60000, 80000]
     p1 = 5
     c1 = 5
 
     for N in Ns:
         p = p1
         c = c1
-        names.append("{}_{}_{}".format(N, p, c))'''
+        names.append("{}_{}_{}".format(N, p, c))
 
     N1 = 20000
     ps = [2, 3, 4, 5, 6]#[2, 3, 4, 5, 6]
@@ -243,14 +243,14 @@ def generate_name():
         c = c1
         names.append("{}_{}_{}".format(N, p, c))
 
-    N1 = 20000
+    '''N1 = 20000
     p1 = 5
     cs = [2, 3, 4, 5, 6]
     for c in cs:
         N = N1
         p = p1
         names.append("{}_{}_{}".format(N, p, c))
-    return names
+    return names'''
 
 def get_name_test():
 

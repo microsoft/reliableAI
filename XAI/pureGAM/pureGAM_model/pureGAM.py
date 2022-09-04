@@ -466,8 +466,8 @@ class PureGam:
     def predict(self, test_data_loader):
 
         t1 = time()
-        # # Notice ::! in test data loader , there should not be label y in data.
         all_y_hat_test = []
+        # # Notice ::! in test data loader , there should not be label y in data. so we just ignore y_test in test_data_loader
         for batch_C_X, batch_N_X, _ in test_data_loader:
             with torch.no_grad():
                 y_hat_test, _, _, _, _, _ = self.predict_batch(batch_N_X, batch_C_X)
@@ -478,7 +478,6 @@ class PureGam:
 
     def predict_with_y(self, test_data_loader):
         t1 = time()
-        # # Notice ::! in test data loader , there should not be label y in data.
         all_y_hat_test = []
         all_y_test = []
         for batch_C_X, batch_N_X, tmp_y in test_data_loader:
@@ -487,7 +486,7 @@ class PureGam:
                 all_y_hat_test += y_hat_test.cpu().numpy().tolist()
                 all_y_test += tmp_y.cpu().numpy().tolist()
         t2 = time()
-        #print("time", t2 - t1)
+        print("Total predict time", t2 - t1)
         return all_y_hat_test, all_y_test
 
     def predict_biv_contri_mat(self, train_data_loader):
@@ -501,12 +500,6 @@ class PureGam:
         t2 = time()
         #print("time", t2 - t1)
         return torch.cat(all_contri_mat_biv, dim=-1)# concat through (p, n_batch)
-
-    def plot_numerical(self, train_N_X):
-        NotImplemented
-
-    def plot_categorical(self, train_C_X):
-        NotImplemented
 
 
 if __name__ == "__main__":
