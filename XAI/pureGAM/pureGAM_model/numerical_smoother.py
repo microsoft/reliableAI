@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
 import numpy as np
 from torch_utils.kernel_smoother import compute_pairwise_distance
 from torch_utils.kernel_smoother import K_Gaussian as K_G

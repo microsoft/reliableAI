@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
 import numpy as np
 from pureGAM_model.pure_coding import pure_encoder_bivariate, pure_encoder_univariate
 from pureGAM_model.utils import generate_pairwise_idxes

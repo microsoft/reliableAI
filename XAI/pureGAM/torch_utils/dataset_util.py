@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
 import torch.utils.data as data
 
 class PureGamDataset(data.Dataset):

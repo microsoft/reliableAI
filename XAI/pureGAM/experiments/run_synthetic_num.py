@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import time
