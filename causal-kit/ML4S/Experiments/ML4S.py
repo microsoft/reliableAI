@@ -1,5 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 import xgboost as xgb
 from sklearn import linear_model
 import numpy as np

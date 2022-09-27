@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
 import random
 from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD

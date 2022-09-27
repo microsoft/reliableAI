@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 import copy, os

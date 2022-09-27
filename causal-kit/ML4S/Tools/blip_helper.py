@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
 from typing import List, Tuple
 import pandas as pd
 import os, tempfile

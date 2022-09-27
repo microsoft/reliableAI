@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
 from itertools import permutations
 from typing import Dict
 import numpy as np
