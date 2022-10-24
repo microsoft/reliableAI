@@ -50,7 +50,7 @@ def process_gami_info(X_num, y):
     get_metric = metric_wrapper(rmse, sy)
     return task_type, meta_info, get_metric, X_num, y
 
-def run_pureGam_gami_kfold(X_num, X_cate, y, results_folder, isPureScore=True, seed=42):
+def run_pureGam_gami_kfold(X_num, X_cate, y, results_folder, isPureScore, seed, model_output_dir):
     #preprocess minmax/power
     task_type, meta_info, get_metric, X_num, y = process_gami_info(X_num, y)
 
@@ -61,10 +61,10 @@ def run_pureGam_gami_kfold(X_num, X_cate, y, results_folder, isPureScore=True, s
         y_train, y_test = y[train_index], y[test_index]
 
         pureGam = run_pureGam(X_num_train, X_cate_train, y_train, X_num_test, X_cate_test, y_test,
-                              results_folder=results_folder + '/' + 'pureGam' + '_fold' + str(i), isPureScore=isPureScore)
+                              results_folder=results_folder + '/' + 'pureGam' + '_fold' + str(i), isPureScore=isPureScore, seed=seed, model_output_dir=model_output_dir)
         _ = run_gami(X_num_train, X_cate_train, y_train, X_num_test, X_cate_test, y_test, task_type, meta_info,
                      results_folder=results_folder + '/' + 'Gami' + '_fold' + str(i), isPureScore=isPureScore,
-                     h_map=pureGam.num_enc.get_lam()[0].detach().cpu().numpy().tolist())
+                     h_map=pureGam.num_enc.get_lam()[0].detach().cpu().numpy().tolist(), seed=seed)
 
         #todo:
         run_ebm(X_num_train, X_cate_train, y_train, X_num_test, X_cate_test, y_test,
@@ -141,7 +141,7 @@ def run_xgb(X_num, X_cate, y_train, X_num_test, X_cate_test, y_test, results_fol
     acc_df.to_csv(os.path.join(results_folder, "accuracy.csv"))
     print(acc_df)
 
-def run_pureGam(X_num, X_cate, y_train, X_num_test, X_cate_test, y_test, results_folder, isPureScore=True):
+def run_pureGam(X_num, X_cate, y_train, X_num_test, X_cate_test, y_test, results_folder, isPureScore, seed, model_output_dir):
     Path(results_folder).mkdir(parents=True, exist_ok=True)
     y_train = y_train[:, 0]
     y_test = y_test[:, 0]
@@ -158,16 +158,16 @@ def run_pureGam(X_num, X_cate, y_train, X_num_test, X_cate_test, y_test, results
     N_param_scale = 0.5# todo: 0.5
     kwargs = {}
     train_loader = th.utils.data.DataLoader(PureGamDataset_smoothingInTraining(
-        X_cate_ttrain, th.tensor(X_num_ttrain).to(device), th.tensor(y_ttrain).to(device)),
+        X_cate_ttrain, th.tensor(X_num_ttrain * 1.0).to(device), th.tensor(y_ttrain * 1.0).to(device)),
         batch_size=int(batch_scale * 128), shuffle=True, **kwargs)
     valid_loader = th.utils.data.DataLoader(PureGamDataset_smoothingInTraining(
-        X_cate_valid, th.tensor(X_num_valid).to(device), th.tensor(y_valid).to(device)),
+        X_cate_valid, th.tensor(X_num_valid * 1.0).to(device), th.tensor(y_valid * 1.0).to(device)),
         batch_size=int(batch_scale * 128 * 2), shuffle=False, **kwargs)
     test_loader = th.utils.data.DataLoader(PureGamDataset_smoothingInTraining(
-        X_cate_test, th.tensor(X_num_test).to(device), th.tensor(y_test).to(device)),
+        X_cate_test, th.tensor(X_num_test * 1.0).to(device), th.tensor(y_test * 1.0).to(device)),
         batch_size=int(batch_scale * 128 * 2), shuffle=False, **kwargs)
     train_loader_all = th.utils.data.DataLoader(PureGamDataset_smoothingInTraining(
-        X_cate, th.tensor(X_num).to(device), th.tensor(y_train).to(device)),
+        X_cate, th.tensor(X_num * 1.0).to(device), th.tensor(y_train * 1.0).to(device)),
         batch_size=int(batch_scale * 128 * 2), shuffle=False, **kwargs)
 
     '''N_param_univ=int(N_param_scale * 512),
@@ -227,8 +227,8 @@ def run_pureGam(X_num, X_cate, y_train, X_num_test, X_cate_test, y_test, results
         model.load_model(results_folder + "/model_best")
     except:
         t0 = time.time()
-        model.train(train_loader, valid_loader, optimizer=optimizer, num_epoch=int(5*200 * math.sqrt(1e4 / len(y))),
-                    tolerent_level=int(30 * math.sqrt(1e4 / len(y))),
+        model.train(train_loader, valid_loader, optimizer=optimizer, num_epoch=int(5*200 * math.sqrt(1e4 / len(y_train))),
+                    tolerent_level=int(30 * math.sqrt(1e4 / len(y_train))),
                     # Pureness Loss ratio of total loss
                      #ratio_part2=2e1,
                     #ratio_part2=1e-1, #todo : with balancer
@@ -237,8 +237,8 @@ def run_pureGam(X_num, X_cate, y_train, X_num_test, X_cate_test, y_test, results
         '''ratio_part2=2e1,
         lmd1=2e0, lmd2=2e0, lmd3=1e0, test_data_loader=test_loader)'''
 
-        '''model.train(train_loader, valid_loader, optimizer=optimizer, num_epoch=int(160 * math.sqrt(1e4 / len(y))),
-                    tolerent_level=int(10 * math.sqrt(1e4 / len(y))),
+        '''model.train(train_loader, valid_loader, optimizer=optimizer, num_epoch=int(160 * math.sqrt(1e4 / len(y_train))),
+                    tolerent_level=int(10 * math.sqrt(1e4 / len(y_train))),
                     # Pureness Loss ratio of total loss
                     ratio_part2=1e2, lmd1=0e0, lmd2=0e0, lmd3=1e0, test_data_loader=test_loader)'''
         # ratio_part2=1e2, lmd1=1e0, lmd2=1e0, lmd3=2e0)
@@ -293,7 +293,7 @@ def run_pureGam(X_num, X_cate, y_train, X_num_test, X_cate_test, y_test, results
     return model
 
 
-def run_gami(X_num, X_cate, y_train, X_num_test, X_cate_test, y_test, task_type, meta_info, results_folder, h_map, isPureScore=True):
+def run_gami(X_num, X_cate, y_train, X_num_test, X_cate_test, y_test, task_type, meta_info, results_folder, h_map, isPureScore=True, seed=42):
     Path(results_folder).mkdir(parents=True, exist_ok=True)
     '''X_num, X_num_test, X_cate, X_cate_test, y_train, y_test = \
         train_test_split(X_num, X_cate, y, test_size=0.2, random_state=seed)'''
@@ -403,7 +403,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # X_cate = df.loc[:, ["WeekStatus", "Day_of_week", "Load_Type"]].values
     y = df.loc[:, ["company10"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo: bank
     dataset_name = "Bank"
@@ -423,7 +423,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # X_cate = df.loc[:, ["WeekStatus", "Day_of_week", "Load_Type"]].values
     y = df.loc[:, ["rej"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo: Elevators delta
     dataset_name = "deltaElevators"
@@ -442,7 +442,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # X_cate = df.loc[:, ["WeekStatus", "Day_of_week", "Load_Type"]].values
     y = df.loc[:, ["Se"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
 
     # todo: Kinematics
@@ -460,7 +460,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # X_cate = df.loc[:, ["WeekStatus", "Day_of_week", "Load_Type"]].values
     y = df.loc[:, ["y"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo: seoul bike
     dataset_name = "SeoulBikeData"
@@ -476,7 +476,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # X_cate = df.loc[:, ["Seasons","Holiday","Functioning Day"]].values
     y = df.loc[:, ["Rented Bike Count"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo: wine white
     dataset_name = "winequality-white"
@@ -490,7 +490,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # "L3","L4","L5"
     y = df.loc[:, ["quality"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo: Steel
     dataset_name = "Steel_industry_data"
@@ -505,7 +505,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # X_cate = df.loc[:, ["WeekStatus", "Day_of_week", "Load_Type"]].values
     y = df.loc[:, ["CO2(tCO2)"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo: Air quality UCI
     dataset_name = "AirQualityUCI"
@@ -520,7 +520,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # X_cate = df.loc[:, ["WeekStatus", "Day_of_week", "Load_Type"]].values
     y = df.loc[:, ["PT08.S4(NO2)"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo: treasury
     dataset_name = "treasury"
@@ -541,7 +541,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # "L3","L4","L5"
     y = df.loc[:, ["1MonthCDRate"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
 
 
@@ -559,7 +559,7 @@ if __name__ == "__main__":
     # X_cate = df.loc[:, ["season", "yr", "mnth", "hr", "holiday", "weekday", "workingday", "weathersit"]].values
     # "L3","L4","L5"
     y = df.loc[:, ["PE"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo : skill craft
     dataset_name = "skill_craft"
@@ -580,7 +580,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # "L3","L4","L5"
     y = df.loc[:, ["ComplexAbilitiesUsed"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo: airfoil
     base_dir = "../"
@@ -599,7 +599,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # "L3","L4","L5"
     y = df.loc[:, ["out"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     #todo: abalone
     dataset_name = "abalone"
@@ -613,7 +613,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # "L3","L4","L5"
     y = df.loc[:, ["Class_number_of_rings"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo: electrical grid
     dataset_name = "electrical_grid"
@@ -626,7 +626,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # "L3","L4","L5"
     y = df.loc[:, ["stab"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     #todo: wine red
     dataset_name = "wine_red"
@@ -642,7 +642,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # "L3","L4","L5"
     y = df.loc[:, ["class"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     #todo:wind
     dataset_name = "wind"
@@ -656,7 +656,7 @@ if __name__ == "__main__":
     X_cate = df.loc[:, []].values
     # "L3","L4","L5"
     y = df.loc[:, ["MAL"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo: weather_wizmir
     dataset_name = "weather_wizmir"
@@ -669,7 +669,7 @@ if __name__ == "__main__":
                        "Standard_pressure", "Visibility", "Wind_speed", "Max_wind_speed"]].values
     X_cate = df.loc[:, []].values
     y = df.loc[:, ["Mean_temperature"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo: cali house
     dataset_name = "cal_house_processed"
@@ -685,7 +685,7 @@ if __name__ == "__main__":
             ["MedInc", "HouseAge", "AveRooms", "AveBedrms", "Population", "AveOccup", "Latitude", "Longitude"]].values
     X_cate = df.loc[:, []].values
     y = df.loc[:, ["MedHouseVal"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo : elev
     dataset_name = "elevators"
@@ -702,7 +702,7 @@ if __name__ == "__main__":
              "SaTime2", "SaTime3", "SaTime4", "diffSaTime1", "diffSaTime2", "diffSaTime3", "diffSaTime4", "Sa"]].values
     X_cate = df.loc[:, []].values
     y = df.loc[:, ["Goal"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
     # todo:ailerons
     dataset_name = "ailerons"
@@ -719,7 +719,7 @@ if __name__ == "__main__":
              "diffSeTime11", "diffSeTime12", "diffSeTime13", "diffSeTime14", "alpha", "Se"]].values
     X_cate = df.loc[:, []].values
     y = df.loc[:, ["goal"]].values
-    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, seed=seed)
+    run_pureGam_gami_kfold(X_num, X_cate, y, base_results_folder, isPureScore=True, seed=seed, model_output_dir=model_output_dir)
 
 
 
