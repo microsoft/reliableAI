@@ -1,7 +1,7 @@
 # Introduction
 
 This repository contains the open-sourced official implementation of the paper:
-"XInsight: eXplainable Data Analysis Through The Lens of Causality" (SIGMOD '2). If you find this
+"XInsight: eXplainable Data Analysis Through The Lens of Causality" (SIGMOD '23). If you find this
 repository helpful, please cite the following paper:
 
 ```
