@@ -8,6 +8,8 @@
 
 2. XAI: contains the algorithms for XAI, mainly about GAM-based (Generalized Additive Model), interpretable machine learning algorithms.
 
+3. XDA: contains the algorithms for explainable data analysis, mainly about XInsight.
+
 
 ## Contributing
 

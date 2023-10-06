@@ -1,0 +1,7 @@
+duckdb
+pandas
+numpy
+causal-learn==0.1.2.6
+pgmpy
+igraph
+p-tqdm
