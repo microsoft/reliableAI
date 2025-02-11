@@ -1,0 +1,22 @@
+testset_path:
+  'ws': synthetic/avicidata30test/sbm
+
+skeleton_graph_predictor_path:
+  .../model.pt
+vstruc_predictor_path:
+  .../model.pt
+  
+continuous:
+  True
+
+learning_mode:
+  skeleton
+
+pairwise:
+  True
+
+layers:
+  6
+
+useMEC:
+  False

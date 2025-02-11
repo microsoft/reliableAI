@@ -1,0 +1,48 @@
+---
+learning_rate:
+    0.0003
+
+warmup_epoch:
+    20
+
+total_epoch:
+    300
+    
+optimizer:
+    'adam'
+
+testset_path:
+  'sbm': synthetic/avicidata30test/sbm
+
+continuous:
+    True
+
+load_path:
+
+
+learning_mode:
+    vstruc
+
+feature_extrator_path:
+    .../model.pt
+
+freeze:
+    False
+
+title:
+    'test'
+    
+pairwise:
+    True
+
+train_config_path:
+    avici_Tools/dense_ws.yaml
+
+smoke_test:
+    False
+
+seed:
+    42
+
+nodes:
+    30

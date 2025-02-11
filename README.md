@@ -2,7 +2,7 @@
 
 [reliableAI](https://github.com/microsoft/reliableAI) is an umbrella repo that maintains both XAI and causal discovery projects. We believe causal discovery is a key aspect for acquiring causal knowledge, and causal knowledge is a key aspect for providing explanations for both machine learning models and data analysis.
 
-[reliableAI](https://github.com/microsoft/reliableAI) is being continuously developed and enriched. Algorithms are placed in two folders:
+[reliableAI](https://github.com/microsoft/reliableAI) is being continuously developed and enriched. Algorithms are placed in the following folders:
 
 1. causal-kit: contains the algorithms for causal discovery, mostly about Supervised Causal Learning (SCL).
 

@@ -1,0 +1,43 @@
+---
+data:
+  - n_observations_obs: null
+    n_observations_int: null
+
+    graph:
+      - __class__: ErdosRenyi
+        edges_per_var: [1, 2, 3]
+      - __class__: ScaleFree
+        edges_per_var: [ 1, 2, 3 ]
+        power: [1.0]
+
+    mechanism:
+      - __class__: RFFAdditive
+
+        length_scale:
+          - __class__: Uniform
+            low: 7.0
+            high: 10.0
+
+        output_scale:
+          - __class__: Uniform
+            low: 10.0
+            high: 20.0
+
+        bias:
+          - __class__: Uniform
+            low: -3.0
+            high: 3.0
+
+        noise:
+          - __class__: Gaussian
+
+        noise_scale:
+          - __class__: Uniform
+            low: 0.2
+            high: 2.0
+
+        n_interv_vars: -1
+        interv_dist:
+          - __class__: SignedUniform
+            low:  1.0
+            high: 3.0

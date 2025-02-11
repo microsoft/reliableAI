@@ -1,0 +1,12 @@
+__pycache__/
+.vscode/
+
+.idea
+.idea/*
+
+__pycache__/*
+.vscode/*
+results/*
+
+help.sh
+*.DS_Store

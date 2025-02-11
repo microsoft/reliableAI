@@ -1,0 +1,51 @@
+---
+learning_rate:
+  0.0003
+
+warmup_epoch:
+  20
+
+total_epoch:
+  300
+
+optimizer:
+  'adam'
+
+infinite_trainset:
+  True
+
+testset_path:
+  'ws': synthetic/avicidata30test/sbm
+
+continuous:
+  True
+
+load_path:
+
+learning_mode:
+  skeleton
+
+title:
+  'test'
+
+pairwise:
+  True
+
+layers:
+  6
+
+train_config_path:
+  avici_Tools/myiddata.yaml
+
+smoke_test:
+  False
+
+seed:
+  42
+
+useMEC:
+  True
+
+nodes:
+  30
+
