@@ -82,7 +82,8 @@ class AvgSearch:
         self.search_space = search_space
         self.Delta = self.diff.get_raw_diff(self.conn)
         self.epsilon = SumSearch.delta * self.Delta
-        assert self.Delta > 0 and self.diff.measure.func.lower() == "avg"
+        assert self.Delta > 0 
+        assert self.diff.measure.func.lower() == "avg"
     
     def run(self, prior_cols=None):
         if prior_cols is None: prior_cols = self.diff.retained_cols

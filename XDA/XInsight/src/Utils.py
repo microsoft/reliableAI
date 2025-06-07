@@ -21,7 +21,7 @@ class FixedPredicate:
                 if isinstance(val, int) or isinstance(val, float):
                     predicate_strs.append(f" {col}={val} ")
                 else:
-                    predicate_strs.append(f" {col}=\"{val}\" ")
+                    predicate_strs.append(f" {col}='{val}' ")
             return " AND ".join(predicate_strs)
         else:
             return " 1=1 "
@@ -44,7 +44,7 @@ class InterventionalPredicate:
                 if isinstance(val, int) or isinstance(val, float):
                     predicate_strs.append(f" {col}!={val} ")
                 else:
-                    predicate_strs.append(f" {col}!=\"{val}\" ")
+                    predicate_strs.append(f" {col}!='{val}' ")
             return " AND ".join(predicate_strs)
         else:
             return " 1=1 "
@@ -62,7 +62,7 @@ class InterventionalPredicate:
                 if isinstance(val, int) or isinstance(val, float):
                     predicate_strs.append(f" {col}=={val} ")
                 else:
-                    predicate_strs.append(f" {col}==\"{val}\" ")
+                    predicate_strs.append(f" {col}=='{val}' ")
             return " OR ".join(predicate_strs)
         else:
             return " 1=1 "
@@ -103,7 +103,7 @@ class CounterfactualPredicate:
             if isinstance(val, int) or isinstance(val, float):
                 predicate_strs.append(f" {col}!={self.vals[idx]} ")
             else:
-                predicate_strs.append(f" {col}!=\"{self.vals[idx]}\" ")
+                predicate_strs.append(f" {col}!='{self.vals[idx]}' ")
         return " AND ".join(predicate_strs)
     
     def size(self):
@@ -126,11 +126,11 @@ class DiffPredicate:
         if isinstance(vals[0], int) or isinstance(vals[0], float):
             pred_str1 = f" {col}={vals[0]} "
         else:
-            pred_str1 = f" {col}=\"{vals[0]}\" "
+            pred_str1 = f" {col}='{vals[0]}' "
         if isinstance(vals[1], int) or isinstance(vals[1], float):
             pred_str2 = f" {col}={vals[1]} "
         else:
-            pred_str2 = f" {col}=\"{vals[1]}\" "
+            pred_str2 = f" {col}='{vals[1]}' "
         return pred_str1, pred_str2
 
 class Measure:

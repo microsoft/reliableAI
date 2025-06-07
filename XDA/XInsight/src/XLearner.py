@@ -4,6 +4,7 @@
 from __future__ import annotations
 from itertools import permutations
 from typing import List, Tuple
+import numpy as np
 import pandas as pd
 import pickle
 
@@ -25,6 +26,22 @@ class XLearner:
         self.sl_algo = sl_algo
         self.sl_file = sl_file
         self.learn(fd_edges=fd_edges)
+    
+    @staticmethod
+    def preprocess_numerical_col(df: pd.DataFrame) -> pd.DataFrame:
+        df_new = df.copy()
+        for col in df.columns:
+            col_type = df[col].dtype
+            if np.issubdtype(col_type, np.number):
+                low, high = df[col].quantile([0.05, 0.95])    
+                # Special indices for top/bottom 5%
+                df_new.loc[df[col] < low, col] = -1
+                df_new.loc[df[col] > high, col] = -2
+                mask = (df[col] >= low) & (df[col] <= high)
+                df_new.loc[mask, col], bin_edges = pd.cut(df[mask][col], bins=10, labels=False, retbins=True, right=False, duplicates='drop')
+                # Adjusting bin indices because of the special indices
+                df_new.loc[mask, col] += 2
+        return df_new
     
     @staticmethod
     def from_file(file_path: str) -> XLearner:
@@ -101,7 +118,7 @@ class XLearner:
             skeleton = XLearner.sl_from_file(self.sl_file, self.df, df.columns)
             csm_edges = xlearner(dataset, df.columns, skeleton=skeleton)
         elif self.sl_algo.lower() == "default":
-            csm_edges = xlearner(dataset, df.columns)
+            csm_edges = xlearner(dataset, df.columns, alpha=0.05)
         else:
             raise RuntimeError(f"{self.sl_algo} not found")
         if resolve_fd:
@@ -132,3 +149,13 @@ class XLearner:
             if semantic != CausalSemanticModel.SemanticType.Unexplainable:
                 explainable_cols.append(col)
         return explainable_cols, semantics
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--csv", type=str, required=True, help="Path to input CSV file")
+    parser.add_argument("--algo", type=str, default="default", help="Skeleton learning algorithm")
+    args = parser.parse_args()
+    xl = XLearner(args.csv, sl_algo=args.algo)
+    xl.learn()
+    print(str(xl.csm))

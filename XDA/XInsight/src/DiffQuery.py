@@ -48,7 +48,7 @@ class DiffQuery:
             self.cache[sql] = (0, 0)
             return 0, 0
         row_num = min([row[1] for row in rlt])
-        if rlt[0][0] == self.diff_pred.vals[0]: 
+        if str(rlt[0][0]) == str(self.diff_pred.vals[0]): 
             self.cache[sql] = (row_num, rlt[0][2] - rlt[1][2])
             return row_num, rlt[0][2] - rlt[1][2]
         else: 

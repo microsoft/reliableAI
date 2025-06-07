@@ -39,6 +39,8 @@ class CausalSemanticModel:
 
     def check_semantic(self, target_col: str, explanation_col: str, condition_set: Iterable[str]):
         if target_col == explanation_col: return CausalSemanticModel.SemanticType.Unexplainable 
+        print(self.edges)
+        print(self.graphviz())
         adjacent_edges = self.edges[target_col]
         for edge in adjacent_edges:
             edge: Edge

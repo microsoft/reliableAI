@@ -9,8 +9,6 @@ from src.logger import *
 
 EXE_PATH = "./lib/real/PGM.Experiments.exe"
 
-if not os.path.exists(EXE_PATH):
-    raise RuntimeError("REAL not found. This is currently not open source.")
 
 def generate_tsv(df: pd.DataFrame, tmp: tempfile.TemporaryDirectory):
     tsv_path = os.path.join(tmp, "data.tsv")
@@ -34,6 +32,8 @@ def parse_graph(col_names: List[str], tmp: tempfile.TemporaryDirectory) -> List[
     return skeleton
 
 def skeleton_learning(df: pd.DataFrame, is_small: bool=True) -> List[Tuple[str, str]]:
+    if not os.path.exists(EXE_PATH):
+        raise RuntimeError("REAL not found. This is currently not open source.")
     with tempfile.TemporaryDirectory() as tmp:
         logging.info("LEARNING SKELETON [REAL]")
         generate_tsv(df, tmp)
