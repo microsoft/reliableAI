@@ -1,0 +1,48 @@
+analyze ch.idsia.blip.api.common.Analyze Analyzes a given Bayesian Network: number of nodes and edges, check acyclicity, and computes treewidth (approximate)
+evaluate ch.idsia.blip.api.common.Evaluate Evaluated a given BN w.r.t to a given dataset: computes LL, BIC and BDeu
+graph.gen ch.idsia.blip.api.common.NetToGraphApi Generates a graph representation of a BN (using graphviz)
+hmdist ch.idsia.blip.api.common.HammingDist Computes the Hamming Distance between the skeletons of two networks
+lleval ch.idsia.blip.api.common.LLEvalApi Computes the Log-likelihood of a given BN w.r.t to a given dataset
+marg ch.idsia.blip.api.common.MarginalsApi Computes marginals of all variables in datafile
+query ch.idsia.blip.api.common.QueryApi Computes PR of a query on a dataset
+samge ch.idsia.blip.api.common.SamGeApi Samples a dataset from a BN
+imputation.sem ch.idsia.blip.api.learn.missing.SemImputationApi Performs Structural EM Imputation using the SEM-kMAX algorithm
+scorer.k2 ch.idsia.blip.api.learn.scorer.AdvK2ScorerApi K2 Scorer
+scorer.gs ch.idsia.blip.api.learn.scorer.GreedyScorerApi Greedy Selection Scorer
+scorer.is ch.idsia.blip.api.learn.scorer.IndependenceScorerApi Performs parent set exploration using the Independence Selection approach - the BIC*
+scorer.sq ch.idsia.blip.api.learn.scorer.SeqScorerApi Sequential Scorer
+solver.asobs.adv ch.idsia.blip.api.learn.solver.AsobsAdvSolverApi Asobs (with control on sampling process)
+solver.obs.adv ch.idsia.blip.api.learn.solver.ObsAdvSolverApi OBS (with control on sampling process)
+solver.asobs.avg ch.idsia.blip.api.learn.solver.AsobsAvgSolverApi Asobs Average (graph building)
+solver.asobs ch.idsia.blip.api.learn.solver.AsobsSolverApi Acyclic selection OBS
+solver.winobs ch.idsia.blip.api.learn.solver.win.WinObsSolverApi Window Iteration Obs
+solver.winasobs ch.idsia.blip.api.learn.solver.win.WinAsobsSolverApi Performs structure optimization using the WINASOBS approach
+solver.winobs.adv ch.idsia.blip.api.learn.solver.win.WinObsAdvSolverApi Window Iteration Obs (with control on sampling process)
+solver.winasobs.adv ch.idsia.blip.api.learn.solver.win.WinAsobsAdvSolverApi Window Iteration Asobs (with control on sampling process)
+solver.winasobs.pert ch.idsia.blip.api.learn.solver.win.WinAsobsPertSolverApi Window Iteration Asobs - Perturbation
+solver.winasobs.impr ch.idsia.blip.api.learn.solver.win.WinAsobsImprSolverApi Window Iteration Asobs - Improvement
+solver.winasobs.learn ch.idsia.blip.api.learn.solver.win.WinAsobsLearningSolverApi Window Iteration Asobs - Learning
+solver.ka ch.idsia.blip.api.learn.solver.tw.BrutalAstarSolverApi k-A*
+solver.kg ch.idsia.blip.api.learn.solver.tw.BrutalGreedySolverApi k-G
+solver.kg.adv ch.idsia.blip.api.learn.solver.tw.BrutalGreedyAdvSolverApi k-G (Advanced)
+solver.kmax ch.idsia.blip.api.learn.solver.tw.BrutalMaxSolverApi Performs structure optimization with bounded treewidth, using the k-MAX approach
+solver.obs ch.idsia.blip.api.learn.solver.ObsSolverApi Ordering-based search
+solver.quiet ch.idsia.blip.api.learn.solver.tw.QuietMcSolverApi k-G with max degree constraint
+parle ch.idsia.blip.api.learn.param.ParLeApi Parameter Learner
+parle.smooth ch.idsia.blip.api.learn.param.ParLeSmoothApi Parameter Learner with Smoothing
+# solver.asobs.heu ch.idsia.blip.api.learn.solver.tw.heu.AsobsTwHeuSimple Acyclic selection OBS, tree-width check, simple version
+# solver.asobs.tw.adv ch.idsia.blip.api.learn.solver.tw.heu.AsobsTwAdvSolverApi Acyclic selection OBS, tree-width check, advanced version
+# solver.brutal3 ch.idsia.blip.api.learn.solver.tw.BrutalMcSolver3Api Brutal solver: acyclic AND treewidth!
+# solver.dand2.asobs ch.idsia.blip.api.learn.solver.tw.dand.AsobsDand2SolverApi Acyclic selection OBS, with tree-width check by Dandelion codes
+# solver.dand2.gobnilp ch.idsia.blip.api.learn.solver.tw.dand.GobnilpDand2SolverApi Gobnilp and Dandelion K-tree, whaaaat?
+# solver.dand.asobs ch.idsia.blip.api.learn.solver.tw.dand.AsobsDandSolverApi Acyclic selection OBS, with tree-width check by Dandelion codes
+# solver.dand.gobnilp ch.idsia.blip.api.learn.solver.tw.dand.GobnilpDandSolverApi Gobnilp and Dandelion K-tree, whaaaat?
+# solver.pc ch.idsia.blip.api.learn.constraints.PcAlgoApi Independence Selection Score
+# solver.s2.gobnilp ch.idsia.blip.api.learn.solver.tw.dand.GobnilpS2SolverApi Gobnilp and Dandelion K-tree
+# scorer.sq.adv ch.idsia.blip.api.learn.scorer.SeqAdvScorerApi Sequential Score, improved
+# solver.asobs2 ch.idsia.blip.api.learn.solver.Asobs2SolverApi Acyclic selection OBS - max childrens
+# bda ch.idsia.blip.api.old.Bda Computes BDeu of dataset
+# divconq ch.idsia.blip.api.old.DivConqApi K-Cluster attributes
+# ktree.score ch.idsia.blip.api.old.KTreeScoreApi Select score ktree
+# ranker ch.idsia.blip.api.learn.scorer.RankScores Rank betweeen Score
+# matrix.graph ch.idsia.blip.api.old.MatrixArcVisualizerApi Matrix view visualizator

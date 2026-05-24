@@ -1,0 +1,8900 @@
+net { }
+
+node node0 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node1 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node10 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node100 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node101 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node102 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node103 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node104 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node105 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node106 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node107 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node108 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node109 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node11 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node110 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node111 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node112 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node113 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node114 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node115 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node116 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node117 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node118 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node119 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node12 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node120 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node121 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node122 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node123 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node124 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node125 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node126 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node127 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node128 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node129 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node13 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node130 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node131 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node132 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node133 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node134 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node135 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node136 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node137 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node138 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node139 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node14 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node140 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node141 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node142 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node143 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node144 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node145 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node146 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node147 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node148 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node149 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node15 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node150 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node151 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node152 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node153 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node154 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node155 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node156 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node157 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node158 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node159 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node16 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node160 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node161 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node162 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node163 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node164 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node165 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node166 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node167 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node168 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node169 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node17 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node170 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node171 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node172 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node173 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node174 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node175 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node176 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node177 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node178 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node179 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node18 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node180 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node181 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node182 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node183 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node184 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node185 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node186 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node187 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node188 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node189 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node19 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node190 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node191 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node192 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node193 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node194 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node195 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node196 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node197 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node198 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node199 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node2 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node20 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node200 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node201 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node202 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node203 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node204 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node205 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node206 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node207 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node208 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node209 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node21 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node210 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node211 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node212 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node213 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node214 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node215 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node216 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node217 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node218 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node219 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node22 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node220 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node221 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node222 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node223 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node224 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node225 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node226 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node227 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node228 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node229 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node23 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node230 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node231 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node232 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node233 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node234 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node235 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node236 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node237 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node238 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node239 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node24 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node240 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node241 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node242 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node243 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node244 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node245 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node246 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node247 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node248 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node249 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node25 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node250 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node251 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node252 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node253 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node254 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node255 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node256 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node257 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node258 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node259 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node26 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node260 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node261 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node262 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node263 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node264 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node265 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node266 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node267 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node268 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node269 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node27 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node270 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node271 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node272 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node273 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node274 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node275 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node276 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node277 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node278 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node279 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node28 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node280 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node281 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node282 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node283 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node284 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node285 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node286 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node287 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node288 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node289 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node29 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node290 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node291 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node292 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node293 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node294 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node295 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node296 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node297 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node298 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node299 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node3 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node30 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node300 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node301 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node302 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node303 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node304 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node305 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node306 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node307 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node308 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node309 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node31 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node310 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node311 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node312 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node313 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node314 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node315 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node316 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node317 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node318 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node319 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node32 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node320 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node321 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node322 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node323 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node324 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node325 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node326 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node327 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node328 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node329 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node33 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node330 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node331 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node332 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node333 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node334 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node335 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node336 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node337 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node338 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node339 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node34 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node340 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node341 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node342 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node343 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node344 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node345 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node346 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node347 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node348 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node349 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node35 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node350 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node351 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node352 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node353 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node354 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node355 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node356 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node357 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node358 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node359 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node36 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node360 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node361 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node362 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node363 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node364 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node365 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node366 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node367 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node368 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node369 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node37 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node370 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node371 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node372 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node373 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node374 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node375 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node376 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node377 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node378 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node379 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node38 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node380 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node381 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node382 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node383 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node384 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node385 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node386 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node387 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node388 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node389 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node39 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node390 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node391 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node392 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node393 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node394 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node395 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node396 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node397 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node398 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node399 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node4 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node40 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node400 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node401 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node402 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node403 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node404 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node405 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node406 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node407 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node408 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node409 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node41 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node410 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node411 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node412 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node413 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node414 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node415 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node416 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node417 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node418 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node419 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node42 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node420 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node421 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node422 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node423 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node424 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node425 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node426 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node427 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node428 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node429 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node43 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node430 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node431 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node432 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node433 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node434 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node435 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node436 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node437 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node438 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node439 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node44 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node440 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node441 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node442 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node443 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node444 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node445 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node446 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node447 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node448 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node449 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node45 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node450 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node451 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node452 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node453 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node454 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node455 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node456 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node457 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node458 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node459 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node46 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node460 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node461 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node462 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node463 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node464 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node465 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node466 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node467 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node468 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node469 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node47 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node470 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node471 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node472 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node473 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node474 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node475 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node476 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node477 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node478 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node479 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node48 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node480 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node481 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node482 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node483 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node484 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node485 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node486 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node487 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node488 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node489 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node49 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node490 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node491 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node492 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node493 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node494 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node495 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node496 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node497 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node498 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node499 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node5 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node50 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node500 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node501 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node502 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node503 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node504 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node505 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node506 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node507 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node508 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node509 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node51 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node510 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node511 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node512 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node513 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node514 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node515 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node516 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node517 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node518 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node519 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node52 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node520 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node521 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node522 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node523 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node524 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node525 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node526 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node527 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node528 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node529 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node53 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node530 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node531 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node532 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node533 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node534 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node535 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node536 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node537 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node538 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node539 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node54 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node540 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node541 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node542 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node543 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node544 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node545 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node546 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node547 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node548 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node549 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node55 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node550 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node551 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node552 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node553 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node554 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node555 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node556 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node557 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node558 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node559 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node56 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node560 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node561 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node562 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node563 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node564 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node565 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node566 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node567 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node568 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node569 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node57 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node570 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node571 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node572 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node573 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node574 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node575 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node576 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node577 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node578 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node579 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node58 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node580 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node581 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node582 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node583 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node584 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node585 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node586 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node587 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node588 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node589 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node59 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node590 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node591 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node592 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node593 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node594 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node595 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node596 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node597 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node598 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node599 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node6 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node60 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node61 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node62 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node63 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node64 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node65 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node66 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node67 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node68 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node69 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node7 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node70 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node71 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node72 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node73 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node74 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node75 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node76 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node77 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node78 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node79 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node8 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node80 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node81 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node82 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node83 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node84 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node85 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node86 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node87 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node88 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node89 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node9 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node90 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node91 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node92 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node93 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node94 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node95 { 
+ states = ( "state0" "state1" ); 
+}
+
+node node96 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node97 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node98 { 
+ states = ( "state0" "state1" "state2" ); 
+}
+
+node node99 { 
+ states = ( "state0" "state1" ); 
+}
+
+potential ( node0 | node8 ) { 
+ data = (( 0.9900016061 0.0099983939)
+( 0.9036530729 0.0963469271)
+( 0.0193709059 0.9806290941)); 
+}
+
+potential ( node1 | node106 node154 node373 node522 ) { 
+ data = ((((( 0.0890392937 0.9109607063)
+( 0.5990391240 0.4009608760)
+)
+(( 0.0784845046 0.9215154954)
+( 0.5057663798 0.4942336202)
+)
+(( 0.9474938284 0.0525061716)
+( 0.3992699160 0.6007300840)
+)
+)
+((( 0.0167115177 0.9832884823)
+( 0.1651479850 0.8348520150)
+)
+(( 0.2672865107 0.7327134893)
+( 0.3202020296 0.6797979704)
+)
+(( 0.3934783182 0.6065216818)
+( 0.6054095363 0.3945904637)
+)
+)
+)
+(((( 0.7702593846 0.2297406154)
+( 0.3399686670 0.6600313330)
+)
+(( 0.9900130978 0.0099869022)
+( 0.7307577269 0.2692422731)
+)
+(( 0.2937032176 0.7062967824)
+( 0.7090214000 0.2909786000)
+)
+)
+((( 0.1248733575 0.8751266425)
+( 0.8155008437 0.1844991563)
+)
+(( 0.8383419000 0.1616581000)
+( 0.5646456331 0.4353543669)
+)
+(( 0.6672452467 0.3327547533)
+( 0.4235933169 0.5764066831))))); 
+}
+
+potential ( node10 | node258 node335 node395 node87 ) { 
+ data = ((((( 0.3204472572 0.1316557647 0.5478969781)
+( 0.0347725173 0.5994134890 0.3658139938)
+( 0.7211127639 0.2112899594 0.0675972766)
+)
+(( 0.0182264234 0.2104514028 0.7713221738)
+( 0.7028412394 0.2745262554 0.0226325053)
+( 0.0703625844 0.8043643757 0.1252730400)
+)
+)
+((( 0.8443767865 0.0416117413 0.1140114722)
+( 0.9614795135 0.0125539112 0.0259665754)
+( 0.8481084791 0.0390458177 0.1128457032)
+)
+(( 0.0800958540 0.3676554184 0.5522487276)
+( 0.3428657331 0.0776778284 0.5794564384)
+( 0.0734304540 0.0149051258 0.9116644201)
+)
+)
+)
+(((( 0.6146044868 0.3754218474 0.0099736658)
+( 0.3040549954 0.6808350898 0.0151099148)
+( 0.1376344345 0.3634632655 0.4989023000)
+)
+(( 0.2987643110 0.5309170341 0.1703186549)
+( 0.3038796276 0.5719895543 0.1241308181)
+( 0.8314261083 0.0341803203 0.1343935713)
+)
+)
+((( 0.4185573800 0.4378416200 0.1436010000)
+( 0.0432356405 0.5639262808 0.3928380788)
+( 0.4469914445 0.0842235008 0.4687850547)
+)
+(( 0.3993920186 0.0099449966 0.5906629848)
+( 0.6637455617 0.2933889273 0.0428655110)
+( 0.3266290367 0.3951094660 0.2782614972))))); 
+}
+
+potential ( node100 ) { 
+ data = ( ); 
+}
+
+potential ( node101 ) { 
+ data = ( ); 
+}
+
+potential ( node102 ) { 
+ data = ( ); 
+}
+
+potential ( node103 ) { 
+ data = ( ); 
+}
+
+potential ( node104 ) { 
+ data = ( ); 
+}
+
+potential ( node105 ) { 
+ data = ( ); 
+}
+
+potential ( node106 ) { 
+ data = ( ); 
+}
+
+potential ( node107 ) { 
+ data = ( ); 
+}
+
+potential ( node108 ) { 
+ data = ( ); 
+}
+
+potential ( node109 ) { 
+ data = ( ); 
+}
+
+potential ( node11 | node17 node187 node259 node591 ) { 
+ data = ((((( 0.2207591734 0.7792408266)
+( 0.6320823590 0.3679176410)
+( 0.9900124300 0.0099875700)
+)
+(( 0.0935479965 0.9064520035)
+( 0.0839079725 0.9160920275)
+( 0.0099496297 0.9900503703)
+)
+(( 0.9900627725 0.0099372275)
+( 0.2744427218 0.7255572782)
+( 0.0688086466 0.9311913534)
+)
+)
+((( 0.0099527172 0.9900472828)
+( 0.9572141345 0.0427858655)
+( 0.4307177302 0.5692822698)
+)
+(( 0.5669818217 0.4330181783)
+( 0.4085062409 0.5914937591)
+( 0.8513564585 0.1486435415)
+)
+(( 0.6796811000 0.3203189000)
+( 0.5894454646 0.4105545354)
+( 0.1701190834 0.8298809166)
+)
+)
+((( 0.8372208000 0.1627792000)
+( 0.0728505536 0.9271494464)
+( 0.6568913303 0.3431086697)
+)
+(( 0.7733151068 0.2266848932)
+( 0.3921658000 0.6078342000)
+( 0.6946092653 0.3053907347)
+)
+(( 0.6198738124 0.3801261876)
+( 0.3179020409 0.6820979591)
+( 0.7734736219 0.2265263781)
+)
+)
+)
+(((( 0.4744239190 0.5255760810)
+( 0.0996730000 0.9003270000)
+( 0.3645626746 0.6354373254)
+)
+(( 0.2419108379 0.7580891621)
+( 0.3427037403 0.6572962597)
+( 0.0566291783 0.9433708217)
+)
+(( 0.1770150535 0.8229849465)
+( 0.0997108360 0.9002891640)
+( 0.7681166961 0.2318833039)
+)
+)
+((( 0.8945888687 0.1054111313)
+( 0.0747021685 0.9252978315)
+( 0.0329615945 0.9670384055)
+)
+(( 0.9093169636 0.0906830364)
+( 0.4128342765 0.5871657235)
+( 0.4679532600 0.5320467400)
+)
+(( 0.4571833817 0.5428166183)
+( 0.8418712000 0.1581288000)
+( 0.2890100713 0.7109899287)
+)
+)
+((( 0.4351504400 0.5648495600)
+( 0.1968146841 0.8031853159)
+( 0.9768308107 0.0231691893)
+)
+(( 0.6284239000 0.3715761000)
+( 0.4789143583 0.5210856417)
+( 0.0971767729 0.9028232271)
+)
+(( 0.1177691294 0.8822308706)
+( 0.5071818000 0.4928182000)
+( 0.3472219653 0.6527780347)
+)
+)
+)
+(((( 0.0776022092 0.9223977908)
+( 0.7234631362 0.2765368638)
+( 0.1194273384 0.8805726616)
+)
+(( 0.8538132658 0.1461867342)
+( 0.4914713500 0.5085286500)
+( 0.9149745888 0.0850254112)
+)
+(( 0.1264993738 0.8735006262)
+( 0.9142583634 0.0857416366)
+( 0.0479486000 0.9520514000)
+)
+)
+((( 0.1604323748 0.8395676252)
+( 0.9560547863 0.0439452137)
+( 0.3493415910 0.6506584090)
+)
+(( 0.8941309411 0.1058690589)
+( 0.6094075244 0.3905924756)
+( 0.2446463924 0.7553536076)
+)
+(( 0.9474057811 0.0525942189)
+( 0.3643674191 0.6356325809)
+( 0.1714778417 0.8285221583)
+)
+)
+((( 0.8342584233 0.1657415767)
+( 0.7289677219 0.2710322781)
+( 0.7923651538 0.2076348462)
+)
+(( 0.3711075874 0.6288924126)
+( 0.6748070798 0.3251929202)
+( 0.9862694980 0.0137305020)
+)
+(( 0.2817356600 0.7182643400)
+( 0.5371942000 0.4628058000)
+( 0.8128698837 0.1871301163))))); 
+}
+
+potential ( node110 ) { 
+ data = ( ); 
+}
+
+potential ( node111 ) { 
+ data = ( ); 
+}
+
+potential ( node112 ) { 
+ data = ( ); 
+}
+
+potential ( node113 ) { 
+ data = ( ); 
+}
+
+potential ( node114 ) { 
+ data = ( ); 
+}
+
+potential ( node115 ) { 
+ data = ( ); 
+}
+
+potential ( node116 ) { 
+ data = ( ); 
+}
+
+potential ( node117 ) { 
+ data = ( ); 
+}
+
+potential ( node118 ) { 
+ data = ( ); 
+}
+
+potential ( node119 ) { 
+ data = ( ); 
+}
+
+potential ( node12 | node279 node289 node351 node465 ) { 
+ data = ((((( 0.0976416722 0.4175803666 0.4847779612)
+( 0.6072599964 0.3047797382 0.0879602655)
+( 0.1025238854 0.2284182186 0.6690578960)
+)
+(( 0.6092578122 0.2898871058 0.1008550820)
+( 0.3296468934 0.1036953179 0.5666577887)
+( 0.3678935982 0.0877139046 0.5443924973)
+)
+)
+((( 0.4020518400 0.3605716800 0.2373764800)
+( 0.3765084174 0.4451016733 0.1783899093)
+( 0.7311385634 0.1907599605 0.0781014761)
+)
+(( 0.3516795547 0.6156527908 0.0326676545)
+( 0.6876084835 0.0707789123 0.2416126042)
+( 0.6134489368 0.2345485541 0.1520025091)
+)
+)
+((( 0.0146206059 0.1804864989 0.8048928952)
+( 0.7630551805 0.0428977917 0.1940470278)
+( 0.2372515847 0.2429743049 0.5197741104)
+)
+(( 0.3119801394 0.3321559500 0.3558639107)
+( 0.7183878400 0.2615697700 0.0200423900)
+( 0.1621981732 0.3905391478 0.4472626789)
+)
+)
+)
+(((( 0.2204539156 0.5518685890 0.2276774954)
+( 0.2992688418 0.0841010145 0.6166301437)
+( 0.2165223413 0.3824788447 0.4009988140)
+)
+(( 0.5857412293 0.2792458140 0.1350129568)
+( 0.4021586460 0.3665717163 0.2312696377)
+( 0.2500333975 0.1627537484 0.5872128541)
+)
+)
+((( 0.2764784838 0.2412365321 0.4822849841)
+( 0.8916745911 0.0203470598 0.0879783491)
+( 0.5594245720 0.1834968408 0.2570785871)
+)
+(( 0.0501589525 0.7116463356 0.2381947119)
+( 0.5567730967 0.4038596694 0.0393672339)
+( 0.4988301580 0.4281031397 0.0730667022)
+)
+)
+((( 0.2653512814 0.5535808612 0.1810678573)
+( 0.1456047051 0.7721691270 0.0822261679)
+( 0.6628236735 0.1954998422 0.1416764843)
+)
+(( 0.1341113106 0.7865766949 0.0793119944)
+( 0.2812941869 0.3791606627 0.3395451504)
+( 0.0401508260 0.5852705146 0.3745786594))))); 
+}
+
+potential ( node120 ) { 
+ data = ( ); 
+}
+
+potential ( node121 ) { 
+ data = ( ); 
+}
+
+potential ( node122 ) { 
+ data = ( ); 
+}
+
+potential ( node123 ) { 
+ data = ( ); 
+}
+
+potential ( node124 ) { 
+ data = ( ); 
+}
+
+potential ( node125 ) { 
+ data = ( ); 
+}
+
+potential ( node126 ) { 
+ data = ( ); 
+}
+
+potential ( node127 ) { 
+ data = ( ); 
+}
+
+potential ( node128 ) { 
+ data = ( ); 
+}
+
+potential ( node129 ) { 
+ data = ( ); 
+}
+
+potential ( node13 | node448 ) { 
+ data = (( 0.2134294893 0.7865705107)
+( 0.2443037373 0.7556962627)); 
+}
+
+potential ( node130 ) { 
+ data = ( ); 
+}
+
+potential ( node131 ) { 
+ data = ( ); 
+}
+
+potential ( node132 ) { 
+ data = ( ); 
+}
+
+potential ( node133 ) { 
+ data = ( ); 
+}
+
+potential ( node134 ) { 
+ data = ( ); 
+}
+
+potential ( node135 ) { 
+ data = ( ); 
+}
+
+potential ( node136 ) { 
+ data = ( ); 
+}
+
+potential ( node137 ) { 
+ data = ( ); 
+}
+
+potential ( node138 ) { 
+ data = ( ); 
+}
+
+potential ( node139 ) { 
+ data = ( ); 
+}
+
+potential ( node14 ) { 
+ data = (  0.4680602953 0.2220214878 0.3099182169); 
+}
+
+potential ( node140 ) { 
+ data = ( ); 
+}
+
+potential ( node141 ) { 
+ data = ( ); 
+}
+
+potential ( node142 ) { 
+ data = ( ); 
+}
+
+potential ( node143 ) { 
+ data = ( ); 
+}
+
+potential ( node144 ) { 
+ data = ( ); 
+}
+
+potential ( node145 ) { 
+ data = ( ); 
+}
+
+potential ( node146 ) { 
+ data = ( ); 
+}
+
+potential ( node147 ) { 
+ data = ( ); 
+}
+
+potential ( node148 ) { 
+ data = ( ); 
+}
+
+potential ( node149 ) { 
+ data = ( ); 
+}
+
+potential ( node15 | node168 node279 ) { 
+ data = ((( 0.3822187271 0.4535938528 0.1641874201)
+( 0.5381493492 0.2054664559 0.2563841949)
+)
+(( 0.2592498099 0.0169491626 0.7238010275)
+( 0.6131233845 0.1572825363 0.2295940792))); 
+}
+
+potential ( node150 ) { 
+ data = ( ); 
+}
+
+potential ( node151 ) { 
+ data = ( ); 
+}
+
+potential ( node152 ) { 
+ data = ( ); 
+}
+
+potential ( node153 ) { 
+ data = ( ); 
+}
+
+potential ( node154 ) { 
+ data = ( ); 
+}
+
+potential ( node155 ) { 
+ data = ( ); 
+}
+
+potential ( node156 ) { 
+ data = ( ); 
+}
+
+potential ( node157 ) { 
+ data = ( ); 
+}
+
+potential ( node158 ) { 
+ data = ( ); 
+}
+
+potential ( node159 ) { 
+ data = ( ); 
+}
+
+potential ( node16 | node224 node293 node485 node508 ) { 
+ data = ((((( 0.0819970584 0.9180029416)
+( 0.0123330686 0.9876669314)
+)
+(( 0.6210201773 0.3789798227)
+( 0.4339868174 0.5660131826)
+)
+)
+((( 0.1393767600 0.8606232400)
+( 0.3027630400 0.6972369600)
+)
+(( 0.5039637000 0.4960363000)
+( 0.9107925182 0.0892074818)
+)
+)
+)
+(((( 0.8456682600 0.1543317400)
+( 0.1763086218 0.8236913782)
+)
+(( 0.6809447000 0.3190553000)
+( 0.6287749148 0.3712250852)
+)
+)
+((( 0.8762691600 0.1237308400)
+( 0.7691680154 0.2308319846)
+)
+(( 0.1500647170 0.8499352830)
+( 0.4648821186 0.5351178814))))); 
+}
+
+potential ( node160 ) { 
+ data = ( ); 
+}
+
+potential ( node161 ) { 
+ data = ( ); 
+}
+
+potential ( node162 ) { 
+ data = ( ); 
+}
+
+potential ( node163 ) { 
+ data = ( ); 
+}
+
+potential ( node164 ) { 
+ data = ( ); 
+}
+
+potential ( node165 ) { 
+ data = ( ); 
+}
+
+potential ( node166 ) { 
+ data = ( ); 
+}
+
+potential ( node167 ) { 
+ data = ( ); 
+}
+
+potential ( node168 ) { 
+ data = ( ); 
+}
+
+potential ( node169 ) { 
+ data = ( ); 
+}
+
+potential ( node17 | node385 node520 ) { 
+ data = ((( 0.2301167585 0.2043645698 0.5655186717)
+( 0.1508975194 0.5056189646 0.3434835160)
+)
+(( 0.1031909931 0.5976822579 0.2991267490)
+( 0.2777512372 0.2737661973 0.4484825655))); 
+}
+
+potential ( node170 ) { 
+ data = ( ); 
+}
+
+potential ( node171 ) { 
+ data = ( ); 
+}
+
+potential ( node172 ) { 
+ data = ( ); 
+}
+
+potential ( node173 ) { 
+ data = ( ); 
+}
+
+potential ( node174 ) { 
+ data = ( ); 
+}
+
+potential ( node175 ) { 
+ data = ( ); 
+}
+
+potential ( node176 ) { 
+ data = ( ); 
+}
+
+potential ( node177 ) { 
+ data = ( ); 
+}
+
+potential ( node178 ) { 
+ data = ( ); 
+}
+
+potential ( node179 ) { 
+ data = ( ); 
+}
+
+potential ( node18 | node367 ) { 
+ data = (( 0.1837134255 0.7206469216 0.0956396529)
+( 0.8650817035 0.0995817264 0.0353365701)); 
+}
+
+potential ( node180 ) { 
+ data = ( ); 
+}
+
+potential ( node181 ) { 
+ data = ( ); 
+}
+
+potential ( node182 ) { 
+ data = ( ); 
+}
+
+potential ( node183 ) { 
+ data = ( ); 
+}
+
+potential ( node184 ) { 
+ data = ( ); 
+}
+
+potential ( node185 ) { 
+ data = ( ); 
+}
+
+potential ( node186 ) { 
+ data = ( ); 
+}
+
+potential ( node187 ) { 
+ data = ( ); 
+}
+
+potential ( node188 ) { 
+ data = ( ); 
+}
+
+potential ( node189 ) { 
+ data = ( ); 
+}
+
+potential ( node19 | node179 node194 node397 node418 node588 ) { 
+ data = (((((( 0.7407832778 0.2592167222)
+( 0.4352737226 0.5647262774)
+( 0.7365103400 0.2634896600)
+)
+(( 0.7471950299 0.2528049701)
+( 0.0601539263 0.9398460737)
+( 0.9900050514 0.0099949486)
+)
+)
+((( 0.9184153470 0.0815846530)
+( 0.3737210976 0.6262789024)
+( 0.1979945541 0.8020054459)
+)
+(( 0.4309355828 0.5690644172)
+( 0.3780151849 0.6219848151)
+( 0.8307491166 0.1692508834)
+)
+)
+((( 0.1294648252 0.8705351748)
+( 0.4889080500 0.5110919500)
+( 0.1229059263 0.8770940737)
+)
+(( 0.8643555259 0.1356444741)
+( 0.2607572700 0.7392427300)
+( 0.7549329174 0.2450670826)
+)
+)
+)
+(((( 0.8921587268 0.1078412732)
+( 0.7102703000 0.2897297000)
+( 0.0518551595 0.9481448405)
+)
+(( 0.6504613480 0.3495386520)
+( 0.9315727633 0.0684272367)
+( 0.9150850908 0.0849149092)
+)
+)
+((( 0.1953147439 0.8046852561)
+( 0.7420088297 0.2579911703)
+( 0.5013156249 0.4986843751)
+)
+(( 0.9376066534 0.0623933466)
+( 0.9814913491 0.0185086509)
+( 0.2802373856 0.7197626144)
+)
+)
+((( 0.4176169833 0.5823830167)
+( 0.4734021842 0.5265978158)
+( 0.3195848704 0.6804151296)
+)
+(( 0.7192894425 0.2807105575)
+( 0.9740662688 0.0259337312)
+( 0.0545309775 0.9454690225)
+)
+)
+)
+)
+((((( 0.6460331700 0.3539668300)
+( 0.3502152000 0.6497848000)
+( 0.8182728509 0.1817271491)
+)
+(( 0.5973490799 0.4026509201)
+( 0.1235944526 0.8764055474)
+( 0.6390669000 0.3609331000)
+)
+)
+((( 0.2877166427 0.7122833573)
+( 0.2742684855 0.7257315145)
+( 0.9745027186 0.0254972814)
+)
+(( 0.5552953889 0.4447046111)
+( 0.8810963912 0.1189036088)
+( 0.2594477148 0.7405522852)
+)
+)
+((( 0.1698771083 0.8301228917)
+( 0.7133877428 0.2866122572)
+( 0.5451994500 0.4548005500)
+)
+(( 0.4895453245 0.5104546755)
+( 0.5189173741 0.4810826259)
+( 0.0574426604 0.9425573396)
+)
+)
+)
+(((( 0.5528987779 0.4471012221)
+( 0.2675181707 0.7324818293)
+( 0.3760950974 0.6239049026)
+)
+(( 0.8171349673 0.1828650327)
+( 0.6930031446 0.3069968554)
+( 0.0705824630 0.9294175370)
+)
+)
+((( 0.4184048000 0.5815952000)
+( 0.8115409649 0.1884590351)
+( 0.8016807560 0.1983192440)
+)
+(( 0.8478527785 0.1521472215)
+( 0.6297765252 0.3702234748)
+( 0.9039453090 0.0960546910)
+)
+)
+((( 0.2961339000 0.7038661000)
+( 0.2626500779 0.7373499221)
+( 0.0475157500 0.9524842500)
+)
+(( 0.0803163006 0.9196836994)
+( 0.6674748000 0.3325252000)
+( 0.8397536336 0.1602463664)))))); 
+}
+
+potential ( node190 ) { 
+ data = ( ); 
+}
+
+potential ( node191 ) { 
+ data = ( ); 
+}
+
+potential ( node192 ) { 
+ data = ( ); 
+}
+
+potential ( node193 ) { 
+ data = ( ); 
+}
+
+potential ( node194 ) { 
+ data = ( ); 
+}
+
+potential ( node195 ) { 
+ data = ( ); 
+}
+
+potential ( node196 ) { 
+ data = ( ); 
+}
+
+potential ( node197 ) { 
+ data = ( ); 
+}
+
+potential ( node198 ) { 
+ data = ( ); 
+}
+
+potential ( node199 ) { 
+ data = ( ); 
+}
+
+potential ( node2 | node160 node199 node418 node446 ) { 
+ data = ((((( 0.1778217189 0.8221782811)
+( 0.1615122852 0.8384877148)
+( 0.3532888194 0.6467111806)
+)
+(( 0.3092691507 0.6907308493)
+( 0.7859292364 0.2140707636)
+( 0.7981175239 0.2018824761)
+)
+)
+((( 0.6905684293 0.3094315707)
+( 0.2927290859 0.7072709141)
+( 0.5020700700 0.4979299300)
+)
+(( 0.8349500550 0.1650499450)
+( 0.1140483246 0.8859516754)
+( 0.7475874776 0.2524125224)
+)
+)
+((( 0.1099979822 0.8900020178)
+( 0.0345472415 0.9654527585)
+( 0.5219611896 0.4780388104)
+)
+(( 0.9107191545 0.0892808455)
+( 0.2850828857 0.7149171143)
+( 0.7624619905 0.2375380095)
+)
+)
+)
+(((( 0.3602512000 0.6397488000)
+( 0.8290229400 0.1709770600)
+( 0.1014924645 0.8985075355)
+)
+(( 0.0738401952 0.9261598048)
+( 0.3772605813 0.6227394187)
+( 0.9435471191 0.0564528809)
+)
+)
+((( 0.0978783639 0.9021216361)
+( 0.9674357348 0.0325642652)
+( 0.8343217734 0.1656782266)
+)
+(( 0.9900941973 0.0099058027)
+( 0.9381342688 0.0618657312)
+( 0.7631080466 0.2368919534)
+)
+)
+((( 0.9789420010 0.0210579990)
+( 0.9291888721 0.0708111279)
+( 0.5166987742 0.4833012258)
+)
+(( 0.9493515190 0.0506484810)
+( 0.9148020222 0.0851979778)
+( 0.9666171816 0.0333828184)
+)
+)
+)
+(((( 0.7188200616 0.2811799384)
+( 0.3813143629 0.6186856371)
+( 0.9166313183 0.0833686817)
+)
+(( 0.3140639906 0.6859360094)
+( 0.3336345733 0.6663654267)
+( 0.2906324709 0.7093675291)
+)
+)
+((( 0.9555258478 0.0444741522)
+( 0.2807708400 0.7192291600)
+( 0.7090431142 0.2909568858)
+)
+(( 0.0485172152 0.9514827848)
+( 0.3863838116 0.6136161884)
+( 0.4961027101 0.5038972899)
+)
+)
+((( 0.1456959744 0.8543040256)
+( 0.1229033763 0.8770966237)
+( 0.5314817213 0.4685182787)
+)
+(( 0.8051865403 0.1948134597)
+( 0.1503060830 0.8496939170)
+( 0.0575715416 0.9424284584))))); 
+}
+
+potential ( node20 | node29 node338 ) { 
+ data = ((( 0.3711133889 0.4598616862 0.1690249249)
+( 0.1583755216 0.3810155438 0.4606089346)
+)
+(( 0.3295340401 0.1922347742 0.4782311857)
+( 0.3860900037 0.0099270921 0.6039829042)
+)
+(( 0.0591654106 0.3456162835 0.5952183060)
+( 0.4887986102 0.3341921933 0.1770091965))); 
+}
+
+potential ( node200 ) { 
+ data = ( ); 
+}
+
+potential ( node201 ) { 
+ data = ( ); 
+}
+
+potential ( node202 ) { 
+ data = ( ); 
+}
+
+potential ( node203 ) { 
+ data = ( ); 
+}
+
+potential ( node204 ) { 
+ data = ( ); 
+}
+
+potential ( node205 ) { 
+ data = ( ); 
+}
+
+potential ( node206 ) { 
+ data = ( ); 
+}
+
+potential ( node207 ) { 
+ data = ( ); 
+}
+
+potential ( node208 ) { 
+ data = ( ); 
+}
+
+potential ( node209 ) { 
+ data = ( ); 
+}
+
+potential ( node21 | node29 node390 node465 node80 ) { 
+ data = ((((( 0.1139119300 0.3886232700 0.4974648000)
+( 0.1492988351 0.5571278443 0.2935733206)
+)
+(( 0.1738554148 0.4532309364 0.3729136488)
+( 0.2247745078 0.6682161633 0.1070093289)
+)
+(( 0.0392228852 0.3000082415 0.6607688733)
+( 0.1128587922 0.3718242207 0.5153169871)
+)
+)
+((( 0.4082204465 0.0155035442 0.5762760092)
+( 0.2703742781 0.3578095807 0.3718161412)
+)
+(( 0.3665106927 0.4370036613 0.1964856461)
+( 0.0173371710 0.5646004994 0.4180623296)
+)
+(( 0.0180570018 0.9720192759 0.0099237224)
+( 0.0279941292 0.7022696789 0.2697361919)
+)
+)
+((( 0.2848352103 0.0299877651 0.6851770247)
+( 0.0289606672 0.3887588891 0.5822804437)
+)
+(( 0.0759017623 0.7188059916 0.2052922462)
+( 0.5211206127 0.2152726563 0.2636067310)
+)
+(( 0.5623140469 0.2830352885 0.1546506646)
+( 0.0886677994 0.8579545540 0.0533776466)
+)
+)
+)
+(((( 0.6247292125 0.2240927045 0.1511780830)
+( 0.2068517459 0.6006910880 0.1924571662)
+)
+(( 0.0446264330 0.9448615991 0.0105119680)
+( 0.7183700899 0.0356089135 0.2460209966)
+)
+(( 0.2807820728 0.1290708213 0.5901471059)
+( 0.2392040720 0.5655490283 0.1952468998)
+)
+)
+((( 0.5148367297 0.0099372554 0.4752260149)
+( 0.3151984895 0.3324214600 0.3523800506)
+)
+(( 0.1195362464 0.6102227417 0.2702410119)
+( 0.5486501890 0.1267531475 0.3245966635)
+)
+(( 0.5299676674 0.0181972049 0.4518351277)
+( 0.4417129535 0.3596464184 0.1986406281)
+)
+)
+((( 0.6005196318 0.0512287446 0.3482516236)
+( 0.0655418613 0.7348686147 0.1995895240)
+)
+(( 0.0208565914 0.0720382414 0.9071051672)
+( 0.0163464148 0.7547568347 0.2288967505)
+)
+(( 0.4107595236 0.0809246968 0.5083157797)
+( 0.6695220799 0.2078633238 0.1226145963)
+)
+)
+)
+(((( 0.3565388400 0.5991379264 0.0443232335)
+( 0.0878997270 0.7212620977 0.1908381753)
+)
+(( 0.6689193067 0.2031955320 0.1278851613)
+( 0.6666645633 0.2562133259 0.0771221108)
+)
+(( 0.4897810534 0.5002588335 0.0099601131)
+( 0.0608708837 0.4355360861 0.5035930302)
+)
+)
+((( 0.1471345876 0.1073568743 0.7455085381)
+( 0.1177244059 0.7235751116 0.1587004825)
+)
+(( 0.4047631179 0.2477008926 0.3475359896)
+( 0.0802265908 0.2644242626 0.6553491466)
+)
+(( 0.8354054251 0.0378810411 0.1267135338)
+( 0.1539718500 0.5452933300 0.3007348200)
+)
+)
+((( 0.4184849705 0.0688975467 0.5126174828)
+( 0.5400370808 0.4499828433 0.0099800760)
+)
+(( 0.2885275673 0.2928042876 0.4186681451)
+( 0.1928414300 0.6464038000 0.1607547700)
+)
+(( 0.2723856567 0.0386451515 0.6889691917)
+( 0.1746959395 0.6803091992 0.1449948613))))); 
+}
+
+potential ( node210 ) { 
+ data = ( ); 
+}
+
+potential ( node211 ) { 
+ data = ( ); 
+}
+
+potential ( node212 ) { 
+ data = ( ); 
+}
+
+potential ( node213 ) { 
+ data = ( ); 
+}
+
+potential ( node214 ) { 
+ data = ( ); 
+}
+
+potential ( node215 ) { 
+ data = ( ); 
+}
+
+potential ( node216 ) { 
+ data = ( ); 
+}
+
+potential ( node217 ) { 
+ data = ( ); 
+}
+
+potential ( node218 ) { 
+ data = ( ); 
+}
+
+potential ( node219 ) { 
+ data = ( ); 
+}
+
+potential ( node22 | node208 node241 node463 ) { 
+ data = (((( 0.1544912000 0.6486137000 0.1968951000)
+( 0.3039727176 0.6511718978 0.0448553846)
+( 0.2631613653 0.0768703615 0.6599682732)
+)
+(( 0.3340826767 0.4868122543 0.1791050690)
+( 0.9120188017 0.0403772353 0.0476039630)
+( 0.7106063071 0.0388022604 0.2505914325)
+)
+)
+((( 0.3619212961 0.6280787869 0.0099999170)
+( 0.0664176580 0.2360680029 0.6975143391)
+( 0.4307994083 0.5592133172 0.0099872745)
+)
+(( 0.2719778719 0.6718549047 0.0561672234)
+( 0.4628342422 0.2293163062 0.3078494515)
+( 0.1338169127 0.2272012745 0.6389818128)))); 
+}
+
+potential ( node220 ) { 
+ data = ( ); 
+}
+
+potential ( node221 ) { 
+ data = ( ); 
+}
+
+potential ( node222 ) { 
+ data = ( ); 
+}
+
+potential ( node223 ) { 
+ data = ( ); 
+}
+
+potential ( node224 ) { 
+ data = ( ); 
+}
+
+potential ( node225 ) { 
+ data = ( ); 
+}
+
+potential ( node226 ) { 
+ data = ( ); 
+}
+
+potential ( node227 ) { 
+ data = ( ); 
+}
+
+potential ( node228 ) { 
+ data = ( ); 
+}
+
+potential ( node229 ) { 
+ data = ( ); 
+}
+
+potential ( node23 | node284 node428 node522 node546 node554 ) { 
+ data = (((((( 0.4750222157 0.5249777843)
+( 0.1442138658 0.8557861342)
+( 0.8086955419 0.1913044581)
+)
+(( 0.2727181518 0.7272818482)
+( 0.9234513591 0.0765486409)
+( 0.1288471174 0.8711528826)
+)
+)
+((( 0.4425703167 0.5574296833)
+( 0.5883166000 0.4116834000)
+( 0.9118958047 0.0881041953)
+)
+(( 0.5019101100 0.4980898900)
+( 0.8280626834 0.1719373166)
+( 0.7327658500 0.2672341500)
+)
+)
+)
+(((( 0.1834696663 0.8165303337)
+( 0.8209837700 0.1790162300)
+( 0.9191716208 0.0808283792)
+)
+(( 0.2622394379 0.7377605621)
+( 0.5514618559 0.4485381441)
+( 0.1497410670 0.8502589330)
+)
+)
+((( 0.0750535092 0.9249464908)
+( 0.2504123625 0.7495876375)
+( 0.2226508922 0.7773491078)
+)
+(( 0.9327865813 0.0672134187)
+( 0.1735398835 0.8264601165)
+( 0.6482041130 0.3517958870)
+)
+)
+)
+(((( 0.7979940601 0.2020059399)
+( 0.2810804641 0.7189195359)
+( 0.4675806532 0.5324193468)
+)
+(( 0.8166187318 0.1833812682)
+( 0.6562695500 0.3437304500)
+( 0.8615374686 0.1384625314)
+)
+)
+((( 0.1758171918 0.8241828082)
+( 0.3204346504 0.6795653496)
+( 0.5160482345 0.4839517655)
+)
+(( 0.6445377871 0.3554622129)
+( 0.2984641140 0.7015358860)
+( 0.3617448000 0.6382552000)
+)
+)
+)
+)
+((((( 0.9832306451 0.0167693549)
+( 0.3489480000 0.6510520000)
+( 0.1625713084 0.8374286916)
+)
+(( 0.8876508322 0.1123491678)
+( 0.7253562637 0.2746437363)
+( 0.3909065935 0.6090934065)
+)
+)
+((( 0.5826443167 0.4173556833)
+( 0.9648903175 0.0351096825)
+( 0.2298252231 0.7701747769)
+)
+(( 0.1346519427 0.8653480573)
+( 0.3945591158 0.6054408842)
+( 0.2381993500 0.7618006500)
+)
+)
+)
+(((( 0.2688425366 0.7311574634)
+( 0.7272686782 0.2727313218)
+( 0.9363359707 0.0636640293)
+)
+(( 0.8059928561 0.1940071439)
+( 0.8680507000 0.1319493000)
+( 0.3566411257 0.6433588743)
+)
+)
+((( 0.4758101210 0.5241898790)
+( 0.3434039000 0.6565961000)
+( 0.4078819882 0.5921180118)
+)
+(( 0.5781869769 0.4218130231)
+( 0.7702314462 0.2297685538)
+( 0.5699394171 0.4300605829)
+)
+)
+)
+(((( 0.5962044421 0.4037955579)
+( 0.2677208854 0.7322791146)
+( 0.6391388000 0.3608612000)
+)
+(( 0.9314461674 0.0685538326)
+( 0.3058732347 0.6941267653)
+( 0.8523823256 0.1476176744)
+)
+)
+((( 0.0420769098 0.9579230902)
+( 0.3440105738 0.6559894262)
+( 0.2316703000 0.7683297000)
+)
+(( 0.1824959009 0.8175040991)
+( 0.6865381875 0.3134618125)
+( 0.5796974174 0.4203025826)))))); 
+}
+
+potential ( node230 ) { 
+ data = ( ); 
+}
+
+potential ( node231 ) { 
+ data = ( ); 
+}
+
+potential ( node232 ) { 
+ data = ( ); 
+}
+
+potential ( node233 ) { 
+ data = ( ); 
+}
+
+potential ( node234 ) { 
+ data = ( ); 
+}
+
+potential ( node235 ) { 
+ data = ( ); 
+}
+
+potential ( node236 ) { 
+ data = ( ); 
+}
+
+potential ( node237 ) { 
+ data = ( ); 
+}
+
+potential ( node238 ) { 
+ data = ( ); 
+}
+
+potential ( node239 ) { 
+ data = ( ); 
+}
+
+potential ( node24 | node141 node174 node477 ) { 
+ data = (((( 0.6583935198 0.2924286788 0.0491778015)
+( 0.3136645520 0.3202875224 0.3660479256)
+)
+(( 0.5866704835 0.2477407099 0.1655888066)
+( 0.1571265972 0.0591598667 0.7837135361)
+)
+)
+((( 0.0337998984 0.9455039613 0.0206961402)
+( 0.1033263379 0.3866399723 0.5100336898)
+)
+(( 0.0104967712 0.5454429607 0.4440602680)
+( 0.6939808069 0.0664939607 0.2395252324)
+)
+)
+((( 0.0577174520 0.0148620165 0.9274205315)
+( 0.3063277969 0.3424042766 0.3512679265)
+)
+(( 0.0099666566 0.5333375791 0.4566957643)
+( 0.0099544477 0.1458301993 0.8442153530)))); 
+}
+
+potential ( node240 ) { 
+ data = ( ); 
+}
+
+potential ( node241 ) { 
+ data = ( ); 
+}
+
+potential ( node242 ) { 
+ data = ( ); 
+}
+
+potential ( node243 ) { 
+ data = ( ); 
+}
+
+potential ( node244 ) { 
+ data = ( ); 
+}
+
+potential ( node245 ) { 
+ data = ( ); 
+}
+
+potential ( node246 ) { 
+ data = ( ); 
+}
+
+potential ( node247 ) { 
+ data = ( ); 
+}
+
+potential ( node248 ) { 
+ data = ( ); 
+}
+
+potential ( node249 ) { 
+ data = ( ); 
+}
+
+potential ( node25 | node181 node360 node389 node407 node431 ) { 
+ data = (((((( 0.3667844183 0.6332155817)
+( 0.7544646226 0.2455353774)
+( 0.1767822000 0.8232178000)
+)
+(( 0.8670192400 0.1329807600)
+( 0.2064910397 0.7935089603)
+( 0.3738564188 0.6261435812)
+)
+(( 0.6464587129 0.3535412871)
+( 0.1656941501 0.8343058499)
+( 0.1499693170 0.8500306830)
+)
+)
+((( 0.4631269815 0.5368730185)
+( 0.0423682587 0.9576317413)
+( 0.8890054533 0.1109945467)
+)
+(( 0.2417589697 0.7582410303)
+( 0.6400060448 0.3599939552)
+( 0.4254257000 0.5745743000)
+)
+(( 0.3180359873 0.6819640127)
+( 0.9839410547 0.0160589453)
+( 0.8093359595 0.1906640405)
+)
+)
+((( 0.0449018596 0.9550981404)
+( 0.5101388700 0.4898611300)
+( 0.9579184987 0.0420815013)
+)
+(( 0.9647997058 0.0352002942)
+( 0.0669251060 0.9330748940)
+( 0.0354558617 0.9645441383)
+)
+(( 0.0732121537 0.9267878463)
+( 0.3289275997 0.6710724003)
+( 0.5613876432 0.4386123568)
+)
+)
+)
+(((( 0.2056804300 0.7943195700)
+( 0.2447103773 0.7552896227)
+( 0.8306579249 0.1693420751)
+)
+(( 0.2695893600 0.7304106400)
+( 0.6977308819 0.3022691181)
+( 0.5115853244 0.4884146756)
+)
+(( 0.4345432113 0.5654567887)
+( 0.4967563101 0.5032436899)
+( 0.2772817600 0.7227182400)
+)
+)
+((( 0.4138159883 0.5861840117)
+( 0.6143771000 0.3856229000)
+( 0.4463920932 0.5536079068)
+)
+(( 0.9514147285 0.0485852715)
+( 0.4938081500 0.5061918500)
+( 0.7032278141 0.2967721859)
+)
+(( 0.5063574452 0.4936425548)
+( 0.0848251966 0.9151748034)
+( 0.2057103603 0.7942896397)
+)
+)
+((( 0.2921598600 0.7078401400)
+( 0.5888390118 0.4111609882)
+( 0.5930019000 0.4069981000)
+)
+(( 0.6587530598 0.3412469402)
+( 0.0611340588 0.9388659412)
+( 0.0911643182 0.9088356818)
+)
+(( 0.8165983245 0.1834016755)
+( 0.3671464490 0.6328535510)
+( 0.5359102000 0.4640898000)
+)
+)
+)
+)
+((((( 0.4874157000 0.5125843000)
+( 0.7785132266 0.2214867734)
+( 0.9266893444 0.0733106556)
+)
+(( 0.0941960091 0.9058039909)
+( 0.1583470337 0.8416529663)
+( 0.1750399835 0.8249600165)
+)
+(( 0.1032944372 0.8967055628)
+( 0.8939652821 0.1060347179)
+( 0.2097609363 0.7902390637)
+)
+)
+((( 0.8384490252 0.1615509748)
+( 0.4726614400 0.5273385600)
+( 0.8164922682 0.1835077318)
+)
+(( 0.1562990831 0.8437009169)
+( 0.9634646648 0.0365353352)
+( 0.5457914109 0.4542085891)
+)
+(( 0.3345345099 0.6654654901)
+( 0.0243250781 0.9756749219)
+( 0.3206590000 0.6793410000)
+)
+)
+((( 0.5562510889 0.4437489111)
+( 0.7408642407 0.2591357593)
+( 0.9232078277 0.0767921723)
+)
+(( 0.6358459191 0.3641540809)
+( 0.8915088223 0.1084911777)
+( 0.5983587000 0.4016413000)
+)
+(( 0.3957106879 0.6042893121)
+( 0.7740179690 0.2259820310)
+( 0.3188156136 0.6811843864)
+)
+)
+)
+(((( 0.0510534287 0.9489465713)
+( 0.9129182974 0.0870817026)
+( 0.5874874000 0.4125126000)
+)
+(( 0.6236121887 0.3763878113)
+( 0.8356011500 0.1643988500)
+( 0.3137816000 0.6862184000)
+)
+(( 0.4771067895 0.5228932105)
+( 0.1668762917 0.8331237083)
+( 0.7203415888 0.2796584112)
+)
+)
+((( 0.8017238400 0.1982761600)
+( 0.1162881823 0.8837118177)
+( 0.9543211876 0.0456788124)
+)
+(( 0.2038834541 0.7961165459)
+( 0.0607500644 0.9392499356)
+( 0.9361777813 0.0638222187)
+)
+(( 0.7225636578 0.2774363422)
+( 0.3142922863 0.6857077137)
+( 0.7791334078 0.2208665922)
+)
+)
+((( 0.9651139525 0.0348860475)
+( 0.3719859812 0.6280140188)
+( 0.4595753276 0.5404246724)
+)
+(( 0.0205160380 0.9794839620)
+( 0.1074519089 0.8925480911)
+( 0.9213188724 0.0786811276)
+)
+(( 0.1854341926 0.8145658074)
+( 0.8724111000 0.1275889000)
+( 0.7468674403 0.2531325597)))))); 
+}
+
+potential ( node250 ) { 
+ data = ( ); 
+}
+
+potential ( node251 ) { 
+ data = ( ); 
+}
+
+potential ( node252 ) { 
+ data = ( ); 
+}
+
+potential ( node253 ) { 
+ data = ( ); 
+}
+
+potential ( node254 ) { 
+ data = ( ); 
+}
+
+potential ( node255 ) { 
+ data = ( ); 
+}
+
+potential ( node256 ) { 
+ data = ( ); 
+}
+
+potential ( node257 ) { 
+ data = ( ); 
+}
+
+potential ( node258 ) { 
+ data = ( ); 
+}
+
+potential ( node259 ) { 
+ data = ( ); 
+}
+
+potential ( node26 | node160 node357 ) { 
+ data = ((( 0.4675846327 0.5324153673)
+( 0.3030651982 0.6969348018)
+)
+(( 0.2681750512 0.7318249488)
+( 0.0520281398 0.9479718602)
+)
+(( 0.6863220506 0.3136779494)
+( 0.6770942000 0.3229058000))); 
+}
+
+potential ( node260 ) { 
+ data = ( ); 
+}
+
+potential ( node261 ) { 
+ data = ( ); 
+}
+
+potential ( node262 ) { 
+ data = ( ); 
+}
+
+potential ( node263 ) { 
+ data = ( ); 
+}
+
+potential ( node264 ) { 
+ data = ( ); 
+}
+
+potential ( node265 ) { 
+ data = ( ); 
+}
+
+potential ( node266 ) { 
+ data = ( ); 
+}
+
+potential ( node267 ) { 
+ data = ( ); 
+}
+
+potential ( node268 ) { 
+ data = ( ); 
+}
+
+potential ( node269 ) { 
+ data = ( ); 
+}
+
+potential ( node27 ) { 
+ data = (  0.3105857586 0.4567324774 0.2326817640); 
+}
+
+potential ( node270 ) { 
+ data = ( ); 
+}
+
+potential ( node271 ) { 
+ data = ( ); 
+}
+
+potential ( node272 ) { 
+ data = ( ); 
+}
+
+potential ( node273 ) { 
+ data = ( ); 
+}
+
+potential ( node274 ) { 
+ data = ( ); 
+}
+
+potential ( node275 ) { 
+ data = ( ); 
+}
+
+potential ( node276 ) { 
+ data = ( ); 
+}
+
+potential ( node277 ) { 
+ data = ( ); 
+}
+
+potential ( node278 ) { 
+ data = ( ); 
+}
+
+potential ( node279 ) { 
+ data = ( ); 
+}
+
+potential ( node28 | node169 ) { 
+ data = (( 0.9896102960 0.0103897040)
+( 0.6757467797 0.3242532203)
+( 0.1755497747 0.8244502253)); 
+}
+
+potential ( node280 ) { 
+ data = ( ); 
+}
+
+potential ( node281 ) { 
+ data = ( ); 
+}
+
+potential ( node282 ) { 
+ data = ( ); 
+}
+
+potential ( node283 ) { 
+ data = ( ); 
+}
+
+potential ( node284 ) { 
+ data = ( ); 
+}
+
+potential ( node285 ) { 
+ data = ( ); 
+}
+
+potential ( node286 ) { 
+ data = ( ); 
+}
+
+potential ( node287 ) { 
+ data = ( ); 
+}
+
+potential ( node288 ) { 
+ data = ( ); 
+}
+
+potential ( node289 ) { 
+ data = ( ); 
+}
+
+potential ( node29 | node139 ) { 
+ data = (( 0.2818307215 0.3598778392 0.3582914393)
+( 0.8292414584 0.0099763100 0.1607822317)); 
+}
+
+potential ( node290 ) { 
+ data = ( ); 
+}
+
+potential ( node291 ) { 
+ data = ( ); 
+}
+
+potential ( node292 ) { 
+ data = ( ); 
+}
+
+potential ( node293 ) { 
+ data = ( ); 
+}
+
+potential ( node294 ) { 
+ data = ( ); 
+}
+
+potential ( node295 ) { 
+ data = ( ); 
+}
+
+potential ( node296 ) { 
+ data = ( ); 
+}
+
+potential ( node297 ) { 
+ data = ( ); 
+}
+
+potential ( node298 ) { 
+ data = ( ); 
+}
+
+potential ( node299 ) { 
+ data = ( ); 
+}
+
+potential ( node3 | node101 node226 node54 node544 ) { 
+ data = ((((( 0.7413445555 0.2586554445)
+( 0.3291078665 0.6708921335)
+)
+(( 0.1021950910 0.8978049090)
+( 0.3190353000 0.6809647000)
+)
+)
+((( 0.9888308808 0.0111691192)
+( 0.5440989218 0.4559010782)
+)
+(( 0.5396272500 0.4603727500)
+( 0.0099958048 0.9900041952)
+)
+)
+)
+(((( 0.1486765659 0.8513234341)
+( 0.3471146326 0.6528853674)
+)
+(( 0.9705869687 0.0294130313)
+( 0.1773876747 0.8226123253)
+)
+)
+((( 0.0798648232 0.9201351768)
+( 0.2943698859 0.7056301141)
+)
+(( 0.3112648311 0.6887351689)
+( 0.8696976735 0.1303023265))))); 
+}
+
+potential ( node30 | node288 node489 node594 ) { 
+ data = (((( 0.4769711162 0.4726583861 0.0503704977)
+( 0.4372187513 0.4273225915 0.1354586573)
+( 0.3455919035 0.0655277907 0.5888803059)
+)
+(( 0.0969746771 0.8931182887 0.0099070342)
+( 0.3020923309 0.2625622121 0.4353454569)
+( 0.1609660897 0.2442380747 0.5947958357)
+)
+(( 0.4399536932 0.4349844930 0.1250618138)
+( 0.0779894300 0.7443481700 0.1776624000)
+( 0.2195566144 0.5043469801 0.2760964055)
+)
+)
+((( 0.6167362393 0.3623711554 0.0208926053)
+( 0.0240823317 0.0774192159 0.8984984524)
+( 0.0124153800 0.3274997800 0.6600848400)
+)
+(( 0.3059565639 0.1295529474 0.5644904887)
+( 0.2742225665 0.5543049333 0.1714725003)
+( 0.1238470144 0.3156472384 0.5605057472)
+)
+(( 0.8865841467 0.1014442285 0.0119716248)
+( 0.1767705053 0.2121121764 0.6111173183)
+( 0.0661086454 0.4427494690 0.4911418856)
+)
+)
+((( 0.0618700138 0.1108570660 0.8272729202)
+( 0.0668823984 0.1092024872 0.8239151144)
+( 0.4667731800 0.3741640000 0.1590628200)
+)
+(( 0.1524686776 0.2145799907 0.6329513316)
+( 0.2881446714 0.4104716077 0.3013837210)
+( 0.0238516572 0.1198103360 0.8563380069)
+)
+(( 0.7870253064 0.0800226776 0.1329520160)
+( 0.0836595225 0.6923567208 0.2239837567)
+( 0.3141781874 0.3843811646 0.3014406479)))); 
+}
+
+potential ( node300 ) { 
+ data = ( ); 
+}
+
+potential ( node301 ) { 
+ data = ( ); 
+}
+
+potential ( node302 ) { 
+ data = ( ); 
+}
+
+potential ( node303 ) { 
+ data = ( ); 
+}
+
+potential ( node304 ) { 
+ data = ( ); 
+}
+
+potential ( node305 ) { 
+ data = ( ); 
+}
+
+potential ( node306 ) { 
+ data = ( ); 
+}
+
+potential ( node307 ) { 
+ data = ( ); 
+}
+
+potential ( node308 ) { 
+ data = ( ); 
+}
+
+potential ( node309 ) { 
+ data = ( ); 
+}
+
+potential ( node31 | node344 ) { 
+ data = (( 0.9117837000 0.0882163000)
+( 0.7078225000 0.2921775000)); 
+}
+
+potential ( node310 ) { 
+ data = ( ); 
+}
+
+potential ( node311 ) { 
+ data = ( ); 
+}
+
+potential ( node312 ) { 
+ data = ( ); 
+}
+
+potential ( node313 ) { 
+ data = ( ); 
+}
+
+potential ( node314 ) { 
+ data = ( ); 
+}
+
+potential ( node315 ) { 
+ data = ( ); 
+}
+
+potential ( node316 ) { 
+ data = ( ); 
+}
+
+potential ( node317 ) { 
+ data = ( ); 
+}
+
+potential ( node318 ) { 
+ data = ( ); 
+}
+
+potential ( node319 ) { 
+ data = ( ); 
+}
+
+potential ( node32 | node124 node149 node26 node424 node474 ) { 
+ data = (((((( 0.3586511000 0.6413489000)
+( 0.2946245912 0.7053754088)
+)
+(( 0.2140886393 0.7859113607)
+( 0.3774374000 0.6225626000)
+)
+(( 0.3762331750 0.6237668250)
+( 0.7093372797 0.2906627203)
+)
+)
+((( 0.0282239222 0.9717760778)
+( 0.7567281470 0.2432718530)
+)
+(( 0.2127094015 0.7872905985)
+( 0.2059724538 0.7940275462)
+)
+(( 0.9350666813 0.0649333187)
+( 0.4856820360 0.5143179640)
+)
+)
+)
+(((( 0.4119022500 0.5880977500)
+( 0.5910625882 0.4089374118)
+)
+(( 0.5328469320 0.4671530680)
+( 0.8509987255 0.1490012745)
+)
+(( 0.7783395756 0.2216604244)
+( 0.5061499000 0.4938501000)
+)
+)
+((( 0.4799900856 0.5200099144)
+( 0.4842668742 0.5157331258)
+)
+(( 0.0217117548 0.9782882452)
+( 0.9750977883 0.0249022117)
+)
+(( 0.1600502664 0.8399497336)
+( 0.7740595455 0.2259404545)
+)
+)
+)
+)
+((((( 0.1510913000 0.8489087000)
+( 0.5952268000 0.4047732000)
+)
+(( 0.4360732831 0.5639267169)
+( 0.2183140891 0.7816859109)
+)
+(( 0.5480232890 0.4519767110)
+( 0.7565367303 0.2434632697)
+)
+)
+((( 0.6270829000 0.3729171000)
+( 0.7523675600 0.2476324400)
+)
+(( 0.4014060000 0.5985940000)
+( 0.6504366805 0.3495633195)
+)
+(( 0.0513596877 0.9486403123)
+( 0.6692967799 0.3307032201)
+)
+)
+)
+(((( 0.8820681353 0.1179318647)
+( 0.3906883000 0.6093117000)
+)
+(( 0.3148877600 0.6851122400)
+( 0.3742249412 0.6257750588)
+)
+(( 0.8679761608 0.1320238392)
+( 0.8854812311 0.1145187689)
+)
+)
+((( 0.5327477340 0.4672522660)
+( 0.0264627865 0.9735372135)
+)
+(( 0.5205030000 0.4794970000)
+( 0.4126660294 0.5873339706)
+)
+(( 0.7663703677 0.2336296323)
+( 0.8486039424 0.1513960576)
+)
+)
+)
+)
+((((( 0.9730345728 0.0269654272)
+( 0.0275458708 0.9724541292)
+)
+(( 0.7996057480 0.2003942520)
+( 0.1346028313 0.8653971687)
+)
+(( 0.4757036315 0.5242963685)
+( 0.6171063309 0.3828936691)
+)
+)
+((( 0.5919626755 0.4080373245)
+( 0.1564873078 0.8435126922)
+)
+(( 0.7185141569 0.2814858431)
+( 0.7465079624 0.2534920376)
+)
+(( 0.2358930694 0.7641069306)
+( 0.4622050731 0.5377949269)
+)
+)
+)
+(((( 0.5719307000 0.4280693000)
+( 0.3975254181 0.6024745819)
+)
+(( 0.9182025735 0.0817974265)
+( 0.7793767468 0.2206232532)
+)
+(( 0.0756820918 0.9243179082)
+( 0.3790056435 0.6209943565)
+)
+)
+((( 0.2443124849 0.7556875151)
+( 0.5952392881 0.4047607119)
+)
+(( 0.0099108863 0.9900891137)
+( 0.5335772000 0.4664228000)
+)
+(( 0.8572840700 0.1427159300)
+( 0.8271191331 0.1728808669)))))); 
+}
+
+potential ( node320 ) { 
+ data = ( ); 
+}
+
+potential ( node321 ) { 
+ data = ( ); 
+}
+
+potential ( node322 ) { 
+ data = ( ); 
+}
+
+potential ( node323 ) { 
+ data = ( ); 
+}
+
+potential ( node324 ) { 
+ data = ( ); 
+}
+
+potential ( node325 ) { 
+ data = ( ); 
+}
+
+potential ( node326 ) { 
+ data = ( ); 
+}
+
+potential ( node327 ) { 
+ data = ( ); 
+}
+
+potential ( node328 ) { 
+ data = ( ); 
+}
+
+potential ( node329 ) { 
+ data = ( ); 
+}
+
+potential ( node33 | node269 ) { 
+ data = (( 0.7865744393 0.2134255607)
+( 0.4677523681 0.5322476319)
+( 0.2264126000 0.7735874000)); 
+}
+
+potential ( node330 ) { 
+ data = ( ); 
+}
+
+potential ( node331 ) { 
+ data = ( ); 
+}
+
+potential ( node332 ) { 
+ data = ( ); 
+}
+
+potential ( node333 ) { 
+ data = ( ); 
+}
+
+potential ( node334 ) { 
+ data = ( ); 
+}
+
+potential ( node335 ) { 
+ data = ( ); 
+}
+
+potential ( node336 ) { 
+ data = ( ); 
+}
+
+potential ( node337 ) { 
+ data = ( ); 
+}
+
+potential ( node338 ) { 
+ data = ( ); 
+}
+
+potential ( node339 ) { 
+ data = ( ); 
+}
+
+potential ( node34 | node171 node27 ) { 
+ data = ((( 0.0099374981 0.9900625019)
+( 0.2208517610 0.7791482390)
+( 0.4966512149 0.5033487851)
+)
+(( 0.3381150603 0.6618849397)
+( 0.1325691040 0.8674308960)
+( 0.7878713758 0.2121286242))); 
+}
+
+potential ( node340 ) { 
+ data = ( ); 
+}
+
+potential ( node341 ) { 
+ data = ( ); 
+}
+
+potential ( node342 ) { 
+ data = ( ); 
+}
+
+potential ( node343 ) { 
+ data = ( ); 
+}
+
+potential ( node344 ) { 
+ data = ( ); 
+}
+
+potential ( node345 ) { 
+ data = ( ); 
+}
+
+potential ( node346 ) { 
+ data = ( ); 
+}
+
+potential ( node347 ) { 
+ data = ( ); 
+}
+
+potential ( node348 ) { 
+ data = ( ); 
+}
+
+potential ( node349 ) { 
+ data = ( ); 
+}
+
+potential ( node35 | node86 ) { 
+ data = (( 0.2426603324 0.2700322627 0.4873074049)
+( 0.2494040935 0.0238928754 0.7267030311)); 
+}
+
+potential ( node350 ) { 
+ data = ( ); 
+}
+
+potential ( node351 ) { 
+ data = ( ); 
+}
+
+potential ( node352 ) { 
+ data = ( ); 
+}
+
+potential ( node353 ) { 
+ data = ( ); 
+}
+
+potential ( node354 ) { 
+ data = ( ); 
+}
+
+potential ( node355 ) { 
+ data = ( ); 
+}
+
+potential ( node356 ) { 
+ data = ( ); 
+}
+
+potential ( node357 ) { 
+ data = ( ); 
+}
+
+potential ( node358 ) { 
+ data = ( ); 
+}
+
+potential ( node359 ) { 
+ data = ( ); 
+}
+
+potential ( node36 | node161 node311 node386 node65 ) { 
+ data = ((((( 0.0169991749 0.1584992795 0.8245015456)
+( 0.7669779870 0.0516729461 0.1813490669)
+( 0.5990787120 0.0646787813 0.3362425067)
+)
+(( 0.6613295766 0.0920350009 0.2466354225)
+( 0.4916400954 0.1579584221 0.3504014825)
+( 0.5410990162 0.2311150769 0.2277859068)
+)
+)
+((( 0.0696236219 0.9059563245 0.0244200537)
+( 0.1459447256 0.7034054789 0.1506497955)
+( 0.0129123680 0.6570023313 0.3300853007)
+)
+(( 0.2119366411 0.7356083437 0.0524550153)
+( 0.6712920269 0.0987759940 0.2299319792)
+( 0.1822144709 0.7313859634 0.0863995657)
+)
+)
+)
+(((( 0.1000658360 0.2390441904 0.6608899736)
+( 0.0766790055 0.6221465963 0.3011743982)
+( 0.1214698733 0.0499905543 0.8285395724)
+)
+(( 0.7071794301 0.2735381233 0.0192824466)
+( 0.3126523325 0.4147055566 0.2726421109)
+( 0.6753669535 0.2329532547 0.0916797918)
+)
+)
+((( 0.8969701410 0.0931241637 0.0099056952)
+( 0.4976474101 0.2165951013 0.2857574886)
+( 0.5012082179 0.4291056125 0.0696861695)
+)
+(( 0.2825750202 0.1996549660 0.5177700138)
+( 0.3041699861 0.4268760085 0.2689540054)
+( 0.0915139845 0.5552577433 0.3532282721)
+)
+)
+)
+(((( 0.3077427378 0.0602393666 0.6320178956)
+( 0.4216056158 0.4248183958 0.1535759885)
+( 0.6011199160 0.1709086632 0.2279714209)
+)
+(( 0.4766186857 0.4469794166 0.0764018977)
+( 0.2138217009 0.0354363961 0.7507419030)
+( 0.7421021173 0.1665407227 0.0913571600)
+)
+)
+((( 0.4519815626 0.1163948958 0.4316235416)
+( 0.3801395924 0.1550578169 0.4648025907)
+( 0.4517762490 0.1326391227 0.4155846283)
+)
+(( 0.4054646907 0.0114013227 0.5831339866)
+( 0.3836882485 0.1159688095 0.5003429420)
+( 0.3895818845 0.5787535665 0.0316645490))))); 
+}
+
+potential ( node360 ) { 
+ data = ( ); 
+}
+
+potential ( node361 ) { 
+ data = ( ); 
+}
+
+potential ( node362 ) { 
+ data = ( ); 
+}
+
+potential ( node363 ) { 
+ data = ( ); 
+}
+
+potential ( node364 ) { 
+ data = ( ); 
+}
+
+potential ( node365 ) { 
+ data = ( ); 
+}
+
+potential ( node366 ) { 
+ data = ( ); 
+}
+
+potential ( node367 ) { 
+ data = ( ); 
+}
+
+potential ( node368 ) { 
+ data = ( ); 
+}
+
+potential ( node369 ) { 
+ data = ( ); 
+}
+
+potential ( node37 | node144 node519 ) { 
+ data = ((( 0.7502863775 0.2497136225)
+( 0.7063852212 0.2936147788)
+( 0.6701946402 0.3298053598)
+)
+(( 0.7266793855 0.2733206145)
+( 0.4537678182 0.5462321818)
+( 0.4991284000 0.5008716000))); 
+}
+
+potential ( node370 ) { 
+ data = ( ); 
+}
+
+potential ( node371 ) { 
+ data = ( ); 
+}
+
+potential ( node372 ) { 
+ data = ( ); 
+}
+
+potential ( node373 ) { 
+ data = ( ); 
+}
+
+potential ( node374 ) { 
+ data = ( ); 
+}
+
+potential ( node375 ) { 
+ data = ( ); 
+}
+
+potential ( node376 ) { 
+ data = ( ); 
+}
+
+potential ( node377 ) { 
+ data = ( ); 
+}
+
+potential ( node378 ) { 
+ data = ( ); 
+}
+
+potential ( node379 ) { 
+ data = ( ); 
+}
+
+potential ( node38 | node332 node9 ) { 
+ data = ((( 0.2416207469 0.7583792531)
+( 0.7567001303 0.2432998697)
+( 0.0923288818 0.9076711182)
+)
+(( 0.4232581346 0.5767418654)
+( 0.5470036781 0.4529963219)
+( 0.6677832600 0.3322167400))); 
+}
+
+potential ( node380 ) { 
+ data = ( ); 
+}
+
+potential ( node381 ) { 
+ data = ( ); 
+}
+
+potential ( node382 ) { 
+ data = ( ); 
+}
+
+potential ( node383 ) { 
+ data = ( ); 
+}
+
+potential ( node384 ) { 
+ data = ( ); 
+}
+
+potential ( node385 ) { 
+ data = ( ); 
+}
+
+potential ( node386 ) { 
+ data = ( ); 
+}
+
+potential ( node387 ) { 
+ data = ( ); 
+}
+
+potential ( node388 ) { 
+ data = ( ); 
+}
+
+potential ( node389 ) { 
+ data = ( ); 
+}
+
+potential ( node39 | node168 node232 node27 ) { 
+ data = (((( 0.2205222390 0.7794777610)
+( 0.0411863192 0.9588136808)
+( 0.8718247000 0.1281753000)
+)
+(( 0.1566753400 0.8433246600)
+( 0.0688057000 0.9311943000)
+( 0.9634357478 0.0365642522)
+)
+)
+((( 0.8241409700 0.1758590300)
+( 0.4393102888 0.5606897112)
+( 0.1926138400 0.8073861600)
+)
+(( 0.2378775924 0.7621224076)
+( 0.0290382286 0.9709617714)
+( 0.8758202038 0.1241797962)))); 
+}
+
+potential ( node390 ) { 
+ data = ( ); 
+}
+
+potential ( node391 ) { 
+ data = ( ); 
+}
+
+potential ( node392 ) { 
+ data = ( ); 
+}
+
+potential ( node393 ) { 
+ data = ( ); 
+}
+
+potential ( node394 ) { 
+ data = ( ); 
+}
+
+potential ( node395 ) { 
+ data = ( ); 
+}
+
+potential ( node396 ) { 
+ data = ( ); 
+}
+
+potential ( node397 ) { 
+ data = ( ); 
+}
+
+potential ( node398 ) { 
+ data = ( ); 
+}
+
+potential ( node399 ) { 
+ data = ( ); 
+}
+
+potential ( node4 | node330 ) { 
+ data = (( 0.8135135675 0.1864864325)
+( 0.5137027757 0.4862972243)
+( 0.9277986907 0.0722013093)); 
+}
+
+potential ( node40 | node204 node243 node270 node353 node435 node472 ) { 
+ data = ((((((( 0.3499069325 0.6500930675)
+( 0.2931540883 0.7068459117)
+( 0.9675816194 0.0324183806)
+)
+(( 0.2178479556 0.7821520444)
+( 0.7420485377 0.2579514623)
+( 0.8642824654 0.1357175346)
+)
+(( 0.4831458638 0.5168541362)
+( 0.1891116838 0.8108883162)
+( 0.7340055266 0.2659944734)
+)
+)
+((( 0.7930760717 0.2069239283)
+( 0.8955443000 0.1044557000)
+( 0.3654645890 0.6345354110)
+)
+(( 0.0811359129 0.9188640871)
+( 0.3365885000 0.6634115000)
+( 0.8753010737 0.1246989263)
+)
+(( 0.2435975549 0.7564024451)
+( 0.9368275494 0.0631724506)
+( 0.9041279600 0.0958720400)
+)
+)
+((( 0.5666541000 0.4333459000)
+( 0.6820119205 0.3179880795)
+( 0.2861249114 0.7138750886)
+)
+(( 0.3072271000 0.6927729000)
+( 0.5806544574 0.4193455426)
+( 0.6723254731 0.3276745269)
+)
+(( 0.2582108623 0.7417891377)
+( 0.4568984728 0.5431015272)
+( 0.8756484715 0.1243515285)
+)
+)
+)
+(((( 0.5179103445 0.4820896555)
+( 0.5843881751 0.4156118249)
+( 0.2012955260 0.7987044740)
+)
+(( 0.3091562400 0.6908437600)
+( 0.6415026321 0.3584973679)
+( 0.6179991400 0.3820008600)
+)
+(( 0.8415137500 0.1584862500)
+( 0.9900447776 0.0099552224)
+( 0.5599978168 0.4400021832)
+)
+)
+((( 0.9445965244 0.0554034756)
+( 0.2215934400 0.7784065600)
+( 0.7605888848 0.2394111152)
+)
+(( 0.3784961700 0.6215038300)
+( 0.2908076213 0.7091923787)
+( 0.5502296220 0.4497703780)
+)
+(( 0.3133653400 0.6866346600)
+( 0.8471098831 0.1528901169)
+( 0.9307797628 0.0692202372)
+)
+)
+((( 0.7941432679 0.2058567321)
+( 0.2395042000 0.7604958000)
+( 0.8724039174 0.1275960826)
+)
+(( 0.7498137775 0.2501862225)
+( 0.7175401615 0.2824598385)
+( 0.7448394523 0.2551605477)
+)
+(( 0.3131486657 0.6868513343)
+( 0.4022545120 0.5977454880)
+( 0.7825644835 0.2174355165)
+)
+)
+)
+)
+((((( 0.2867161214 0.7132838786)
+( 0.5076866000 0.4923134000)
+( 0.8883869911 0.1116130089)
+)
+(( 0.0712164093 0.9287835907)
+( 0.5390798000 0.4609202000)
+( 0.7832945365 0.2167054635)
+)
+(( 0.9034342052 0.0965657948)
+( 0.7323582854 0.2676417146)
+( 0.0994536360 0.9005463640)
+)
+)
+((( 0.1172931441 0.8827068559)
+( 0.9072870691 0.0927129309)
+( 0.0955883271 0.9044116729)
+)
+(( 0.9900157686 0.0099842314)
+( 0.1787279589 0.8212720411)
+( 0.9456727019 0.0543272981)
+)
+(( 0.2618873295 0.7381126705)
+( 0.2314607654 0.7685392346)
+( 0.4985453350 0.5014546650)
+)
+)
+((( 0.0357102222 0.9642897778)
+( 0.3254857228 0.6745142772)
+( 0.8288979997 0.1711020003)
+)
+(( 0.8661932827 0.1338067173)
+( 0.4224431673 0.5775568327)
+( 0.8679140608 0.1320859392)
+)
+(( 0.1152880823 0.8847119177)
+( 0.7731183845 0.2268816155)
+( 0.3197461272 0.6802538728)
+)
+)
+)
+(((( 0.8267068744 0.1732931256)
+( 0.8941603776 0.1058396224)
+( 0.9771563683 0.0228436317)
+)
+(( 0.2708793729 0.7291206271)
+( 0.9209161308 0.0790838692)
+( 0.2087810000 0.7912190000)
+)
+(( 0.5582711000 0.4417289000)
+( 0.1974510241 0.8025489759)
+( 0.9522249452 0.0477750548)
+)
+)
+((( 0.6001656000 0.3998344000)
+( 0.2011984680 0.7988015320)
+( 0.7162726143 0.2837273857)
+)
+(( 0.0163514295 0.9836485705)
+( 0.1440786914 0.8559213086)
+( 0.4019409579 0.5980590421)
+)
+(( 0.8182596436 0.1817403564)
+( 0.6095136156 0.3904863844)
+( 0.5658305039 0.4341694961)
+)
+)
+((( 0.1639530000 0.8360470000)
+( 0.5963826298 0.4036173702)
+( 0.4613635000 0.5386365000)
+)
+(( 0.0992125640 0.9007874360)
+( 0.3471217326 0.6528782674)
+( 0.1899119405 0.8100880595)
+)
+(( 0.5214308739 0.4785691261)
+( 0.6302413748 0.3697586252)
+( 0.5823193466 0.4176806534)
+)
+)
+)
+)
+((((( 0.8191231000 0.1808769000)
+( 0.9011056355 0.0988943645)
+( 0.7134195000 0.2865805000)
+)
+(( 0.6890098862 0.3109901138)
+( 0.5693720171 0.4306279829)
+( 0.1352707954 0.8647292046)
+)
+(( 0.4811293896 0.5188706104)
+( 0.5128022400 0.4871977600)
+( 0.7229091361 0.2770908639)
+)
+)
+((( 0.6333880810 0.3666119190)
+( 0.8920450268 0.1079549732)
+( 0.0711501279 0.9288498721)
+)
+(( 0.4966185000 0.5033815000)
+( 0.7992203840 0.2007796160)
+( 0.9017180054 0.0982819946)
+)
+(( 0.5407724400 0.4592275600)
+( 0.9900626348 0.0099373652)
+( 0.9597669779 0.0402330221)
+)
+)
+((( 0.5763144500 0.4236855500)
+( 0.5140684411 0.4859315589)
+( 0.6788965500 0.3211034500)
+)
+(( 0.1156027381 0.8843972619)
+( 0.6317063600 0.3682936400)
+( 0.9354104306 0.0645895694)
+)
+(( 0.5102985102 0.4897014898)
+( 0.9880269926 0.0119730074)
+( 0.2119629764 0.7880370236)
+)
+)
+)
+(((( 0.8726145000 0.1273855000)
+( 0.1254940525 0.8745059475)
+( 0.5293301000 0.4706699000)
+)
+(( 0.8827392406 0.1172607594)
+( 0.5604277336 0.4395722664)
+( 0.4921628898 0.5078371102)
+)
+(( 0.5995558800 0.4004441200)
+( 0.7628718753 0.2371281247)
+( 0.1551499169 0.8448500831)
+)
+)
+((( 0.5075637345 0.4924362655)
+( 0.7689742769 0.2310257231)
+( 0.0116636259 0.9883363741)
+)
+(( 0.3550453322 0.6449546678)
+( 0.7314871000 0.2685129000)
+( 0.9013931820 0.0986068180)
+)
+(( 0.9007360874 0.0992639126)
+( 0.3031059500 0.6968940500)
+( 0.3631129191 0.6368870809)
+)
+)
+((( 0.5919233000 0.4080767000)
+( 0.7743373655 0.2256626345)
+( 0.6347273854 0.3652726146)
+)
+(( 0.3373536669 0.6626463331)
+( 0.4456933000 0.5543067000)
+( 0.6902646124 0.3097353876)
+)
+(( 0.8767841912 0.1232158088)
+( 0.9594744067 0.0405255933)
+( 0.9767137147 0.0232862853)
+)
+)
+)
+)
+)
+(((((( 0.5339309440 0.4660690560)
+( 0.7358049368 0.2641950632)
+( 0.4354660000 0.5645340000)
+)
+(( 0.2977808281 0.7022191719)
+( 0.1769285835 0.8230714165)
+( 0.0211494078 0.9788505922)
+)
+(( 0.4584916000 0.5415084000)
+( 0.7245325290 0.2754674710)
+( 0.5566229111 0.4433770889)
+)
+)
+((( 0.9248885370 0.0751114630)
+( 0.0622315269 0.9377684731)
+( 0.7951331080 0.2048668920)
+)
+(( 0.4466905932 0.5533094068)
+( 0.7526665376 0.2473334624)
+( 0.7994493840 0.2005506160)
+)
+(( 0.4008322820 0.5991677180)
+( 0.8899252822 0.1100747178)
+( 0.2642770841 0.7357229159)
+)
+)
+((( 0.4703952859 0.5296047141)
+( 0.9567018879 0.0432981121)
+( 0.3393257000 0.6606743000)
+)
+(( 0.5140855146 0.4859144854)
+( 0.6244021000 0.3755979000)
+( 0.7272212282 0.2727787718)
+)
+(( 0.8685274087 0.1314725913)
+( 0.0636944468 0.9363055532)
+( 0.6292835311 0.3707164689)
+)
+)
+)
+(((( 0.5267554500 0.4732445500)
+( 0.9190559908 0.0809440092)
+( 0.3957418302 0.6042581698)
+)
+(( 0.2475443850 0.7524556150)
+( 0.0908934591 0.9091065409)
+( 0.2577190400 0.7422809600)
+)
+(( 0.1455140256 0.8544859744)
+( 0.1131347666 0.8868652334)
+( 0.3159776779 0.6840223221)
+)
+)
+((( 0.0317349349 0.9682650651)
+( 0.8934366089 0.1065633911)
+( 0.1033704090 0.8966295910)
+)
+(( 0.6002543600 0.3997456400)
+( 0.1212096088 0.8787903912)
+( 0.1698197332 0.8301802668)
+)
+(( 0.1433390086 0.8566609914)
+( 0.3523775741 0.6476224259)
+( 0.7717951000 0.2282049000)
+)
+)
+((( 0.9150894366 0.0849105634)
+( 0.0685552627 0.9314447373)
+( 0.9406647794 0.0593352206)
+)
+(( 0.1738094535 0.8261905465)
+( 0.5675664670 0.4324335330)
+( 0.1332296740 0.8667703260)
+)
+(( 0.7789314156 0.2210685844)
+( 0.0099404537 0.9900595463)
+( 0.4439464445 0.5560535555)
+)
+)
+)
+)
+((((( 0.9900444580 0.0099555420)
+( 0.0946307366 0.9053692634)
+( 0.6726641471 0.3273358529)
+)
+(( 0.5007598850 0.4992401150)
+( 0.4852875346 0.5147124654)
+( 0.7415239629 0.2584760371)
+)
+(( 0.1727405835 0.8272594165)
+( 0.6050907158 0.3949092842)
+( 0.9699951322 0.0300048678)
+)
+)
+((( 0.0872690244 0.9127309756)
+( 0.7951086364 0.2048913636)
+( 0.4335304330 0.5664695670)
+)
+(( 0.9476915379 0.0523084621)
+( 0.8961206745 0.1038793255)
+( 0.3774643875 0.6225356125)
+)
+(( 0.9644584874 0.0355415126)
+( 0.4172745125 0.5827254875)
+( 0.8942109479 0.1057890521)
+)
+)
+((( 0.2057583682 0.7942416318)
+( 0.6621716600 0.3378283400)
+( 0.6795184728 0.3204815272)
+)
+(( 0.2364301547 0.7635698453)
+( 0.7360891294 0.2639108706)
+( 0.0893214209 0.9106785791)
+)
+(( 0.2713208146 0.7286791854)
+( 0.9117463410 0.0882536590)
+( 0.7378305852 0.2621694148)
+)
+)
+)
+(((( 0.1985472560 0.8014527440)
+( 0.5937247000 0.4062753000)
+( 0.4929956254 0.5070043746)
+)
+(( 0.7019151260 0.2980848740)
+( 0.2989603210 0.7010396790)
+( 0.7332643220 0.2667356780)
+)
+(( 0.6226219000 0.3773781000)
+( 0.8834087823 0.1165912177)
+( 0.5954221119 0.4045778881)
+)
+)
+((( 0.4203646710 0.5796353290)
+( 0.9642338518 0.0357661482)
+( 0.4937110044 0.5062889956)
+)
+(( 0.1270265338 0.8729734662)
+( 0.4100750877 0.5899249123)
+( 0.1936173919 0.8063826081)
+)
+(( 0.9469001417 0.0530998583)
+( 0.4005517000 0.5994483000)
+( 0.0863623280 0.9136376720)
+)
+)
+((( 0.7081924283 0.2918075717)
+( 0.6077937000 0.3922063000)
+( 0.4770237582 0.5229762418)
+)
+(( 0.0453463484 0.9546536516)
+( 0.8329987500 0.1670012500)
+( 0.4461669688 0.5538330312)
+)
+(( 0.8757053000 0.1242947000)
+( 0.5133157000 0.4866843000)
+( 0.0671240280 0.9328759720)
+)
+)
+)
+)
+((((( 0.5620910000 0.4379090000)
+( 0.1211877000 0.8788123000)
+( 0.4946779448 0.5053220552)
+)
+(( 0.3852778516 0.6147221484)
+( 0.7693382846 0.2306617154)
+( 0.8144322000 0.1855678000)
+)
+(( 0.5843169700 0.4156830300)
+( 0.0099301606 0.9900698394)
+( 0.6796550864 0.3203449136)
+)
+)
+((( 0.9612009558 0.0387990442)
+( 0.3722734500 0.6277265500)
+( 0.1730213496 0.8269786504)
+)
+(( 0.8478709924 0.1521290076)
+( 0.9182347663 0.0817652337)
+( 0.7218861600 0.2781138400)
+)
+(( 0.3786246621 0.6213753379)
+( 0.2110765237 0.7889234763)
+( 0.5975602000 0.4024398000)
+)
+)
+((( 0.8610791000 0.1389209000)
+( 0.3902974817 0.6097025183)
+( 0.1571831253 0.8428168747)
+)
+(( 0.6432497000 0.3567503000)
+( 0.6132952845 0.3867047155)
+( 0.4769303000 0.5230697000)
+)
+(( 0.0760963563 0.9239036437)
+( 0.6054123000 0.3945877000)
+( 0.8187116236 0.1812883764)
+)
+)
+)
+(((( 0.4181162825 0.5818837175)
+( 0.4845483661 0.5154516339)
+( 0.7568949727 0.2431050273)
+)
+(( 0.6655745867 0.3344254133)
+( 0.4249180600 0.5750819400)
+( 0.6677868000 0.3322132000)
+)
+(( 0.5578356665 0.4421643335)
+( 0.9438753717 0.0561246283)
+( 0.0680823207 0.9319176793)
+)
+)
+((( 0.5813210600 0.4186789400)
+( 0.7248686928 0.2751313072)
+( 0.9317299534 0.0682700466)
+)
+(( 0.7186205616 0.2813794384)
+( 0.5909748000 0.4090252000)
+( 0.2978665140 0.7021334860)
+)
+(( 0.8531725656 0.1468274344)
+( 0.6731457798 0.3268542202)
+( 0.1147910911 0.8852089089)
+)
+)
+((( 0.3160025658 0.6839974342)
+( 0.2698778635 0.7301221365)
+( 0.6831806505 0.3168193495)
+)
+(( 0.4378563450 0.5621436550)
+( 0.9626803634 0.0373196366)
+( 0.9686184680 0.0313815320)
+)
+(( 0.0822201541 0.9177798459)
+( 0.3811831000 0.6188169000)
+( 0.5539172778 0.4460827222))))))); 
+}
+
+potential ( node400 ) { 
+ data = ( ); 
+}
+
+potential ( node401 ) { 
+ data = ( ); 
+}
+
+potential ( node402 ) { 
+ data = ( ); 
+}
+
+potential ( node403 ) { 
+ data = ( ); 
+}
+
+potential ( node404 ) { 
+ data = ( ); 
+}
+
+potential ( node405 ) { 
+ data = ( ); 
+}
+
+potential ( node406 ) { 
+ data = ( ); 
+}
+
+potential ( node407 ) { 
+ data = ( ); 
+}
+
+potential ( node408 ) { 
+ data = ( ); 
+}
+
+potential ( node409 ) { 
+ data = ( ); 
+}
+
+potential ( node41 ) { 
+ data = (  0.1884118894 0.3587391179 0.4528489926); 
+}
+
+potential ( node410 ) { 
+ data = ( ); 
+}
+
+potential ( node411 ) { 
+ data = ( ); 
+}
+
+potential ( node412 ) { 
+ data = ( ); 
+}
+
+potential ( node413 ) { 
+ data = ( ); 
+}
+
+potential ( node414 ) { 
+ data = ( ); 
+}
+
+potential ( node415 ) { 
+ data = ( ); 
+}
+
+potential ( node416 ) { 
+ data = ( ); 
+}
+
+potential ( node417 ) { 
+ data = ( ); 
+}
+
+potential ( node418 ) { 
+ data = ( ); 
+}
+
+potential ( node419 ) { 
+ data = ( ); 
+}
+
+potential ( node42 | node0 node14 node61 ) { 
+ data = (((( 0.6453861629 0.0099983511 0.3446154860)
+( 0.4861219897 0.1261080025 0.3877700078)
+)
+(( 0.2592306052 0.2361859847 0.5045834101)
+( 0.0268872983 0.1938097923 0.7793029094)
+)
+(( 0.3743049350 0.2719452509 0.3537498141)
+( 0.0129709951 0.2487337412 0.7382952637)
+)
+)
+((( 0.1069157914 0.8593467294 0.0337374792)
+( 0.2231663144 0.2230635244 0.5537701612)
+)
+(( 0.3677768400 0.1406351900 0.4915879700)
+( 0.0442966565 0.0469507726 0.9087525709)
+)
+(( 0.8099994450 0.1800944219 0.0099061331)
+( 0.4902456547 0.1305764039 0.3791779414)))); 
+}
+
+potential ( node420 ) { 
+ data = ( ); 
+}
+
+potential ( node421 ) { 
+ data = ( ); 
+}
+
+potential ( node422 ) { 
+ data = ( ); 
+}
+
+potential ( node423 ) { 
+ data = ( ); 
+}
+
+potential ( node424 ) { 
+ data = ( ); 
+}
+
+potential ( node425 ) { 
+ data = ( ); 
+}
+
+potential ( node426 ) { 
+ data = ( ); 
+}
+
+potential ( node427 ) { 
+ data = ( ); 
+}
+
+potential ( node428 ) { 
+ data = ( ); 
+}
+
+potential ( node429 ) { 
+ data = ( ); 
+}
+
+potential ( node43 | node118 node261 ) { 
+ data = ((( 0.5313703000 0.4400836800 0.0285460200)
+( 0.4032079300 0.3492175600 0.2475745100)
+( 0.6611761198 0.3180534295 0.0207704506)
+)
+(( 0.6860243652 0.2893184680 0.0246571668)
+( 0.6024311181 0.3477691504 0.0497997315)
+( 0.6537620745 0.3172402276 0.0289976979)
+)
+(( 0.4922013626 0.0986696185 0.4091290189)
+( 0.4876466244 0.3190294960 0.1933238797)
+( 0.3206560715 0.0290651050 0.6502788234))); 
+}
+
+potential ( node430 ) { 
+ data = ( ); 
+}
+
+potential ( node431 ) { 
+ data = ( ); 
+}
+
+potential ( node432 ) { 
+ data = ( ); 
+}
+
+potential ( node433 ) { 
+ data = ( ); 
+}
+
+potential ( node434 ) { 
+ data = ( ); 
+}
+
+potential ( node435 ) { 
+ data = ( ); 
+}
+
+potential ( node436 ) { 
+ data = ( ); 
+}
+
+potential ( node437 ) { 
+ data = ( ); 
+}
+
+potential ( node438 ) { 
+ data = ( ); 
+}
+
+potential ( node439 ) { 
+ data = ( ); 
+}
+
+potential ( node44 | node51 node541 ) { 
+ data = ((( 0.7759644167 0.1610855552 0.0629500281)
+( 0.3981755981 0.2971995262 0.3046248756)
+( 0.2989778764 0.6902574917 0.0107646319)
+)
+(( 0.1455726629 0.1664379733 0.6879893638)
+( 0.2735812592 0.5227898766 0.2036288643)
+( 0.2920745300 0.4237641700 0.2841613000))); 
+}
+
+potential ( node440 ) { 
+ data = ( ); 
+}
+
+potential ( node441 ) { 
+ data = ( ); 
+}
+
+potential ( node442 ) { 
+ data = ( ); 
+}
+
+potential ( node443 ) { 
+ data = ( ); 
+}
+
+potential ( node444 ) { 
+ data = ( ); 
+}
+
+potential ( node445 ) { 
+ data = ( ); 
+}
+
+potential ( node446 ) { 
+ data = ( ); 
+}
+
+potential ( node447 ) { 
+ data = ( ); 
+}
+
+potential ( node448 ) { 
+ data = ( ); 
+}
+
+potential ( node449 ) { 
+ data = ( ); 
+}
+
+potential ( node45 | node201 node315 ) { 
+ data = ((( 0.8200070738 0.1799929262)
+( 0.3034765791 0.6965234209)
+)
+(( 0.0099780971 0.9900219029)
+( 0.6488510400 0.3511489600))); 
+}
+
+potential ( node450 ) { 
+ data = ( ); 
+}
+
+potential ( node451 ) { 
+ data = ( ); 
+}
+
+potential ( node452 ) { 
+ data = ( ); 
+}
+
+potential ( node453 ) { 
+ data = ( ); 
+}
+
+potential ( node454 ) { 
+ data = ( ); 
+}
+
+potential ( node455 ) { 
+ data = ( ); 
+}
+
+potential ( node456 ) { 
+ data = ( ); 
+}
+
+potential ( node457 ) { 
+ data = ( ); 
+}
+
+potential ( node458 ) { 
+ data = ( ); 
+}
+
+potential ( node459 ) { 
+ data = ( ); 
+}
+
+potential ( node46 | node304 node315 node429 ) { 
+ data = (((( 0.0099916326 0.4246534182 0.5653549492)
+( 0.1207914433 0.8565541231 0.0226544336)
+( 0.1732266156 0.4051578665 0.4216155179)
+)
+(( 0.0110507079 0.4923347761 0.4966145160)
+( 0.0478884629 0.8172303890 0.1348811481)
+( 0.0722035822 0.4344237830 0.4933726348)
+)
+)
+((( 0.4261377698 0.4871168583 0.0867453719)
+( 0.6314326044 0.0099818938 0.3585855018)
+( 0.0352695531 0.6998431315 0.2648873154)
+)
+(( 0.3891235961 0.2093148779 0.4015615260)
+( 0.8230801214 0.0624380916 0.1144817870)
+( 0.1526426215 0.5817334758 0.2656239027)
+)
+)
+((( 0.0307594426 0.4241164813 0.5451240760)
+( 0.1828910600 0.1514038400 0.6657051000)
+( 0.3270523435 0.3726217625 0.3003258940)
+)
+(( 0.0600749324 0.6436096257 0.2963154419)
+( 0.1443210071 0.4514320410 0.4042469519)
+( 0.5962120940 0.1458270785 0.2579608274)))); 
+}
+
+potential ( node460 ) { 
+ data = ( ); 
+}
+
+potential ( node461 ) { 
+ data = ( ); 
+}
+
+potential ( node462 ) { 
+ data = ( ); 
+}
+
+potential ( node463 ) { 
+ data = ( ); 
+}
+
+potential ( node464 ) { 
+ data = ( ); 
+}
+
+potential ( node465 ) { 
+ data = ( ); 
+}
+
+potential ( node466 ) { 
+ data = ( ); 
+}
+
+potential ( node467 ) { 
+ data = ( ); 
+}
+
+potential ( node468 ) { 
+ data = ( ); 
+}
+
+potential ( node469 ) { 
+ data = ( ); 
+}
+
+potential ( node47 | node208 node212 node276 node579 ) { 
+ data = ((((( 0.2368913305 0.7631086695)
+( 0.7176830856 0.2823169144)
+)
+(( 0.6402020500 0.3597979500)
+( 0.7176866715 0.2823133285)
+)
+(( 0.3617836872 0.6382163128)
+( 0.1248673088 0.8751326912)
+)
+)
+((( 0.4068131163 0.5931868837)
+( 0.8604396086 0.1395603914)
+)
+(( 0.3045666348 0.6954333652)
+( 0.2813051431 0.7186948569)
+)
+(( 0.0099382230 0.9900617770)
+( 0.4246794600 0.5753205400)
+)
+)
+((( 0.4448911278 0.5551088722)
+( 0.2551577777 0.7448422223)
+)
+(( 0.3014724419 0.6985275581)
+( 0.3139798394 0.6860201606)
+)
+(( 0.9900603101 0.0099396899)
+( 0.4975735349 0.5024264651)
+)
+)
+)
+(((( 0.4891354553 0.5108645447)
+( 0.2419390700 0.7580609300)
+)
+(( 0.6901454300 0.3098545700)
+( 0.5412711500 0.4587288500)
+)
+(( 0.7563970927 0.2436029073)
+( 0.2685918039 0.7314081961)
+)
+)
+((( 0.1017069090 0.8982930910)
+( 0.4820611000 0.5179389000)
+)
+(( 0.7599777304 0.2400222696)
+( 0.9165249500 0.0834750500)
+)
+(( 0.3814010567 0.6185989433)
+( 0.8436620494 0.1563379506)
+)
+)
+((( 0.7620309600 0.2379690400)
+( 0.2088931396 0.7911068604)
+)
+(( 0.7333081620 0.2666918380)
+( 0.8782745863 0.1217254137)
+)
+(( 0.5291960000 0.4708040000)
+( 0.0289067301 0.9710932699))))); 
+}
+
+potential ( node470 ) { 
+ data = ( ); 
+}
+
+potential ( node471 ) { 
+ data = ( ); 
+}
+
+potential ( node472 ) { 
+ data = ( ); 
+}
+
+potential ( node473 ) { 
+ data = ( ); 
+}
+
+potential ( node474 ) { 
+ data = ( ); 
+}
+
+potential ( node475 ) { 
+ data = ( ); 
+}
+
+potential ( node476 ) { 
+ data = ( ); 
+}
+
+potential ( node477 ) { 
+ data = ( ); 
+}
+
+potential ( node478 ) { 
+ data = ( ); 
+}
+
+potential ( node479 ) { 
+ data = ( ); 
+}
+
+potential ( node48 | node102 node44 node580 node89 ) { 
+ data = ((((( 0.0314416087 0.9685583913)
+( 0.4116854000 0.5883146000)
+( 0.2229872000 0.7770128000)
+)
+(( 0.0432388541 0.9567611459)
+( 0.7667315000 0.2332685000)
+( 0.4489814820 0.5510185180)
+)
+(( 0.3319824532 0.6680175468)
+( 0.1443106243 0.8556893757)
+( 0.5128247692 0.4871752308)
+)
+)
+((( 0.9839231833 0.0160768167)
+( 0.1611210413 0.8388789587)
+( 0.2753693717 0.7246306283)
+)
+(( 0.5926021300 0.4073978700)
+( 0.6848749863 0.3151250137)
+( 0.0599125680 0.9400874320)
+)
+(( 0.4973189101 0.5026810899)
+( 0.1988494480 0.8011505520)
+( 0.2184031844 0.7815968156)
+)
+)
+((( 0.4238557115 0.5761442885)
+( 0.4757103790 0.5242896210)
+( 0.2310240308 0.7689759692)
+)
+(( 0.8380717251 0.1619282749)
+( 0.8976557910 0.1023442090)
+( 0.6059866000 0.3940134000)
+)
+(( 0.8375342249 0.1624657751)
+( 0.8431481000 0.1568519000)
+( 0.2014934920 0.7985065080)
+)
+)
+)
+(((( 0.9900541789 0.0099458211)
+( 0.4664563893 0.5335436107)
+( 0.8944645679 0.1055354321)
+)
+(( 0.3324656700 0.6675343300)
+( 0.2635876500 0.7364123500)
+( 0.6710322500 0.3289677500)
+)
+(( 0.9422185595 0.0577814405)
+( 0.8254504165 0.1745495835)
+( 0.3596747128 0.6403252872)
+)
+)
+((( 0.7959949841 0.2040050159)
+( 0.3237903324 0.6762096676)
+( 0.1852407337 0.8147592663)
+)
+(( 0.7489560374 0.2510439626)
+( 0.3410416473 0.6589583527)
+( 0.6210414689 0.3789585311)
+)
+(( 0.1255552650 0.8744447350)
+( 0.0830518967 0.9169481033)
+( 0.6667272000 0.3332728000)
+)
+)
+((( 0.1776653082 0.8223346918)
+( 0.2875400027 0.7124599973)
+( 0.2268009459 0.7731990541)
+)
+(( 0.0545748473 0.9454251527)
+( 0.0739517963 0.9260482037)
+( 0.3741132976 0.6258867024)
+)
+(( 0.9646810029 0.0353189971)
+( 0.5090866847 0.4909133153)
+( 0.5490197000 0.4509803000))))); 
+}
+
+potential ( node480 ) { 
+ data = ( ); 
+}
+
+potential ( node481 ) { 
+ data = ( ); 
+}
+
+potential ( node482 ) { 
+ data = ( ); 
+}
+
+potential ( node483 ) { 
+ data = ( ); 
+}
+
+potential ( node484 ) { 
+ data = ( ); 
+}
+
+potential ( node485 ) { 
+ data = ( ); 
+}
+
+potential ( node486 ) { 
+ data = ( ); 
+}
+
+potential ( node487 ) { 
+ data = ( ); 
+}
+
+potential ( node488 ) { 
+ data = ( ); 
+}
+
+potential ( node489 ) { 
+ data = ( ); 
+}
+
+potential ( node49 | node136 node379 ) { 
+ data = ((( 0.3089426862 0.6910573138)
+( 0.9550084758 0.0449915242)
+)
+(( 0.5636282169 0.4363717831)
+( 0.9579840943 0.0420159057))); 
+}
+
+potential ( node490 ) { 
+ data = ( ); 
+}
+
+potential ( node491 ) { 
+ data = ( ); 
+}
+
+potential ( node492 ) { 
+ data = ( ); 
+}
+
+potential ( node493 ) { 
+ data = ( ); 
+}
+
+potential ( node494 ) { 
+ data = ( ); 
+}
+
+potential ( node495 ) { 
+ data = ( ); 
+}
+
+potential ( node496 ) { 
+ data = ( ); 
+}
+
+potential ( node497 ) { 
+ data = ( ); 
+}
+
+potential ( node498 ) { 
+ data = ( ); 
+}
+
+potential ( node499 ) { 
+ data = ( ); 
+}
+
+potential ( node5 | node155 node165 node33 node576 ) { 
+ data = ((((( 0.9750972390 0.0249027610)
+( 0.0357429400 0.9642570600)
+( 0.0901291273 0.9098708727)
+)
+(( 0.2252858697 0.7747141303)
+( 0.5732342172 0.4267657828)
+( 0.1481267426 0.8518732574)
+)
+)
+((( 0.8622192000 0.1377808000)
+( 0.3295306000 0.6704694000)
+( 0.9168747737 0.0831252263)
+)
+(( 0.1153241400 0.8846758600)
+( 0.8708778600 0.1291221400)
+( 0.9077382182 0.0922617818)
+)
+)
+((( 0.9878362548 0.0121637452)
+( 0.2494696775 0.7505303225)
+( 0.7610890924 0.2389109076)
+)
+(( 0.7557154924 0.2442845076)
+( 0.8771415088 0.1228584912)
+( 0.2925112646 0.7074887354)
+)
+)
+)
+(((( 0.7369983147 0.2630016853)
+( 0.6161073246 0.3838926754)
+( 0.0855468591 0.9144531409)
+)
+(( 0.7661063077 0.2338936923)
+( 0.8190717410 0.1809282590)
+( 0.4277994000 0.5722006000)
+)
+)
+((( 0.2995756210 0.7004243790)
+( 0.8218277207 0.1781722793)
+( 0.0150283882 0.9849716118)
+)
+(( 0.5537260723 0.4462739277)
+( 0.7989440760 0.2010559240)
+( 0.9804782392 0.0195217608)
+)
+)
+((( 0.9846902677 0.0153097323)
+( 0.2319558693 0.7680441307)
+( 0.5732528600 0.4267471400)
+)
+(( 0.7807422012 0.2192577988)
+( 0.3103174393 0.6896825607)
+( 0.5854965649 0.4145034351))))); 
+}
+
+potential ( node50 | node11 node179 node224 node276 node368 ) { 
+ data = (((((( 0.9464666624 0.0298245636 0.0237087741)
+( 0.4699679553 0.2451815475 0.2848504972)
+( 0.4590929746 0.1406882614 0.4002187640)
+)
+(( 0.0814420267 0.3460769562 0.5724810171)
+( 0.4834346355 0.3403079098 0.1762574547)
+( 0.4475243297 0.1890591530 0.3634165173)
+)
+(( 0.1348464827 0.4235485085 0.4416050088)
+( 0.0583436562 0.3844996015 0.5571567422)
+( 0.1057121021 0.5319432106 0.3623446872)
+)
+)
+((( 0.0917172988 0.8711662357 0.0371164655)
+( 0.6241804531 0.0234918995 0.3523276474)
+( 0.0178810201 0.5669695346 0.4151494453)
+)
+(( 0.2394624572 0.4965053349 0.2640322079)
+( 0.1410617213 0.1963657857 0.6625724930)
+( 0.1650035616 0.1861433930 0.6488530454)
+)
+(( 0.0446682370 0.3970993679 0.5582323951)
+( 0.0696584200 0.2750114800 0.6553301000)
+( 0.0632402094 0.2202336478 0.7165261428)
+)
+)
+)
+(((( 0.0336948700 0.6895824000 0.2767227300)
+( 0.4318274557 0.2464229175 0.3217496268)
+( 0.6804337296 0.0763841677 0.2431821027)
+)
+(( 0.3650897000 0.1562686700 0.4786416300)
+( 0.5867789441 0.0577438734 0.3554771825)
+( 0.2678039636 0.0619309525 0.6702650839)
+)
+(( 0.1657051375 0.0557697742 0.7785250883)
+( 0.1428510686 0.3241960368 0.5329528947)
+( 0.0344746090 0.2737626618 0.6917627292)
+)
+)
+((( 0.3411137602 0.3485087305 0.3103775093)
+( 0.0336806855 0.2041850531 0.7621342614)
+( 0.1984453293 0.7798164867 0.0217381840)
+)
+(( 0.5689377886 0.1279528974 0.3031093139)
+( 0.5803242474 0.2830301885 0.1366455641)
+( 0.4683808719 0.2740121036 0.2576070245)
+)
+(( 0.1583959768 0.6737534865 0.1678505366)
+( 0.6270773525 0.0355729007 0.3373497467)
+( 0.6457380571 0.2169886057 0.1372733373)
+)
+)
+)
+)
+((((( 0.3333232167 0.3801347734 0.2865420099)
+( 0.4042942974 0.0301554083 0.5655502943)
+( 0.5515430945 0.2035982280 0.2448586776)
+)
+(( 0.0745273815 0.9155411601 0.0099314583)
+( 0.9308569092 0.0099512848 0.0591918061)
+( 0.7147376814 0.2408986206 0.0443636980)
+)
+(( 0.3700057522 0.5446392327 0.0853550151)
+( 0.1477119741 0.2895506484 0.5627373775)
+( 0.4810824796 0.4232571085 0.0956604119)
+)
+)
+((( 0.7641640109 0.1357675566 0.1000684325)
+( 0.4739622390 0.1813501973 0.3446875638)
+( 0.0708113449 0.8721318860 0.0570567691)
+)
+(( 0.1459804388 0.1873235212 0.6666960400)
+( 0.5922240541 0.1623321484 0.2454437975)
+( 0.4006910420 0.2642145279 0.3350944301)
+)
+(( 0.2774835472 0.5127435949 0.2097728579)
+( 0.2039906041 0.5469130109 0.2490963850)
+( 0.4877640524 0.0188315649 0.4934043827)
+)
+)
+)
+(((( 0.2083688937 0.5036533849 0.2879777214)
+( 0.3166221873 0.0488610380 0.6345167746)
+( 0.2257240700 0.4896439600 0.2846319700)
+)
+(( 0.3286903069 0.4772074309 0.1941022622)
+( 0.6356548601 0.3544418930 0.0099032470)
+( 0.2949478512 0.4557748563 0.2492772925)
+)
+(( 0.0794825984 0.8202714136 0.1002459880)
+( 0.5257752395 0.1970943961 0.2771303645)
+( 0.2757460033 0.6994267084 0.0248272883)
+)
+)
+((( 0.4786205096 0.2129171043 0.3084623862)
+( 0.0308786729 0.0099744210 0.9591469061)
+( 0.3135131663 0.2518893050 0.4345975287)
+)
+(( 0.0099871564 0.7794827774 0.2105300662)
+( 0.5649355282 0.2576239529 0.1774405189)
+( 0.2536512401 0.0472804319 0.6990683280)
+)
+(( 0.2837142600 0.5201065000 0.1961792400)
+( 0.7190212892 0.1634494175 0.1175292932)
+( 0.1911840024 0.7063123317 0.1025036659)))))); 
+}
+
+potential ( node500 ) { 
+ data = ( ); 
+}
+
+potential ( node501 ) { 
+ data = ( ); 
+}
+
+potential ( node502 ) { 
+ data = ( ); 
+}
+
+potential ( node503 ) { 
+ data = ( ); 
+}
+
+potential ( node504 ) { 
+ data = ( ); 
+}
+
+potential ( node505 ) { 
+ data = ( ); 
+}
+
+potential ( node506 ) { 
+ data = ( ); 
+}
+
+potential ( node507 ) { 
+ data = ( ); 
+}
+
+potential ( node508 ) { 
+ data = ( ); 
+}
+
+potential ( node509 ) { 
+ data = ( ); 
+}
+
+potential ( node51 | node201 node312 ) { 
+ data = ((( 0.0308607709 0.9691392291)
+( 0.9681399461 0.0318600539)
+)
+(( 0.3805222000 0.6194778000)
+( 0.1493172515 0.8506827485))); 
+}
+
+potential ( node510 ) { 
+ data = ( ); 
+}
+
+potential ( node511 ) { 
+ data = ( ); 
+}
+
+potential ( node512 ) { 
+ data = ( ); 
+}
+
+potential ( node513 ) { 
+ data = ( ); 
+}
+
+potential ( node514 ) { 
+ data = ( ); 
+}
+
+potential ( node515 ) { 
+ data = ( ); 
+}
+
+potential ( node516 ) { 
+ data = ( ); 
+}
+
+potential ( node517 ) { 
+ data = ( ); 
+}
+
+potential ( node518 ) { 
+ data = ( ); 
+}
+
+potential ( node519 ) { 
+ data = ( ); 
+}
+
+potential ( node52 | node551 ) { 
+ data = (( 0.5877645765 0.4122354235)
+( 0.5697243114 0.4302756886)); 
+}
+
+potential ( node520 ) { 
+ data = ( ); 
+}
+
+potential ( node521 ) { 
+ data = ( ); 
+}
+
+potential ( node522 ) { 
+ data = ( ); 
+}
+
+potential ( node523 ) { 
+ data = ( ); 
+}
+
+potential ( node524 ) { 
+ data = ( ); 
+}
+
+potential ( node525 ) { 
+ data = ( ); 
+}
+
+potential ( node526 ) { 
+ data = ( ); 
+}
+
+potential ( node527 ) { 
+ data = ( ); 
+}
+
+potential ( node528 ) { 
+ data = ( ); 
+}
+
+potential ( node529 ) { 
+ data = ( ); 
+}
+
+potential ( node53 | node332 node363 node377 node486 ) { 
+ data = ((((( 0.0853232940 0.6636244235 0.2510522824)
+( 0.0701750121 0.2042160661 0.7256089218)
+)
+(( 0.0665018243 0.6516860831 0.2818120927)
+( 0.3542251565 0.2084842979 0.4372905456)
+)
+)
+((( 0.2212272278 0.1520804285 0.6266923437)
+( 0.1748458513 0.7198255340 0.1053286147)
+)
+(( 0.4076286722 0.4296284129 0.1627429149)
+( 0.0431527576 0.3687875348 0.5880597076)
+)
+)
+)
+(((( 0.0781617461 0.2533117873 0.6685264666)
+( 0.2645639826 0.4984859050 0.2369501124)
+)
+(( 0.0099914679 0.3859129335 0.6040955986)
+( 0.0435730309 0.3477730570 0.6086539122)
+)
+)
+((( 0.2661839540 0.1805353792 0.5532806668)
+( 0.1648195184 0.4064018359 0.4287786457)
+)
+(( 0.8286036098 0.0253521832 0.1460442070)
+( 0.1369757118 0.0189477389 0.8440765494))))); 
+}
+
+potential ( node530 ) { 
+ data = ( ); 
+}
+
+potential ( node531 ) { 
+ data = ( ); 
+}
+
+potential ( node532 ) { 
+ data = ( ); 
+}
+
+potential ( node533 ) { 
+ data = ( ); 
+}
+
+potential ( node534 ) { 
+ data = ( ); 
+}
+
+potential ( node535 ) { 
+ data = ( ); 
+}
+
+potential ( node536 ) { 
+ data = ( ); 
+}
+
+potential ( node537 ) { 
+ data = ( ); 
+}
+
+potential ( node538 ) { 
+ data = ( ); 
+}
+
+potential ( node539 ) { 
+ data = ( ); 
+}
+
+potential ( node54 | node163 node184 ) { 
+ data = ((( 0.5588104441 0.4411895559)
+( 0.4628542861 0.5371457139)
+)
+(( 0.1168599044 0.8831400956)
+( 0.2034600761 0.7965399239))); 
+}
+
+potential ( node540 ) { 
+ data = ( ); 
+}
+
+potential ( node541 ) { 
+ data = ( ); 
+}
+
+potential ( node542 ) { 
+ data = ( ); 
+}
+
+potential ( node543 ) { 
+ data = ( ); 
+}
+
+potential ( node544 ) { 
+ data = ( ); 
+}
+
+potential ( node545 ) { 
+ data = ( ); 
+}
+
+potential ( node546 ) { 
+ data = ( ); 
+}
+
+potential ( node547 ) { 
+ data = ( ); 
+}
+
+potential ( node548 ) { 
+ data = ( ); 
+}
+
+potential ( node549 ) { 
+ data = ( ); 
+}
+
+potential ( node55 | node118 node277 node525 ) { 
+ data = (((( 0.7583885379 0.2416114621)
+( 0.5853870676 0.4146129324)
+( 0.4237915000 0.5762085000)
+)
+(( 0.5624555775 0.4375444225)
+( 0.7588476379 0.2411523621)
+( 0.0099982383 0.9900017617)
+)
+)
+((( 0.6598240604 0.3401759396)
+( 0.8132955081 0.1867044919)
+( 0.7069772500 0.2930227500)
+)
+(( 0.3097598876 0.6902401124)
+( 0.6526106208 0.3473893792)
+( 0.3308421000 0.6691579000)
+)
+)
+((( 0.0143407237 0.9856592763)
+( 0.9900266882 0.0099733118)
+( 0.9700595863 0.0299404137)
+)
+(( 0.8108114000 0.1891886000)
+( 0.9626360539 0.0373639461)
+( 0.0755188000 0.9244812000)))); 
+}
+
+potential ( node550 ) { 
+ data = ( ); 
+}
+
+potential ( node551 ) { 
+ data = ( ); 
+}
+
+potential ( node552 ) { 
+ data = ( ); 
+}
+
+potential ( node553 ) { 
+ data = ( ); 
+}
+
+potential ( node554 ) { 
+ data = ( ); 
+}
+
+potential ( node555 ) { 
+ data = ( ); 
+}
+
+potential ( node556 ) { 
+ data = ( ); 
+}
+
+potential ( node557 ) { 
+ data = ( ); 
+}
+
+potential ( node558 ) { 
+ data = ( ); 
+}
+
+potential ( node559 ) { 
+ data = ( ); 
+}
+
+potential ( node56 | node262 node29 node433 node493 node537 ) { 
+ data = (((((( 0.1952063920 0.8047936080)
+( 0.4870451000 0.5129549000)
+( 0.8381478000 0.1618522000)
+)
+(( 0.5508892004 0.4491107996)
+( 0.8329071317 0.1670928683)
+( 0.4879486446 0.5120513554)
+)
+)
+((( 0.8730197000 0.1269803000)
+( 0.0436728457 0.9563271543)
+( 0.7427407277 0.2572592723)
+)
+(( 0.0893487537 0.9106512463)
+( 0.7565977146 0.2434022854)
+( 0.3537410129 0.6462589871)
+)
+)
+((( 0.4446499611 0.5553500389)
+( 0.3767614813 0.6232385187)
+( 0.4272862000 0.5727138000)
+)
+(( 0.5006518400 0.4993481600)
+( 0.8792350771 0.1207649229)
+( 0.8716652174 0.1283347826)
+)
+)
+)
+(((( 0.1603030432 0.8396969568)
+( 0.7508370549 0.2491629451)
+( 0.9040582090 0.0959417910)
+)
+(( 0.5054521903 0.4945478097)
+( 0.1103306489 0.8896693511)
+( 0.6024347681 0.3975652319)
+)
+)
+((( 0.0187509941 0.9812490059)
+( 0.6698924201 0.3301075799)
+( 0.3412251132 0.6587748868)
+)
+(( 0.8730640913 0.1269359087)
+( 0.3544864000 0.6455136000)
+( 0.3300662402 0.6699337598)
+)
+)
+((( 0.5878825294 0.4121174706)
+( 0.5635676569 0.4364323431)
+( 0.8853360400 0.1146639600)
+)
+(( 0.2293206923 0.7706793077)
+( 0.4561567681 0.5438432319)
+( 0.8679302213 0.1320697787)
+)
+)
+)
+(((( 0.2758685400 0.7241314600)
+( 0.7881746015 0.2118253985)
+( 0.4066501356 0.5933498644)
+)
+(( 0.0332051481 0.9667948519)
+( 0.8296354000 0.1703646000)
+( 0.2632829279 0.7367170721)
+)
+)
+((( 0.1738157496 0.8261842504)
+( 0.9049806729 0.0950193271)
+( 0.4666429573 0.5333570427)
+)
+(( 0.5813591674 0.4186408326)
+( 0.1199773512 0.8800226488)
+( 0.5254181158 0.4745818842)
+)
+)
+((( 0.2058099318 0.7941900682)
+( 0.5535175443 0.4464824557)
+( 0.9604347712 0.0395652288)
+)
+(( 0.4630613300 0.5369386700)
+( 0.0168757197 0.9831242803)
+( 0.2388039000 0.7611961000)
+)
+)
+)
+)
+((((( 0.3286648597 0.6713351403)
+( 0.8258588217 0.1741411783)
+( 0.0884410909 0.9115589091)
+)
+(( 0.3334658800 0.6665341200)
+( 0.2781003567 0.7218996433)
+( 0.8232916847 0.1767083153)
+)
+)
+((( 0.5272935442 0.4727064558)
+( 0.0311757523 0.9688242477)
+( 0.1636012167 0.8363987833)
+)
+(( 0.3965843300 0.6034156700)
+( 0.2882242858 0.7117757142)
+( 0.9612022365 0.0387977635)
+)
+)
+((( 0.5980758700 0.4019241300)
+( 0.3887415122 0.6112584878)
+( 0.1259870675 0.8740129325)
+)
+(( 0.6622138000 0.3377862000)
+( 0.8808061736 0.1191938264)
+( 0.9436628632 0.0563371368)
+)
+)
+)
+(((( 0.2090897000 0.7909103000)
+( 0.7615868152 0.2384131848)
+( 0.9269835907 0.0730164093)
+)
+(( 0.2203421078 0.7796578922)
+( 0.4926032197 0.5073967803)
+( 0.0983032510 0.9016967490)
+)
+)
+((( 0.7856421579 0.2143578421)
+( 0.6968459152 0.3031540848)
+( 0.2852303114 0.7147696886)
+)
+(( 0.0719615371 0.9280384629)
+( 0.1815488164 0.8184511836)
+( 0.1134332843 0.8865667157)
+)
+)
+((( 0.8174600600 0.1825399400)
+( 0.7997733720 0.2002266280)
+( 0.5220250343 0.4779749657)
+)
+(( 0.2717658137 0.7282341863)
+( 0.2199938876 0.7800061124)
+( 0.3979701159 0.6020298841)
+)
+)
+)
+(((( 0.2463100901 0.7536899099)
+( 0.3477509000 0.6522491000)
+( 0.2040505682 0.7959494318)
+)
+(( 0.8686080739 0.1313919261)
+( 0.7145176857 0.2854823143)
+( 0.0099442825 0.9900557175)
+)
+)
+((( 0.9851540980 0.0148459020)
+( 0.0940730600 0.9059269400)
+( 0.6993197441 0.3006802559)
+)
+(( 0.5632991887 0.4367008113)
+( 0.6900035000 0.3099965000)
+( 0.6792767600 0.3207232400)
+)
+)
+((( 0.6346283600 0.3653716400)
+( 0.7622431043 0.2377568957)
+( 0.3985253420 0.6014746580)
+)
+(( 0.7105263713 0.2894736287)
+( 0.1965730598 0.8034269402)
+( 0.9630024304 0.0369975696)
+)
+)
+)
+)
+((((( 0.2399827848 0.7600172152)
+( 0.4009097700 0.5990902300)
+( 0.5819406500 0.4180593500)
+)
+(( 0.1327042740 0.8672957260)
+( 0.6983578559 0.3016421441)
+( 0.2985232500 0.7014767500)
+)
+)
+((( 0.0968641000 0.9031359000)
+( 0.1510810660 0.8489189340)
+( 0.8861272796 0.1138727204)
+)
+(( 0.0830331171 0.9169668829)
+( 0.3973033819 0.6026966181)
+( 0.5168768258 0.4831231742)
+)
+)
+((( 0.1229409425 0.8770590575)
+( 0.0234647410 0.9765352590)
+( 0.0099259711 0.9900740289)
+)
+(( 0.0679340214 0.9320659786)
+( 0.0099315212 0.9900684788)
+( 0.8584251657 0.1415748343)
+)
+)
+)
+(((( 0.7112134284 0.2887865716)
+( 0.3743963125 0.6256036875)
+( 0.8036046520 0.1963953480)
+)
+(( 0.8447387493 0.1552612507)
+( 0.5604062532 0.4395937468)
+( 0.2932348212 0.7067651788)
+)
+)
+((( 0.8101423481 0.1898576519)
+( 0.2338529213 0.7661470787)
+( 0.0477081748 0.9522918252)
+)
+(( 0.0183503383 0.9816496617)
+( 0.3029554291 0.6970445709)
+( 0.1822619327 0.8177380673)
+)
+)
+((( 0.1084578911 0.8915421089)
+( 0.9375922281 0.0624077719)
+( 0.8724643600 0.1275356400)
+)
+(( 0.3110335293 0.6889664707)
+( 0.7329842253 0.2670157747)
+( 0.9213748600 0.0786251400)
+)
+)
+)
+(((( 0.6916178707 0.3083821293)
+( 0.1854170600 0.8145829400)
+( 0.7920585921 0.2079414079)
+)
+(( 0.1915177919 0.8084822081)
+( 0.6338320400 0.3661679600)
+( 0.5917193763 0.4082806237)
+)
+)
+((( 0.2969903508 0.7030096492)
+( 0.1520444170 0.8479555830)
+( 0.9791714834 0.0208285166)
+)
+(( 0.8858797556 0.1141202444)
+( 0.6972633721 0.3027366279)
+( 0.4708968559 0.5291031441)
+)
+)
+((( 0.9008910270 0.0991089730)
+( 0.5974035238 0.4025964762)
+( 0.0161021970 0.9838978030)
+)
+(( 0.4581356437 0.5418643563)
+( 0.6816981000 0.3183019000)
+( 0.8391703232 0.1608296768)))))); 
+}
+
+potential ( node560 ) { 
+ data = ( ); 
+}
+
+potential ( node561 ) { 
+ data = ( ); 
+}
+
+potential ( node562 ) { 
+ data = ( ); 
+}
+
+potential ( node563 ) { 
+ data = ( ); 
+}
+
+potential ( node564 ) { 
+ data = ( ); 
+}
+
+potential ( node565 ) { 
+ data = ( ); 
+}
+
+potential ( node566 ) { 
+ data = ( ); 
+}
+
+potential ( node567 ) { 
+ data = ( ); 
+}
+
+potential ( node568 ) { 
+ data = ( ); 
+}
+
+potential ( node569 ) { 
+ data = ( ); 
+}
+
+potential ( node57 | node254 node444 node490 node96 ) { 
+ data = ((((( 0.2539481175 0.1665227883 0.5795290942)
+( 0.1614910048 0.2801842784 0.5583247167)
+( 0.2956400377 0.6456360387 0.0587239235)
+)
+(( 0.3550790393 0.1863574344 0.4585635262)
+( 0.0237465820 0.8772231763 0.0990302417)
+( 0.4546301582 0.3530163641 0.1923534777)
+)
+)
+((( 0.3839984162 0.1015944890 0.5144070949)
+( 0.0386387742 0.2450680615 0.7162931643)
+( 0.5183400189 0.2874308828 0.1942290983)
+)
+(( 0.7080437231 0.0497017561 0.2422545208)
+( 0.0284248632 0.7850496490 0.1865254879)
+( 0.1079584332 0.4190095826 0.4730319842)
+)
+)
+)
+(((( 0.3519402957 0.0556624611 0.5923972432)
+( 0.1862921675 0.5075515703 0.3061562622)
+( 0.0173911705 0.2637194079 0.7188894216)
+)
+(( 0.5683453416 0.1126281144 0.3190265440)
+( 0.0982803669 0.4159946691 0.4857249640)
+( 0.0915614382 0.0185373796 0.8899011822)
+)
+)
+((( 0.0730873339 0.3403242749 0.5865883912)
+( 0.3063499631 0.1545500315 0.5391000054)
+( 0.1958114922 0.0943791362 0.7098093716)
+)
+(( 0.1617780073 0.8282841008 0.0099378919)
+( 0.7002652650 0.1162696842 0.1834650508)
+( 0.0099570454 0.3838131638 0.6062297907))))); 
+}
+
+potential ( node570 ) { 
+ data = ( ); 
+}
+
+potential ( node571 ) { 
+ data = ( ); 
+}
+
+potential ( node572 ) { 
+ data = ( ); 
+}
+
+potential ( node573 ) { 
+ data = ( ); 
+}
+
+potential ( node574 ) { 
+ data = ( ); 
+}
+
+potential ( node575 ) { 
+ data = ( ); 
+}
+
+potential ( node576 ) { 
+ data = ( ); 
+}
+
+potential ( node577 ) { 
+ data = ( ); 
+}
+
+potential ( node578 ) { 
+ data = ( ); 
+}
+
+potential ( node579 ) { 
+ data = ( ); 
+}
+
+potential ( node58 | node218 node240 node337 node379 node431 node432 ) { 
+ data = ((((((( 0.0312643868 0.1529753189 0.8157602943)
+( 0.2022484370 0.0398148744 0.7579366886)
+)
+(( 0.2356810971 0.5841790175 0.1801398854)
+( 0.2847511585 0.4303824729 0.2848663685)
+)
+(( 0.5650340113 0.2300263646 0.2049396241)
+( 0.1837533590 0.1317711821 0.6844754589)
+)
+)
+((( 0.0285200691 0.9077672128 0.0637127181)
+( 0.2212360948 0.0148476732 0.7639162320)
+)
+(( 0.0873199074 0.6508817505 0.2617983421)
+( 0.0994331396 0.7784779969 0.1220888635)
+)
+(( 0.6564212531 0.2091941242 0.1343846227)
+( 0.2580793070 0.0178638735 0.7240568195)
+)
+)
+)
+(((( 0.0707549100 0.6151824600 0.3140626300)
+( 0.2027528661 0.5605496168 0.2366975171)
+)
+(( 0.8165878398 0.0455236153 0.1378885449)
+( 0.3942632518 0.2066681762 0.3990685720)
+)
+(( 0.1213469036 0.2106721063 0.6679809900)
+( 0.4935534596 0.2615045757 0.2449419647)
+)
+)
+((( 0.4581079564 0.4169140058 0.1249780377)
+( 0.2353307924 0.5531756055 0.2114936021)
+)
+(( 0.3609681447 0.4050089716 0.2340228836)
+( 0.4842388252 0.4249633558 0.0907978191)
+)
+(( 0.4982896400 0.1662028600 0.3355075000)
+( 0.4347648087 0.4455933389 0.1196418524)
+)
+)
+)
+(((( 0.2872316800 0.4461977800 0.2665705400)
+( 0.7053404788 0.1170715865 0.1775879347)
+)
+(( 0.0770431778 0.5057351121 0.4172217100)
+( 0.0548862789 0.5824909884 0.3626227327)
+)
+(( 0.1504915415 0.5320015553 0.3175069032)
+( 0.2105271521 0.6647609566 0.1247118912)
+)
+)
+((( 0.6069696423 0.2915341323 0.1014962254)
+( 0.3378859756 0.0187457328 0.6433682916)
+)
+(( 0.3436128000 0.0660729300 0.5903142700)
+( 0.1311965087 0.3363855966 0.5324178947)
+)
+(( 0.1777447829 0.2423652903 0.5798899268)
+( 0.3405615034 0.2937879629 0.3656505337)
+)
+)
+)
+)
+((((( 0.7953471342 0.1753439975 0.0293088683)
+( 0.2176176287 0.4174230567 0.3649593146)
+)
+(( 0.1951966678 0.1739244070 0.6308789252)
+( 0.1515294770 0.3313929634 0.5170775597)
+)
+(( 0.6510720000 0.2772563700 0.0716716300)
+( 0.7544876834 0.0197189016 0.2257934150)
+)
+)
+((( 0.4879585493 0.1946906517 0.3173507990)
+( 0.5521419331 0.0654560139 0.3824020529)
+)
+(( 0.4776925048 0.2992683430 0.2230391522)
+( 0.1041563786 0.1546084954 0.7412351259)
+)
+(( 0.6403624400 0.1690521700 0.1905853900)
+( 0.1800067892 0.5304101682 0.2895830426)
+)
+)
+)
+(((( 0.5600030776 0.2854042486 0.1545926738)
+( 0.6367183682 0.1591179595 0.2041636722)
+)
+(( 0.2891450945 0.5926387596 0.1182161459)
+( 0.6127000255 0.1507976340 0.2365023405)
+)
+(( 0.1856887989 0.4079600755 0.4063511256)
+( 0.6887857162 0.1592890468 0.1519252370)
+)
+)
+((( 0.9454517745 0.0155272166 0.0390210089)
+( 0.5538835500 0.2140007000 0.2321157500)
+)
+(( 0.0593796348 0.7756452313 0.1649751339)
+( 0.5009920750 0.3025813491 0.1964265759)
+)
+(( 0.0612795035 0.2289155643 0.7098049323)
+( 0.7054190805 0.2832798482 0.0113010713)
+)
+)
+)
+(((( 0.1532366608 0.6939590184 0.1528043208)
+( 0.8314047268 0.0099890706 0.1586062026)
+)
+(( 0.2131929800 0.0342670546 0.7525399654)
+( 0.4252179745 0.4349812739 0.1398007516)
+)
+(( 0.4048385519 0.4918387702 0.1033226779)
+( 0.1747791113 0.7182730041 0.1069478847)
+)
+)
+((( 0.4621289169 0.3576833421 0.1801877410)
+( 0.2673955600 0.0971671900 0.6354372500)
+)
+(( 0.3335192667 0.3925774196 0.2739033137)
+( 0.1282174338 0.0736271722 0.7981553939)
+)
+(( 0.2046279759 0.4505470910 0.3448249331)
+( 0.5065108652 0.2783644884 0.2151246465)
+)
+)
+)
+)
+((((( 0.3970421340 0.5311088053 0.0718490607)
+( 0.4365173956 0.2902488671 0.2732337373)
+)
+(( 0.3900507828 0.1129014890 0.4970477281)
+( 0.6358505691 0.1361132741 0.2280361568)
+)
+(( 0.7179246799 0.2571640528 0.0249112673)
+( 0.0413963375 0.6262801624 0.3323235001)
+)
+)
+((( 0.2491408050 0.1328310827 0.6180281124)
+( 0.0509842209 0.3114053531 0.6376104260)
+)
+(( 0.5973147078 0.3358524269 0.0668328653)
+( 0.3922087182 0.3681340090 0.2396572728)
+)
+(( 0.8928375402 0.0335713865 0.0735910733)
+( 0.1115506911 0.5689618057 0.3194875032)
+)
+)
+)
+(((( 0.6190616135 0.3648874285 0.0160509581)
+( 0.4911989551 0.2319965977 0.2768044472)
+)
+(( 0.2567060718 0.1752693907 0.5680245375)
+( 0.6002059480 0.1438323571 0.2559616949)
+)
+(( 0.2918424000 0.3196588200 0.3884987800)
+( 0.1506011300 0.6734152000 0.1759836700)
+)
+)
+((( 0.0923514237 0.3187867528 0.5888618236)
+( 0.0951986552 0.7944781603 0.1103231845)
+)
+(( 0.1703334000 0.6330378700 0.1966287300)
+( 0.4359546556 0.3113229969 0.2527223475)
+)
+(( 0.4171958350 0.3226417806 0.2601623844)
+( 0.2143389471 0.4011876959 0.3844733569)
+)
+)
+)
+(((( 0.2697134251 0.6828351877 0.0474513871)
+( 0.2362239018 0.5571205879 0.2066555103)
+)
+(( 0.4499856054 0.5400826045 0.0099317902)
+( 0.1476468459 0.5399217216 0.3124314325)
+)
+(( 0.0543160378 0.1141708254 0.8315131367)
+( 0.5203476500 0.2259368900 0.2537154600)
+)
+)
+((( 0.0207273157 0.4473100928 0.5319625915)
+( 0.1132285000 0.4765147600 0.4102567400)
+)
+(( 0.3383203156 0.0335575055 0.6281221789)
+( 0.3680963947 0.4824490393 0.1494545660)
+)
+(( 0.1755372953 0.2638430379 0.5606196668)
+( 0.3405297390 0.0364380629 0.6230321981)
+)
+)
+)
+)
+)
+(((((( 0.1888758068 0.1100041680 0.7011200252)
+( 0.6855406794 0.0463221986 0.2681371220)
+)
+(( 0.1970779241 0.7201599284 0.0827621475)
+( 0.0325011851 0.7127224994 0.2547763155)
+)
+(( 0.1226253563 0.3365797599 0.5407948838)
+( 0.0438049429 0.5155278876 0.4406671694)
+)
+)
+((( 0.7072178212 0.1725281652 0.1202540136)
+( 0.7825968499 0.1143182067 0.1030849434)
+)
+(( 0.7664418749 0.1542432669 0.0793148583)
+( 0.0857742983 0.4564829109 0.4577427908)
+)
+(( 0.2724313000 0.3432031000 0.3843656000)
+( 0.7484644105 0.1292927718 0.1222428177)
+)
+)
+)
+(((( 0.5870918952 0.1205497472 0.2923583575)
+( 0.5662244634 0.3948238524 0.0389516842)
+)
+(( 0.0897197046 0.5223492974 0.3879309981)
+( 0.0968951632 0.5017976649 0.4013071719)
+)
+(( 0.0231817446 0.4374419814 0.5393762740)
+( 0.1954934959 0.2464962874 0.5580102167)
+)
+)
+((( 0.4156999374 0.4164515175 0.1678485451)
+( 0.1189724915 0.0987822311 0.7822452773)
+)
+(( 0.4593232462 0.1484226255 0.3922541282)
+( 0.1363325920 0.0473073357 0.8163600722)
+)
+(( 0.3264098696 0.0910935955 0.5824965349)
+( 0.2300830569 0.3036390891 0.4662778540)
+)
+)
+)
+(((( 0.1736202228 0.0652997950 0.7610799822)
+( 0.1055638511 0.1986003720 0.6958357770)
+)
+(( 0.6203249310 0.1604409580 0.2192341110)
+( 0.3616604319 0.3771459811 0.2611935869)
+)
+(( 0.4821283096 0.2842989057 0.2335727847)
+( 0.1261466400 0.6550060000 0.2188473600)
+)
+)
+((( 0.4118366035 0.5047554798 0.0834079167)
+( 0.4720546300 0.3271390500 0.2008063200)
+)
+(( 0.1943443684 0.7899824740 0.0156731577)
+( 0.1873248437 0.1437731029 0.6689020534)
+)
+(( 0.3593068144 0.0950563638 0.5456368218)
+( 0.3004297300 0.4443382000 0.2552320700)
+)
+)
+)
+)
+((((( 0.3538392788 0.1008391539 0.5453215673)
+( 0.1279747626 0.4167059083 0.4553193291)
+)
+(( 0.2207384790 0.2870501156 0.4922114054)
+( 0.4693756094 0.4143087683 0.1163156223)
+)
+(( 0.0860924046 0.5246386974 0.3892688981)
+( 0.3088223569 0.5706292943 0.1205483488)
+)
+)
+((( 0.4576652325 0.4872921108 0.0550426567)
+( 0.5670210159 0.0303672729 0.4026117113)
+)
+(( 0.0802165232 0.0647818426 0.8550016342)
+( 0.4684093050 0.5216219307 0.0099687643)
+)
+(( 0.1534128754 0.2085147137 0.6380724109)
+( 0.2611330778 0.2991391090 0.4397278132)
+)
+)
+)
+(((( 0.2317692279 0.7271482547 0.0410825174)
+( 0.6465297612 0.1201741528 0.2332960860)
+)
+(( 0.0682940563 0.5736114423 0.3580945014)
+( 0.1107047744 0.4895144896 0.3997807360)
+)
+(( 0.4460582388 0.1011013729 0.4528403883)
+( 0.1171519711 0.7913524668 0.0914955622)
+)
+)
+((( 0.2523752076 0.6240697687 0.1235550237)
+( 0.0790298508 0.5235036652 0.3974664840)
+)
+(( 0.5280270547 0.2658127773 0.2061601679)
+( 0.4495392940 0.4367380351 0.1137226709)
+)
+(( 0.2389498881 0.4727982764 0.2882518356)
+( 0.3501967060 0.3807819048 0.2690213892)
+)
+)
+)
+(((( 0.0475111862 0.8779162035 0.0745726103)
+( 0.3347074026 0.6553629164 0.0099296810)
+)
+(( 0.0116553049 0.1876683491 0.8006763460)
+( 0.5424716951 0.0123360089 0.4451922960)
+)
+(( 0.4105097954 0.2704180638 0.3190721409)
+( 0.2679532420 0.2657165120 0.4663302460)
+)
+)
+((( 0.3114561400 0.4684256600 0.2201182000)
+( 0.2975382396 0.6498309173 0.0526308432)
+)
+(( 0.2314550377 0.3066905369 0.4618544254)
+( 0.6044482788 0.3402318881 0.0553198331)
+)
+(( 0.6477040393 0.0601333101 0.2921626507)
+( 0.5555674456 0.3493781035 0.0950544510)
+)
+)
+)
+)
+((((( 0.9803053174 0.0098473413 0.0098473413)
+( 0.3983427841 0.3992977540 0.2023594619)
+)
+(( 0.1183018912 0.1116689657 0.7700291430)
+( 0.0562806717 0.3699354111 0.5737839172)
+)
+(( 0.5058720086 0.4614790478 0.0326489436)
+( 0.4233415548 0.4850561170 0.0916023282)
+)
+)
+((( 0.4776869175 0.3727783190 0.1495347636)
+( 0.3864775368 0.2519894649 0.3615329983)
+)
+(( 0.5785363126 0.1284936961 0.2929699912)
+( 0.1981232801 0.1040262848 0.6978504351)
+)
+(( 0.2879974173 0.2553169853 0.4566855974)
+( 0.2407782404 0.3347121366 0.4245096230)
+)
+)
+)
+(((( 0.2128569894 0.3441573828 0.4429856279)
+( 0.3458951141 0.1007178274 0.5533870585)
+)
+(( 0.2705368508 0.6634878765 0.0659752726)
+( 0.1204196512 0.2537679425 0.6258124063)
+)
+(( 0.3317556133 0.2530180301 0.4152263566)
+( 0.1004756556 0.2048490333 0.6946753111)
+)
+)
+((( 0.1905491124 0.4261591230 0.3832917647)
+( 0.5188006000 0.3317465800 0.1494528200)
+)
+(( 0.2721506109 0.0998981040 0.6279512851)
+( 0.1497012152 0.8208410287 0.0294577560)
+)
+(( 0.2827265685 0.0668205620 0.6504528695)
+( 0.0586678232 0.8824901476 0.0588420292)
+)
+)
+)
+(((( 0.3169495451 0.1844499697 0.4986004852)
+( 0.6031608660 0.2681154627 0.1287236713)
+)
+(( 0.0659437653 0.6131659091 0.3208903257)
+( 0.8664056440 0.0272171592 0.1063771968)
+)
+(( 0.1776121471 0.6314218253 0.1909660276)
+( 0.2887287599 0.5897561794 0.1215150607)
+)
+)
+((( 0.2145891236 0.1342958960 0.6511149805)
+( 0.7028201000 0.1567090200 0.1404708800)
+)
+(( 0.2283129614 0.3034199652 0.4682670734)
+( 0.2731439937 0.5568174278 0.1700385785)
+)
+(( 0.1241473787 0.2497282775 0.6261243438)
+( 0.0471471014 0.5487937119 0.4040591867))))))); 
+}
+
+potential ( node580 ) { 
+ data = ( ); 
+}
+
+potential ( node581 ) { 
+ data = ( ); 
+}
+
+potential ( node582 ) { 
+ data = ( ); 
+}
+
+potential ( node583 ) { 
+ data = ( ); 
+}
+
+potential ( node584 ) { 
+ data = ( ); 
+}
+
+potential ( node585 ) { 
+ data = ( ); 
+}
+
+potential ( node586 ) { 
+ data = ( ); 
+}
+
+potential ( node587 ) { 
+ data = ( ); 
+}
+
+potential ( node588 ) { 
+ data = ( ); 
+}
+
+potential ( node589 ) { 
+ data = ( ); 
+}
+
+potential ( node59 | node15 node378 node45 node97 ) { 
+ data = ((((( 0.2691738162 0.7308261838)
+( 0.8099156486 0.1900843514)
+( 0.6566624000 0.3433376000)
+)
+(( 0.9442329000 0.0557671000)
+( 0.2898970142 0.7101029858)
+( 0.2194469366 0.7805530634)
+)
+)
+((( 0.5349874107 0.4650125893)
+( 0.7444576702 0.2555423298)
+( 0.7298970635 0.2701029365)
+)
+(( 0.9534240305 0.0465759695)
+( 0.3960798000 0.6039202000)
+( 0.2291003808 0.7708996192)
+)
+)
+)
+(((( 0.8989403494 0.1010596506)
+( 0.2118172364 0.7881827636)
+( 0.1763149912 0.8236850088)
+)
+(( 0.2032564080 0.7967435920)
+( 0.3644440127 0.6355559873)
+( 0.6737505663 0.3262494337)
+)
+)
+((( 0.9596520000 0.0403480000)
+( 0.6977747909 0.3022252091)
+( 0.0366628822 0.9633371178)
+)
+(( 0.5547107000 0.4452893000)
+( 0.0904886272 0.9095113728)
+( 0.8711280826 0.1288719174)
+)
+)
+)
+(((( 0.9641556646 0.0358443354)
+( 0.4589377784 0.5410622216)
+( 0.1468618244 0.8531381756)
+)
+(( 0.5817222833 0.4182777167)
+( 0.7715145223 0.2284854777)
+( 0.9900168615 0.0099831385)
+)
+)
+((( 0.2448507424 0.7551492576)
+( 0.1968130500 0.8031869500)
+( 0.9499095943 0.0500904057)
+)
+(( 0.9900593546 0.0099406454)
+( 0.6420607857 0.3579392143)
+( 0.9434310928 0.0565689072))))); 
+}
+
+potential ( node590 ) { 
+ data = ( ); 
+}
+
+potential ( node591 ) { 
+ data = ( ); 
+}
+
+potential ( node592 ) { 
+ data = ( ); 
+}
+
+potential ( node593 ) { 
+ data = ( ); 
+}
+
+potential ( node594 ) { 
+ data = ( ); 
+}
+
+potential ( node595 ) { 
+ data = ( ); 
+}
+
+potential ( node596 ) { 
+ data = ( ); 
+}
+
+potential ( node597 ) { 
+ data = ( ); 
+}
+
+potential ( node598 ) { 
+ data = ( ); 
+}
+
+potential ( node599 ) { 
+ data = ( ); 
+}
+
+potential ( node6 | node392 node9 ) { 
+ data = ((( 0.0099739279 0.9900260721)
+( 0.8757488562 0.1242511438)
+( 0.3794789752 0.6205210248)
+)
+(( 0.0099831823 0.9900168177)
+( 0.7129996115 0.2870003885)
+( 0.1851758237 0.8148241763))); 
+}
+
+potential ( node60 | node313 node41 ) { 
+ data = ((( 0.1027858569 0.7948439762 0.1023701669)
+( 0.3021840588 0.6785076525 0.0193082886)
+( 0.6444140148 0.3442539379 0.0113320473)
+)
+(( 0.1723694314 0.0961440052 0.7314865634)
+( 0.4378962931 0.4870553446 0.0750483623)
+( 0.5068045124 0.0099087866 0.4832867009)
+)
+(( 0.3734533114 0.5697928869 0.0567538017)
+( 0.0256263983 0.7842096773 0.1901639245)
+( 0.5118154113 0.4696561103 0.0185284784))); 
+}
+
+potential ( node61 | node80 ) { 
+ data = (( 0.0173418520 0.9826581480)
+( 0.2521160049 0.7478839951)); 
+}
+
+potential ( node62 | node127 node28 node528 ) { 
+ data = (((( 0.1420796472 0.2842618943 0.5736584585)
+( 0.0250165209 0.4989993990 0.4759840800)
+( 0.5545779445 0.2105638479 0.2348582077)
+)
+(( 0.2143763343 0.1755874535 0.6100362122)
+( 0.6182409839 0.0557856245 0.3259733915)
+( 0.2518001950 0.3392662932 0.4089335118)
+)
+)
+((( 0.5121576488 0.3205952679 0.1672470833)
+( 0.7605222772 0.1764374747 0.0630402481)
+( 0.2104087579 0.5210447248 0.2685465173)
+)
+(( 0.1846336718 0.2244004522 0.5909658759)
+( 0.2728411518 0.6961593791 0.0309994691)
+( 0.0105479174 0.6311535634 0.3582985192)
+)
+)
+((( 0.1571651700 0.1637736000 0.6790612300)
+( 0.2377453924 0.3934381639 0.3688164437)
+( 0.1058317602 0.2763615676 0.6178066722)
+)
+(( 0.3374056044 0.0190700372 0.6435243584)
+( 0.0559829861 0.9264095576 0.0176074563)
+( 0.3761158487 0.3004623610 0.3234217903)))); 
+}
+
+potential ( node63 | node161 ) { 
+ data = (( 0.2321632661 0.1408620715 0.6269746624)
+( 0.2552634851 0.1766815035 0.5680550114)
+( 0.1890640957 0.3595164508 0.4514194535)); 
+}
+
+potential ( node64 | node214 node215 ) { 
+ data = ((( 0.8406315075 0.0472763548 0.1120921377)
+( 0.1898378757 0.3768728513 0.4332892730)
+( 0.0114227792 0.5790506122 0.4095266086)
+)
+(( 0.6331034899 0.0887750746 0.2781214356)
+( 0.6056097927 0.3815651454 0.0128250618)
+( 0.2253115623 0.1659363017 0.6087521361))); 
+}
+
+potential ( node65 | node270 node307 node560 ) { 
+ data = (((( 0.2379785790 0.6277676502 0.1342537707)
+( 0.4600826662 0.3000639910 0.2398533428)
+( 0.1180518088 0.4304157757 0.4515324155)
+)
+(( 0.0348856397 0.5104937949 0.4546205655)
+( 0.2679549280 0.4285515629 0.3034935091)
+( 0.3088357700 0.6511755600 0.0399886700)
+)
+)
+((( 0.9098296977 0.0125889825 0.0775813198)
+( 0.3420756868 0.1595075032 0.4984168100)
+( 0.5941123103 0.3049475648 0.1009401250)
+)
+(( 0.6052137721 0.0690890214 0.3256972065)
+( 0.2935254571 0.5846906942 0.1217838488)
+( 0.6908779931 0.1463411885 0.1627808184)))); 
+}
+
+potential ( node66 | node190 node465 ) { 
+ data = ((( 0.0989862270 0.9010137730)
+( 0.1676677916 0.8323322084)
+( 0.0625608413 0.9374391587)
+)
+(( 0.8638639259 0.1361360741)
+( 0.5223032000 0.4776968000)
+( 0.7921087446 0.2078912554)
+)
+(( 0.3783271113 0.6216728887)
+( 0.6872881000 0.3127119000)
+( 0.0184046423 0.9815953577))); 
+}
+
+potential ( node67 | node15 node191 node60 ) { 
+ data = (((( 0.3921044843 0.5929219763 0.0149735394)
+( 0.0681515215 0.3347499179 0.5970985606)
+( 0.5582587665 0.2432160054 0.1985252281)
+)
+(( 0.0954458819 0.5304349806 0.3741191375)
+( 0.0559415472 0.6995889650 0.2444694878)
+( 0.1439584344 0.8103315810 0.0457099846)
+)
+)
+((( 0.0396118192 0.7787254844 0.1816626964)
+( 0.6256828750 0.3003696080 0.0739475170)
+( 0.5140496397 0.1798482664 0.3061020939)
+)
+(( 0.0948102909 0.1702890017 0.7349007073)
+( 0.1676295450 0.7020376211 0.1303328339)
+( 0.1937194000 0.2989264000 0.5073542000)
+)
+)
+((( 0.3278578242 0.6621670567 0.0099751191)
+( 0.0755588360 0.0470275112 0.8774136528)
+( 0.7789390097 0.0099967070 0.2110642833)
+)
+(( 0.7581881114 0.1351686420 0.1066432466)
+( 0.2443015227 0.3488346195 0.4068638578)
+( 0.5070860000 0.1021830500 0.3907309500)))); 
+}
+
+potential ( node68 | node125 node24 node255 node408 node594 node84 ) { 
+ data = ((((((( 0.9059780583 0.0940219417)
+( 0.9662210874 0.0337789126)
+)
+(( 0.4194032000 0.5805968000)
+( 0.6254662375 0.3745337625)
+)
+(( 0.4396037000 0.5603963000)
+( 0.7754494535 0.2245505465)
+)
+)
+((( 0.5540825222 0.4459174778)
+( 0.0359633099 0.9640366901)
+)
+(( 0.3617379253 0.6382620747)
+( 0.3367612801 0.6632387199)
+)
+(( 0.3741390624 0.6258609376)
+( 0.8118008838 0.1881991162)
+)
+)
+((( 0.6990635581 0.3009364419)
+( 0.6194261000 0.3805739000)
+)
+(( 0.9900699118 0.0099300882)
+( 0.6798057600 0.3201942400)
+)
+(( 0.9643614135 0.0356385865)
+( 0.2043878761 0.7956121239)
+)
+)
+)
+(((( 0.9900052307 0.0099947693)
+( 0.4383622568 0.5616377432)
+)
+(( 0.6751745000 0.3248255000)
+( 0.7225193111 0.2774806889)
+)
+(( 0.2634051000 0.7365949000)
+( 0.8478728924 0.1521271076)
+)
+)
+((( 0.2032632080 0.7967367920)
+( 0.6892132449 0.3107867551)
+)
+(( 0.6453088500 0.3546911500)
+( 0.8342437750 0.1657562250)
+)
+(( 0.7646707694 0.2353292306)
+( 0.9681334597 0.0318665403)
+)
+)
+((( 0.1206749780 0.8793250220)
+( 0.4993837650 0.5006162350)
+)
+(( 0.3923052378 0.6076947622)
+( 0.3165713863 0.6834286137)
+)
+(( 0.4013069599 0.5986930401)
+( 0.6635175499 0.3364824501)
+)
+)
+)
+)
+((((( 0.3299660000 0.6700340000)
+( 0.2882824500 0.7117175500)
+)
+(( 0.1474026744 0.8525973256)
+( 0.0905586136 0.9094413864)
+)
+(( 0.3855031246 0.6144968754)
+( 0.7842267392 0.2157732608)
+)
+)
+((( 0.9629365520 0.0370634480)
+( 0.1617115251 0.8382884749)
+)
+(( 0.0398940250 0.9601059750)
+( 0.0783133094 0.9216866906)
+)
+(( 0.1447777572 0.8552222428)
+( 0.5480363219 0.4519636781)
+)
+)
+((( 0.7232798517 0.2767201483)
+( 0.1730075835 0.8269924165)
+)
+(( 0.8584915000 0.1415085000)
+( 0.7386440378 0.2613559622)
+)
+(( 0.7347837000 0.2652163000)
+( 0.3781740249 0.6218259751)
+)
+)
+)
+(((( 0.3373116735 0.6626883265)
+( 0.1595008484 0.8404991516)
+)
+(( 0.5357947000 0.4642053000)
+( 0.2137292836 0.7862707164)
+)
+(( 0.2479871124 0.7520128876)
+( 0.3960802419 0.6039197581)
+)
+)
+((( 0.8880299645 0.1119700355)
+( 0.6343443400 0.3656556600)
+)
+(( 0.6160428808 0.3839571192)
+( 0.2602197148 0.7397802852)
+)
+(( 0.5625132300 0.4374867700)
+( 0.2781089283 0.7218910717)
+)
+)
+((( 0.9775098606 0.0224901394)
+( 0.4594602600 0.5405397400)
+)
+(( 0.6237358312 0.3762641688)
+( 0.0352516633 0.9647483367)
+)
+(( 0.8261633252 0.1738366748)
+( 0.3356215000 0.6643785000)
+)
+)
+)
+)
+((((( 0.0929550319 0.9070449681)
+( 0.0264122325 0.9735877675)
+)
+(( 0.9199960264 0.0800039736)
+( 0.4026305521 0.5973694479)
+)
+(( 0.1539348000 0.8460652000)
+( 0.1482515300 0.8517484700)
+)
+)
+((( 0.8713005174 0.1286994826)
+( 0.4747751842 0.5252248158)
+)
+(( 0.2914934975 0.7085065025)
+( 0.1494957000 0.8505043000)
+)
+(( 0.0803646713 0.9196353287)
+( 0.5671245284 0.4328754716)
+)
+)
+((( 0.5135363454 0.4864636546)
+( 0.2068062321 0.7931937679)
+)
+(( 0.6116227000 0.3883773000)
+( 0.0923188000 0.9076812000)
+)
+(( 0.2872414172 0.7127585828)
+( 0.6160590600 0.3839409400)
+)
+)
+)
+(((( 0.5270158600 0.4729841400)
+( 0.4957911849 0.5042088151)
+)
+(( 0.6751268000 0.3248732000)
+( 0.8744070762 0.1255929238)
+)
+(( 0.1476915830 0.8523084170)
+( 0.8004598600 0.1995401400)
+)
+)
+((( 0.7096122142 0.2903877858)
+( 0.2177643000 0.7822357000)
+)
+(( 0.2418536424 0.7581463576)
+( 0.8173852000 0.1826148000)
+)
+(( 0.3107482655 0.6892517345)
+( 0.3987578000 0.6012422000)
+)
+)
+((( 0.3580968143 0.6419031857)
+( 0.2493046075 0.7506953925)
+)
+(( 0.0698285093 0.9301714907)
+( 0.2688647866 0.7311352134)
+)
+(( 0.3153303411 0.6846696589)
+( 0.5702027871 0.4297972129)
+)
+)
+)
+)
+)
+(((((( 0.4311240772 0.5688759228)
+( 0.8809002371 0.1190997629)
+)
+(( 0.9361979494 0.0638020506)
+( 0.3708491300 0.6291508700)
+)
+(( 0.3080784000 0.6919216000)
+( 0.0683559655 0.9316440345)
+)
+)
+((( 0.6329018184 0.3670981816)
+( 0.0099283599 0.9900716401)
+)
+(( 0.7741946910 0.2258053090)
+( 0.7082637000 0.2917363000)
+)
+(( 0.9023970910 0.0976029090)
+( 0.2295218077 0.7704781923)
+)
+)
+((( 0.3505168600 0.6494831400)
+( 0.7271186154 0.2728813846)
+)
+(( 0.4630402139 0.5369597861)
+( 0.6989954280 0.3010045720)
+)
+(( 0.8746070525 0.1253929475)
+( 0.5594993280 0.4405006720)
+)
+)
+)
+(((( 0.8054180000 0.1945820000)
+( 0.6632496265 0.3367503735)
+)
+(( 0.4645148661 0.5354851339)
+( 0.4309196114 0.5690803886)
+)
+(( 0.1350204214 0.8649795786)
+( 0.0481590247 0.9518409753)
+)
+)
+((( 0.2246158078 0.7753841922)
+( 0.0285875573 0.9714124427)
+)
+(( 0.8830824000 0.1169176000)
+( 0.0603090660 0.9396909340)
+)
+(( 0.7866779915 0.2133220085)
+( 0.4469853821 0.5530146179)
+)
+)
+((( 0.8213376754 0.1786623246)
+( 0.3348444800 0.6651555200)
+)
+(( 0.2549310822 0.7450689178)
+( 0.5357237500 0.4642762500)
+)
+(( 0.3062228000 0.6937772000)
+( 0.7515456775 0.2484543225)
+)
+)
+)
+)
+((((( 0.1476527585 0.8523472415)
+( 0.2805310284 0.7194689716)
+)
+(( 0.4133527052 0.5866472948)
+( 0.2574420377 0.7425579623)
+)
+(( 0.6341655000 0.3658345000)
+( 0.5694020000 0.4305980000)
+)
+)
+((( 0.5413775000 0.4586225000)
+( 0.7686404446 0.2313595554)
+)
+(( 0.4138280000 0.5861720000)
+( 0.4460072777 0.5539927223)
+)
+(( 0.2355034476 0.7644965524)
+( 0.5942725678 0.4057274322)
+)
+)
+((( 0.5401135862 0.4598864138)
+( 0.8074801000 0.1925199000)
+)
+(( 0.2708495437 0.7291504563)
+( 0.1108848267 0.8891151733)
+)
+(( 0.1386699086 0.8613300914)
+( 0.8211866000 0.1788134000)
+)
+)
+)
+(((( 0.3782614313 0.6217385687)
+( 0.5323775213 0.4676224787)
+)
+(( 0.1132379645 0.8867620355)
+( 0.3209113296 0.6790886704)
+)
+(( 0.9784658775 0.0215341225)
+( 0.4449727722 0.5550272278)
+)
+)
+((( 0.8033800562 0.1966199438)
+( 0.3992071421 0.6007928579)
+)
+(( 0.8557902686 0.1442097314)
+( 0.3777709849 0.6222290151)
+)
+(( 0.9803258725 0.0196741275)
+( 0.7191285144 0.2808714856)
+)
+)
+((( 0.8273299165 0.1726700835)
+( 0.7466098299 0.2533901701)
+)
+(( 0.8303096249 0.1696903751)
+( 0.9563974045 0.0436025955)
+)
+(( 0.8365419500 0.1634580500)
+( 0.9707983903 0.0292016097)
+)
+)
+)
+)
+((((( 0.9755268437 0.0244731563)
+( 0.0484341619 0.9515658381)
+)
+(( 0.5526576332 0.4473423668)
+( 0.2275438923 0.7724561077)
+)
+(( 0.3547527129 0.6452472871)
+( 0.5009868850 0.4990131150)
+)
+)
+((( 0.9900079237 0.0099920763)
+( 0.8292355168 0.1707644832)
+)
+(( 0.7254799600 0.2745200400)
+( 0.1050957489 0.8949042511)
+)
+(( 0.6376132809 0.3623867191)
+( 0.0536409161 0.9463590839)
+)
+)
+((( 0.2678348620 0.7321651380)
+( 0.2251118787 0.7748881213)
+)
+(( 0.3088077000 0.6911923000)
+( 0.2638012632 0.7361987368)
+)
+(( 0.8935939611 0.1064060389)
+( 0.4925495552 0.5074504448)
+)
+)
+)
+(((( 0.0649807734 0.9350192266)
+( 0.6166973247 0.3833026753)
+)
+(( 0.6055362697 0.3944637303)
+( 0.8154864055 0.1845135945)
+)
+(( 0.8011685000 0.1988315000)
+( 0.2151726843 0.7848273157)
+)
+)
+((( 0.9648817135 0.0351182865)
+( 0.6593139670 0.3406860330)
+)
+(( 0.3035785879 0.6964214121)
+( 0.6773027323 0.3226972677)
+)
+(( 0.0099805774 0.9900194226)
+( 0.6750444005 0.3249555995)
+)
+)
+((( 0.4559626782 0.5440373218)
+( 0.9779052372 0.0220947628)
+)
+(( 0.3802966314 0.6197033686)
+( 0.9900503165 0.0099496835)
+)
+(( 0.0484359176 0.9515640824)
+( 0.7243672600 0.2756327400)
+)
+)
+)
+)
+)
+(((((( 0.2536628149 0.7463371851)
+( 0.4965804899 0.5034195101)
+)
+(( 0.1488953889 0.8511046111)
+( 0.7299057854 0.2700942146)
+)
+(( 0.5598535500 0.4401464500)
+( 0.7530885000 0.2469115000)
+)
+)
+((( 0.2580588148 0.7419411852)
+( 0.2828520500 0.7171479500)
+)
+(( 0.6297180700 0.3702819300)
+( 0.2758584000 0.7241416000)
+)
+(( 0.8954306090 0.1045693910)
+( 0.7339011400 0.2660988600)
+)
+)
+((( 0.3791687686 0.6208312314)
+( 0.7851402921 0.2148597079)
+)
+(( 0.8722188587 0.1277811413)
+( 0.5036411647 0.4963588353)
+)
+(( 0.6442619000 0.3557381000)
+( 0.9744547239 0.0255452761)
+)
+)
+)
+(((( 0.9900697708 0.0099302292)
+( 0.2530288299 0.7469711701)
+)
+(( 0.4480411669 0.5519588331)
+( 0.6806215204 0.3193784796)
+)
+(( 0.8278226752 0.1721773248)
+( 0.1671214617 0.8328785383)
+)
+)
+((( 0.5403467562 0.4596532438)
+( 0.0578309424 0.9421690576)
+)
+(( 0.6546058504 0.3453941496)
+( 0.2018289600 0.7981710400)
+)
+(( 0.5719015257 0.4280984743)
+( 0.1833788728 0.8166211272)
+)
+)
+((( 0.9317973373 0.0682026627)
+( 0.5553961400 0.4446038600)
+)
+(( 0.9193203768 0.0806796232)
+( 0.4624785269 0.5375214731)
+)
+(( 0.4653524107 0.5346475893)
+( 0.0753268769 0.9246731231)
+)
+)
+)
+)
+((((( 0.0818200092 0.9181799908)
+( 0.6287150811 0.3712849189)
+)
+(( 0.4578959463 0.5421040537)
+( 0.4205653232 0.5794346768)
+)
+(( 0.7085825354 0.2914174646)
+( 0.9525613971 0.0474386029)
+)
+)
+((( 0.4033081000 0.5966919000)
+( 0.6439958485 0.3560041515)
+)
+(( 0.8685697000 0.1314303000)
+( 0.7779642689 0.2220357311)
+)
+(( 0.8867717932 0.1132282068)
+( 0.4111680647 0.5888319353)
+)
+)
+((( 0.4326706000 0.5673294000)
+( 0.2366892076 0.7633107924)
+)
+(( 0.5773129000 0.4226871000)
+( 0.6544909131 0.3455090869)
+)
+(( 0.1395541572 0.8604458428)
+( 0.6232202249 0.3767797751)
+)
+)
+)
+(((( 0.2132933236 0.7867066764)
+( 0.5229849261 0.4770150739)
+)
+(( 0.8513527170 0.1486472830)
+( 0.2741296000 0.7258704000)
+)
+(( 0.9607782083 0.0392217917)
+( 0.6329334400 0.3670665600)
+)
+)
+((( 0.1968875500 0.8031124500)
+( 0.9285191489 0.0714808511)
+)
+(( 0.3333113000 0.6666887000)
+( 0.2613769369 0.7386230631)
+)
+(( 0.7628976110 0.2371023890)
+( 0.6214647000 0.3785353000)
+)
+)
+((( 0.1294896513 0.8705103487)
+( 0.1925693161 0.8074306839)
+)
+(( 0.3626795145 0.6373204855)
+( 0.6184758500 0.3815241500)
+)
+(( 0.8275757069 0.1724242931)
+( 0.3561400678 0.6438599322)
+)
+)
+)
+)
+((((( 0.0837341271 0.9162658729)
+( 0.3301017201 0.6698982799)
+)
+(( 0.7827759843 0.2172240157)
+( 0.9037377361 0.0962622639)
+)
+(( 0.4391836888 0.5608163112)
+( 0.7584676924 0.2415323076)
+)
+)
+((( 0.7655214547 0.2344785453)
+( 0.4656957214 0.5343042786)
+)
+(( 0.3402010000 0.6597990000)
+( 0.4671520600 0.5328479400)
+)
+(( 0.0099926447 0.9900073553)
+( 0.7107823645 0.2892176355)
+)
+)
+((( 0.4168165767 0.5831834233)
+( 0.4131727000 0.5868273000)
+)
+(( 0.6220739313 0.3779260687)
+( 0.7361087853 0.2638912147)
+)
+(( 0.7003982910 0.2996017090)
+( 0.9557552262 0.0442447738)
+)
+)
+)
+(((( 0.5375721000 0.4624279000)
+( 0.8823297600 0.1176702400)
+)
+(( 0.9492290477 0.0507709523)
+( 0.7021456611 0.2978543389)
+)
+(( 0.4292995772 0.5707004228)
+( 0.7463723848 0.2536276152)
+)
+)
+((( 0.2823414641 0.7176585359)
+( 0.0944988276 0.9055011724)
+)
+(( 0.8287863000 0.1712137000)
+( 0.1999760320 0.8000239680)
+)
+(( 0.3773863736 0.6226136264)
+( 0.2341950000 0.7658050000)
+)
+)
+((( 0.6690534132 0.3309465868)
+( 0.9900027287 0.0099972713)
+)
+(( 0.3297649198 0.6702350802)
+( 0.6729305000 0.3270695000)
+)
+(( 0.2621091000 0.7378909000)
+( 0.4546124464 0.5453875536))))))); 
+}
+
+potential ( node69 | node176 node457 node561 ) { 
+ data = (((( 0.1062213179 0.8937786821)
+( 0.3820956733 0.6179043267)
+)
+(( 0.6426182000 0.3573818000)
+( 0.1155888088 0.8844111912)
+)
+)
+((( 0.7649086694 0.2350913306)
+( 0.7409169478 0.2590830522)
+)
+(( 0.5590544468 0.4409455532)
+( 0.1303068313 0.8696931687)
+)
+)
+((( 0.1889790187 0.8110209813)
+( 0.6337114410 0.3662885590)
+)
+(( 0.6928420000 0.3071580000)
+( 0.4331463170 0.5668536830)))); 
+}
+
+potential ( node7 | node160 ) { 
+ data = (( 0.6488992308 0.0817301013 0.2693706679)
+( 0.2611660504 0.3541979342 0.3846360154)
+( 0.3554930228 0.0384212385 0.6060857388)); 
+}
+
+potential ( node70 | node469 ) { 
+ data = (( 0.6840778205 0.3159221795)
+( 0.9545210457 0.0454789543)
+( 0.0103293334 0.9896706666)); 
+}
+
+potential ( node71 | node184 node51 ) { 
+ data = ((( 0.1284377426 0.8715622574)
+( 0.2407816848 0.7592183152)
+)
+(( 0.4794446896 0.5205553104)
+( 0.4957787198 0.5042212802))); 
+}
+
+potential ( node72 | node101 node188 node2 node212 node310 node487 ) { 
+ data = ((((((( 0.0099873690 0.3532331660 0.6367794650)
+( 0.4580700908 0.2009855660 0.3409443432)
+)
+(( 0.5066674248 0.4038509579 0.0894816173)
+( 0.6777001136 0.0980041120 0.2242957745)
+)
+(( 0.1868030300 0.0387242700 0.7744727000)
+( 0.0720242714 0.7272135145 0.2007622140)
+)
+)
+((( 0.1848800828 0.7319722110 0.0831477062)
+( 0.3244115935 0.3925919121 0.2829964943)
+)
+(( 0.3531565629 0.1498488470 0.4969945901)
+( 0.1587548916 0.2990172030 0.5422279054)
+)
+(( 0.4245894515 0.3619718928 0.2134386557)
+( 0.4226285542 0.3678063537 0.2095650921)
+)
+)
+((( 0.2594031270 0.1204636040 0.6201332690)
+( 0.5940357459 0.1119511111 0.2940131429)
+)
+(( 0.2465362548 0.2137731128 0.5396906324)
+( 0.6635349040 0.0634220544 0.2730430416)
+)
+(( 0.8148758286 0.1173737784 0.0677503931)
+( 0.2823793802 0.2844695201 0.4331510997)
+)
+)
+)
+(((( 0.2227775733 0.5205052844 0.2567171423)
+( 0.3208175257 0.5431898435 0.1359926309)
+)
+(( 0.2090162905 0.3242380462 0.4667456633)
+( 0.1861487319 0.7260585073 0.0877927609)
+)
+(( 0.3826371087 0.4937121670 0.1236507243)
+( 0.2113302021 0.6958098470 0.0928599509)
+)
+)
+((( 0.3863927270 0.1622016814 0.4514055916)
+( 0.2741104373 0.3043684370 0.4215211258)
+)
+(( 0.3039650722 0.1817231073 0.5143118206)
+( 0.7940866924 0.0099673966 0.1959459109)
+)
+(( 0.3081846800 0.4283252400 0.2634900800)
+( 0.2440104551 0.2708255346 0.4851640103)
+)
+)
+((( 0.0099639120 0.0711942138 0.9188418742)
+( 0.3469642035 0.5486963055 0.1043394910)
+)
+(( 0.0466215771 0.2790393067 0.6743391162)
+( 0.0749110081 0.0855444129 0.8395445790)
+)
+(( 0.7157707642 0.0632080968 0.2210211389)
+( 0.1051870511 0.5433090054 0.3515039435)
+)
+)
+)
+)
+((((( 0.0120357627 0.7295379432 0.2584262941)
+( 0.2027362781 0.3603089344 0.4369547875)
+)
+(( 0.6573367836 0.0160783446 0.3265848718)
+( 0.5541885445 0.1739270183 0.2718844373)
+)
+(( 0.1315586987 0.7209426928 0.1474986085)
+( 0.0851773691 0.0691137393 0.8457088915)
+)
+)
+((( 0.1037768293 0.8070486556 0.0891745151)
+( 0.2340151733 0.7427537504 0.0232310763)
+)
+(( 0.5654121543 0.2735173673 0.1610704784)
+( 0.0437629169 0.2657435314 0.6904935517)
+)
+(( 0.8193959162 0.0260269894 0.1545770944)
+( 0.3617416517 0.4021190241 0.2361393242)
+)
+)
+((( 0.2460036226 0.1745448948 0.5794514826)
+( 0.1820469600 0.5067796000 0.3111734400)
+)
+(( 0.1788590354 0.7331010220 0.0880399426)
+( 0.8159516320 0.0392491211 0.1447992468)
+)
+(( 0.1914970485 0.3042858317 0.5042171197)
+( 0.5599593310 0.3605763477 0.0794643213)
+)
+)
+)
+(((( 0.3351797399 0.4081886878 0.2566315723)
+( 0.6555381803 0.2413431228 0.1031186969)
+)
+(( 0.1215780493 0.8093781283 0.0690438224)
+( 0.3056432753 0.4782834239 0.2160733008)
+)
+(( 0.8721290346 0.0474276564 0.0804433090)
+( 0.0201226290 0.6490943006 0.3307830703)
+)
+)
+((( 0.2452324800 0.0689117200 0.6858558000)
+( 0.2182180465 0.4474146134 0.3343673400)
+)
+(( 0.2579250677 0.2644942779 0.4775806543)
+( 0.5093639704 0.1477211659 0.3429148637)
+)
+(( 0.1403856014 0.0320621303 0.8275522683)
+( 0.4581692454 0.1097393489 0.4320914057)
+)
+)
+((( 0.5429109501 0.0226066299 0.4344824200)
+( 0.0646789394 0.0678831693 0.8674378913)
+)
+(( 0.5670952227 0.1265729851 0.3063317923)
+( 0.6078147122 0.3614703472 0.0307149406)
+)
+(( 0.5842994117 0.2739818055 0.1417187828)
+( 0.6919607387 0.0608417274 0.2471975338)
+)
+)
+)
+)
+)
+(((((( 0.3630221655 0.2816357887 0.3553420458)
+( 0.3642857591 0.2714431219 0.3642711191)
+)
+(( 0.0686897927 0.2594968804 0.6718133269)
+( 0.3327017900 0.5375069839 0.1297912261)
+)
+(( 0.6518557700 0.0902109100 0.2579333200)
+( 0.5108992398 0.3471694231 0.1419313372)
+)
+)
+((( 0.8032108420 0.1001000840 0.0966890740)
+( 0.1580942779 0.1454172473 0.6964884748)
+)
+(( 0.4115535000 0.2193934300 0.3690530700)
+( 0.3285701501 0.5368914839 0.1345383660)
+)
+(( 0.3147771637 0.3476990430 0.3375237932)
+( 0.6265601249 0.1827649927 0.1906748824)
+)
+)
+((( 0.0776109487 0.0587355260 0.8636535253)
+( 0.2419740097 0.1414998657 0.6165261247)
+)
+(( 0.1300779553 0.0666221136 0.8032999311)
+( 0.0899423418 0.8426710939 0.0673865643)
+)
+(( 0.0314098517 0.8981345485 0.0704555998)
+( 0.3118670506 0.4024533179 0.2856796314)
+)
+)
+)
+(((( 0.1405510207 0.7718176039 0.0876313754)
+( 0.8058379960 0.1590108692 0.0351511348)
+)
+(( 0.1024645120 0.2782448256 0.6192906624)
+( 0.4817247328 0.4558919932 0.0623832741)
+)
+(( 0.1733513831 0.7337038207 0.0929447963)
+( 0.1999794760 0.2629218079 0.5370987161)
+)
+)
+((( 0.4083026437 0.1957393922 0.3959579642)
+( 0.6634928199 0.1311459239 0.2053612562)
+)
+(( 0.1756907889 0.7662922517 0.0580169593)
+( 0.5281113158 0.3255490798 0.1463396044)
+)
+(( 0.5536175732 0.3227201594 0.1236622674)
+( 0.4982075599 0.2831613113 0.2186311287)
+)
+)
+((( 0.6393198208 0.1469237156 0.2137564636)
+( 0.3961352281 0.5360293239 0.0678354480)
+)
+(( 0.1633039965 0.2788672812 0.5578287223)
+( 0.0845714021 0.4828709778 0.4325576201)
+)
+(( 0.3160655990 0.1820613709 0.5018730301)
+( 0.3266976669 0.2225409511 0.4507613820)
+)
+)
+)
+)
+((((( 0.1487474941 0.6476531341 0.2035993719)
+( 0.2821354972 0.3709279563 0.3469365465)
+)
+(( 0.2200394176 0.7095138568 0.0704467256)
+( 0.0167137699 0.4797499737 0.5035362564)
+)
+(( 0.6887877069 0.2366610624 0.0745512307)
+( 0.3916162623 0.5367142632 0.0716694744)
+)
+)
+((( 0.0766060600 0.3401119400 0.5832820000)
+( 0.1828119527 0.3648921654 0.4522958819)
+)
+(( 0.0976155610 0.5127957551 0.3895886839)
+( 0.5897605764 0.3336448267 0.0765945969)
+)
+(( 0.0874337617 0.6313110126 0.2812552256)
+( 0.2925738788 0.4284075929 0.2790185284)
+)
+)
+((( 0.4195944484 0.1287542126 0.4516513390)
+( 0.7080396640 0.0099266557 0.2820336803)
+)
+(( 0.0387170875 0.7502401598 0.2110427527)
+( 0.2698610108 0.0473232619 0.6828157273)
+)
+(( 0.7464297149 0.0405228208 0.2130474643)
+( 0.2909552715 0.5980657743 0.1109789542)
+)
+)
+)
+(((( 0.0990259270 0.5103889847 0.3905850883)
+( 0.2617103879 0.3259899398 0.4122996724)
+)
+(( 0.0299551569 0.2970709687 0.6729738744)
+( 0.1106721100 0.3452036400 0.5441242500)
+)
+(( 0.0819432639 0.7276919811 0.1903647551)
+( 0.8809196269 0.0286884506 0.0903919225)
+)
+)
+((( 0.0894083490 0.2227185276 0.6878731234)
+( 0.5235061391 0.3726148451 0.1038790158)
+)
+(( 0.0911785900 0.6033494500 0.3054719600)
+( 0.3195055374 0.0477284676 0.6327659949)
+)
+(( 0.1629373884 0.1357686186 0.7012939930)
+( 0.3284626099 0.5316279659 0.1399094242)
+)
+)
+((( 0.4175927725 0.3496448505 0.2327623770)
+( 0.4678582089 0.4642275091 0.0679142819)
+)
+(( 0.7489481750 0.1219893224 0.1290625026)
+( 0.3386630802 0.5810282174 0.0803087024)
+)
+(( 0.0658424107 0.6590195366 0.2751380528)
+( 0.0284671311 0.2000478636 0.7714850053))))))); 
+}
+
+potential ( node73 | node365 ) { 
+ data = (( 0.5962869739 0.0409291916 0.3627838345)
+( 0.4140584083 0.1501618330 0.4357797587)
+( 0.2181818756 0.7151262857 0.0666918387)); 
+}
+
+potential ( node74 | node104 node165 node18 node440 node532 ) { 
+ data = (((((( 0.9900491806 0.0099508194)
+( 0.0483164305 0.9516835695)
+( 0.6858656606 0.3141343394)
+)
+(( 0.8364383916 0.1635616084)
+( 0.4556680137 0.5443319863)
+( 0.4810160844 0.5189839156)
+)
+)
+((( 0.0452093022 0.9547906978)
+( 0.9350835374 0.0649164626)
+( 0.9208973324 0.0791026676)
+)
+(( 0.7221245422 0.2778754578)
+( 0.7640462424 0.2359537576)
+( 0.4615461108 0.5384538892)
+)
+)
+((( 0.2253917577 0.7746082423)
+( 0.9900471764 0.0099528236)
+( 0.4514404665 0.5485595335)
+)
+(( 0.3424219132 0.6575780868)
+( 0.1275700474 0.8724299526)
+( 0.4298441742 0.5701558258)
+)
+)
+)
+(((( 0.5456246218 0.4543753782)
+( 0.4042572643 0.5957427357)
+( 0.8609756311 0.1390243689)
+)
+(( 0.8295207917 0.1704792083)
+( 0.9023362549 0.0976637451)
+( 0.8866431035 0.1133568965)
+)
+)
+((( 0.5480879890 0.4519120110)
+( 0.2780381111 0.7219618889)
+( 0.0099694324 0.9900305676)
+)
+(( 0.7039173437 0.2960826563)
+( 0.0183155608 0.9816844392)
+( 0.4345383170 0.5654616830)
+)
+)
+((( 0.7437750554 0.2562249446)
+( 0.1137133592 0.8862866408)
+( 0.0104704015 0.9895295985)
+)
+(( 0.1708703834 0.8291296166)
+( 0.1257173350 0.8742826650)
+( 0.4563435300 0.5436564700)
+)
+)
+)
+(((( 0.5104167500 0.4895832500)
+( 0.9539292429 0.0460707571)
+( 0.8820292053 0.1179707947)
+)
+(( 0.4282749172 0.5717250828)
+( 0.8057854436 0.1942145564)
+( 0.5366441600 0.4633558400)
+)
+)
+((( 0.2383151381 0.7616848619)
+( 0.1232795474 0.8767204526)
+( 0.6327266253 0.3672733747)
+)
+(( 0.4211957000 0.5788043000)
+( 0.3973989681 0.6026010319)
+( 0.7353525000 0.2646475000)
+)
+)
+((( 0.0099552323 0.9900447677)
+( 0.1769251658 0.8230748342)
+( 0.7192388144 0.2807611856)
+)
+(( 0.7306776000 0.2693224000)
+( 0.0927815127 0.9072184873)
+( 0.2094869521 0.7905130479)
+)
+)
+)
+)
+((((( 0.5934806000 0.4065194000)
+( 0.5183431656 0.4816568344)
+( 0.7977206761 0.2022793239)
+)
+(( 0.2927760500 0.7072239500)
+( 0.0170995315 0.9829004685)
+( 0.2199201766 0.7800798234)
+)
+)
+((( 0.0110722951 0.9889277049)
+( 0.2424062848 0.7575937152)
+( 0.2148803686 0.7851196314)
+)
+(( 0.2625922379 0.7374077621)
+( 0.0695922400 0.9304077600)
+( 0.7578489848 0.2421510152)
+)
+)
+((( 0.9874730494 0.0125269506)
+( 0.8629379396 0.1370620604)
+( 0.0842660737 0.9157339263)
+)
+(( 0.9120712065 0.0879287935)
+( 0.4989966100 0.5010033900)
+( 0.9900194517 0.0099805483)
+)
+)
+)
+(((( 0.5306221265 0.4693778735)
+( 0.2390039772 0.7609960228)
+( 0.4649112107 0.5350887893)
+)
+(( 0.7855218050 0.2144781950)
+( 0.7169291400 0.2830708600)
+( 0.9084290182 0.0915709818)
+)
+)
+((( 0.2512526150 0.7487473850)
+( 0.5828764575 0.4171235425)
+( 0.8753643175 0.1246356825)
+)
+(( 0.2277737232 0.7722262768)
+( 0.7405238296 0.2594761704)
+( 0.7558787000 0.2441213000)
+)
+)
+((( 0.1181951783 0.8818048217)
+( 0.9639052402 0.0360947598)
+( 0.9299028907 0.0700971093)
+)
+(( 0.6751184338 0.3248815662)
+( 0.5834197000 0.4165803000)
+( 0.0445315760 0.9554684240)
+)
+)
+)
+(((( 0.7383402157 0.2616597843)
+( 0.4506591435 0.5493408565)
+( 0.6290758377 0.3709241623)
+)
+(( 0.7637368000 0.2362632000)
+( 0.7171283615 0.2828716385)
+( 0.1801640400 0.8198359600)
+)
+)
+((( 0.2172283109 0.7827716891)
+( 0.5656988000 0.4343012000)
+( 0.9522073591 0.0477926409)
+)
+(( 0.1007938910 0.8992061090)
+( 0.6746733663 0.3253266337)
+( 0.5631330600 0.4368669400)
+)
+)
+((( 0.4999406150 0.5000593850)
+( 0.0982961610 0.9017038390)
+( 0.8614439745 0.1385560255)
+)
+(( 0.3734675600 0.6265324400)
+( 0.4812027104 0.5187972896)
+( 0.0139850819 0.9860149181)
+)
+)
+)
+)
+((((( 0.8657594213 0.1342405787)
+( 0.0923199909 0.9076800091)
+( 0.9145682591 0.0854317409)
+)
+(( 0.6005669300 0.3994330700)
+( 0.0854678771 0.9145321229)
+( 0.5557134000 0.4442866000)
+)
+)
+((( 0.4749242542 0.5250757458)
+( 0.5377701661 0.4622298339)
+( 0.1390025914 0.8609974086)
+)
+(( 0.5493642865 0.4506357135)
+( 0.5776276173 0.4223723827)
+( 0.4798090104 0.5201909896)
+)
+)
+((( 0.3283567799 0.6716432201)
+( 0.3577809300 0.6422190700)
+( 0.0435635866 0.9564364134)
+)
+(( 0.0099228485 0.9900771515)
+( 0.3753072413 0.6246927587)
+( 0.8168478837 0.1831521163)
+)
+)
+)
+(((( 0.9177028092 0.0822971908)
+( 0.9830867738 0.0169132262)
+( 0.4347687226 0.5652312774)
+)
+(( 0.9900307283 0.0099692717)
+( 0.5372468107 0.4627531893)
+( 0.2272424232 0.7727575768)
+)
+)
+((( 0.3557090678 0.6442909322)
+( 0.1113706822 0.8886293178)
+( 0.1650364483 0.8349635517)
+)
+(( 0.4517013181 0.5482986819)
+( 0.6592260000 0.3407740000)
+( 0.7151637000 0.2848363000)
+)
+)
+((( 0.7940548635 0.2059451365)
+( 0.6799683872 0.3200316128)
+( 0.3199295000 0.6800705000)
+)
+(( 0.0638924199 0.9361075801)
+( 0.1283260262 0.8716739738)
+( 0.8115267406 0.1884732594)
+)
+)
+)
+(((( 0.3994400480 0.6005599520)
+( 0.5680957173 0.4319042827)
+( 0.9148917366 0.0851082634)
+)
+(( 0.9899509089 0.0100490911)
+( 0.6994441140 0.3005558860)
+( 0.6743517702 0.3256482298)
+)
+)
+((( 0.8262950413 0.1737049587)
+( 0.0108086698 0.9891913302)
+( 0.7903457711 0.2096542289)
+)
+(( 0.8263824683 0.1736175317)
+( 0.8461922315 0.1538077685)
+( 0.0109506110 0.9890493890)
+)
+)
+((( 0.8437982506 0.1562017494)
+( 0.2797475144 0.7202524856)
+( 0.3043984017 0.6956015983)
+)
+(( 0.6855698657 0.3144301343)
+( 0.8837885495 0.1162114505)
+( 0.2522490224 0.7477509776)))))); 
+}
+
+potential ( node75 | node239 node566 ) { 
+ data = ((( 0.0099494215 0.2945527833 0.6954977952)
+( 0.0985968230 0.4800219644 0.4213812126)
+( 0.0760910085 0.3294307534 0.5944782381)
+)
+(( 0.1333434613 0.2584229026 0.6082336361)
+( 0.1440517914 0.2535237025 0.6024245060)
+( 0.2900136516 0.1642751266 0.5457112218))); 
+}
+
+potential ( node76 | node132 node181 node265 node268 node385 ) { 
+ data = (((((( 0.2426218773 0.3414109702 0.4159671525)
+( 0.7576362629 0.0250841034 0.2172796337)
+)
+(( 0.5298697506 0.3305641066 0.1395661428)
+( 0.0789152608 0.7489737075 0.1721110317)
+)
+(( 0.4746588200 0.1122211500 0.4131200300)
+( 0.0965764700 0.6997081000 0.2037154300)
+)
+)
+((( 0.1233371288 0.6239753938 0.2526874775)
+( 0.0358326486 0.0958057862 0.8683615653)
+)
+(( 0.2123999315 0.5244346790 0.2631653895)
+( 0.0876372128 0.2156520422 0.6967107449)
+)
+(( 0.2555479949 0.1698258666 0.5746261385)
+( 0.2903050413 0.3437654297 0.3659295290)
+)
+)
+)
+(((( 0.5428202620 0.2965193192 0.1606604188)
+( 0.2071300259 0.5902720882 0.2025978859)
+)
+(( 0.2800499214 0.7099603704 0.0099897082)
+( 0.0261046444 0.4774644776 0.4964308779)
+)
+(( 0.4725415226 0.5174811466 0.0099773308)
+( 0.5942155941 0.0981701090 0.3076142969)
+)
+)
+((( 0.1302700935 0.4020466299 0.4676832766)
+( 0.1534713077 0.6569944928 0.1895341995)
+)
+(( 0.3000215030 0.1181465912 0.5818319058)
+( 0.1396916186 0.0665536293 0.7937547521)
+)
+(( 0.5362335000 0.1599717300 0.3037947700)
+( 0.3314881867 0.6281750749 0.0403367384)
+)
+)
+)
+)
+((((( 0.2175007741 0.7421249482 0.0403742776)
+( 0.4418292022 0.0746630954 0.4835077024)
+)
+(( 0.3330437413 0.0883035337 0.5786527250)
+( 0.5803636010 0.3845244808 0.0351119182)
+)
+(( 0.4525133863 0.0461043957 0.5013822180)
+( 0.7784562572 0.1379325424 0.0836112004)
+)
+)
+((( 0.0796431462 0.5846746688 0.3356821850)
+( 0.5228257131 0.1142502379 0.3629240491)
+)
+(( 0.2270776455 0.3438320431 0.4290903114)
+( 0.3608796195 0.6047356327 0.0343847479)
+)
+(( 0.0923349628 0.7782671233 0.1293979139)
+( 0.4302950801 0.4882690942 0.0814358257)
+)
+)
+)
+(((( 0.3879247010 0.4468165057 0.1652587932)
+( 0.0547171878 0.6278030546 0.3174797576)
+)
+(( 0.7447985623 0.1735301952 0.0816712425)
+( 0.4371409087 0.2173324843 0.3455266069)
+)
+(( 0.4709746547 0.1868588919 0.3421664534)
+( 0.4273032029 0.1710575932 0.4016392039)
+)
+)
+((( 0.1801776797 0.0099096667 0.8099126535)
+( 0.5389336246 0.1474290785 0.3136372969)
+)
+(( 0.0199310216 0.6741629852 0.3059059933)
+( 0.0753828431 0.7329132089 0.1917039480)
+)
+(( 0.0099682656 0.8826730706 0.1073586639)
+( 0.2027975450 0.7758561426 0.0213463124)
+)
+)
+)
+)
+((((( 0.0316045451 0.0577733105 0.9106221445)
+( 0.1393464570 0.3723217186 0.4883318244)
+)
+(( 0.0180640184 0.4903761108 0.4915598708)
+( 0.1665463300 0.4171616000 0.4162920700)
+)
+(( 0.6875327807 0.0169524675 0.2955147517)
+( 0.2007985920 0.5721013057 0.2271001023)
+)
+)
+((( 0.7682991216 0.0190563990 0.2126444794)
+( 0.1705856932 0.5793158168 0.2500984900)
+)
+(( 0.5626863185 0.4273141308 0.0099995507)
+( 0.3038114600 0.5773284400 0.1188601000)
+)
+(( 0.3949885961 0.2234026278 0.3816087762)
+( 0.7440837377 0.2160015935 0.0399146688)
+)
+)
+)
+(((( 0.7417371816 0.1295015042 0.1287613142)
+( 0.1448464342 0.3535075859 0.5016459799)
+)
+(( 0.7019152635 0.2568789566 0.0412057799)
+( 0.3850932807 0.2169111392 0.3979955801)
+)
+(( 0.3009905060 0.2391936248 0.4598158692)
+( 0.0999332420 0.6521811478 0.2478856102)
+)
+)
+((( 0.2842552858 0.5046356048 0.2111091094)
+( 0.2623029548 0.4290932314 0.3086038138)
+)
+(( 0.2861284886 0.0799046368 0.6339668746)
+( 0.5199076688 0.3437470594 0.1363452718)
+)
+(( 0.2970899570 0.2101077279 0.4928023151)
+( 0.6817550130 0.0099757002 0.3082692868)))))); 
+}
+
+potential ( node77 | node364 node509 ) { 
+ data = ((( 0.3540896323 0.6459103677)
+( 0.7072388000 0.2927612000)
+( 0.8920265168 0.1079734832)
+)
+(( 0.9163489062 0.0836510938)
+( 0.3562820193 0.6437179807)
+( 0.8635755118 0.1364244882)
+)
+(( 0.2020751761 0.7979248239)
+( 0.3219434203 0.6780565797)
+( 0.5936439356 0.4063560644))); 
+}
+
+potential ( node78 | node90 ) { 
+ data = (( 0.1911308500 0.2154463200 0.5934228300)
+( 0.4701931906 0.3578253928 0.1719814166)); 
+}
+
+potential ( node79 ) { 
+ data = ( ); 
+}
+
+potential ( node8 | node238 ) { 
+ data = (( 0.1929313904 0.4225231489 0.3845454608)
+( 0.0426137249 0.2445729266 0.7128133485)); 
+}
+
+potential ( node80 ) { 
+ data = ( ); 
+}
+
+potential ( node81 ) { 
+ data = ( ); 
+}
+
+potential ( node82 ) { 
+ data = ( ); 
+}
+
+potential ( node83 ) { 
+ data = ( ); 
+}
+
+potential ( node84 ) { 
+ data = ( ); 
+}
+
+potential ( node85 ) { 
+ data = ( ); 
+}
+
+potential ( node86 ) { 
+ data = ( ); 
+}
+
+potential ( node87 ) { 
+ data = ( ); 
+}
+
+potential ( node88 ) { 
+ data = ( ); 
+}
+
+potential ( node89 ) { 
+ data = ( ); 
+}
+
+potential ( node9 | node92 ) { 
+ data = (( 0.6030060558 0.0228841168 0.3741098274)
+( 0.3798490272 0.0620550063 0.5580959665)
+( 0.0824557459 0.5601809320 0.3573633221)); 
+}
+
+potential ( node90 ) { 
+ data = ( ); 
+}
+
+potential ( node91 ) { 
+ data = ( ); 
+}
+
+potential ( node92 ) { 
+ data = ( ); 
+}
+
+potential ( node93 ) { 
+ data = ( ); 
+}
+
+potential ( node94 ) { 
+ data = ( ); 
+}
+
+potential ( node95 ) { 
+ data = ( ); 
+}
+
+potential ( node96 ) { 
+ data = ( ); 
+}
+
+potential ( node97 ) { 
+ data = ( ); 
+}
+
+potential ( node98 ) { 
+ data = ( ); 
+}
+
+potential ( node99 ) { 
+ data = ( ); 
+}
+
