@@ -50,7 +50,7 @@ multiprocess==0.70.14
 nest-asyncio==1.5.5
 networkx==2.8.6
 numpy==1.23.3
-oauthlib==3.2.2
+oauthlib==4.0.0
 opt-einsum==3.3.0
 p-tqdm==1.4.0
 packaging==21.3
