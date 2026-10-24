@@ -60,7 +60,7 @@ pathos==0.3.0
 patsy==0.5.2
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==9.2.0
+Pillow==13.0.0
 pip==22.1.2
 pox==0.3.2
 ppft==1.7.6.6
