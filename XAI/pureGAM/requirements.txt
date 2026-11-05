@@ -7,6 +7,6 @@ pandas==1.3.4
 scikit_learn==1.1.2
 scipy==1.7.3
 tensorflow==2.7.0
-torch==1.10.2
+torch==2.13.0
 tqdm==4.61.2
 xgboost==1.5.1
